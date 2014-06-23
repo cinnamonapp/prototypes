@@ -1,0 +1,12 @@
+.ci-navbar{
+	.container{
+		border-bottom: 1px solid black;
+		.navbar-nav{
+			>li{
+				>a{
+					color: black;
+				}
+			}
+		}
+	}
+}

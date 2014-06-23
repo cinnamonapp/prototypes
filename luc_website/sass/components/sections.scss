@@ -1,0 +1,82 @@
+
+/*Container with image*/
+.container.da-image-right {
+	position: relative; }
+	.container.da-image-right img {
+		position: absolute;
+		right: 0;
+		bottom: 0; }
+.container.da-image-left {
+	position: relative; }
+	.container.da-image-left img {
+		position: absolute;
+		left: 0;
+		bottom: 0; }
+
+/*Row containers*/
+.da-row-container.da-row-main {
+	padding: 80px 0px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center, bottom center; }
+.da-row-container.da-row-default {
+	/*background: #eee;*/
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc; }
+.da-row-container.da-row-cta {
+	background: #eee; }
+.da-row-container.da-row-inverse {
+	background-color: #1d6fb7;
+	color: #fff; }
+.da-row-container.da-row-size1 {
+	padding: 50px 0px; }
+
+
+
+
+// Colored sections
+section{
+	padding: 50px 0;
+	&.section-primary{
+		background: $section_primary; 
+		color: $violet;
+	}
+
+	&.section-info{
+		background: $section_info;
+		color: $violet;
+	}
+
+	&.section-success{
+		background: $section_success;
+		color: $violet;
+	}
+
+	&.section-danger{
+		background: $section_danger;
+		color: $violet;
+	}
+
+	&.section-dream{
+		background: $section_dream;
+		color: $weak_pink;
+	}
+
+	$section_max_size: 10;
+	$section_atom: 30px;
+	// Section sizes
+	@for $size from 1 through $section_max_size{
+		&.section-size-#{$size}{
+			padding: $size * $section_atom 0px;
+		}		
+	}
+
+	position: relative;
+
+	.vertically-aligned{
+		@media(min-width: 768px){
+			width: 100%;
+		}
+	}
+}
+

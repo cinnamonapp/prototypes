@@ -1,0 +1,47 @@
+// SET YOUR STYLES HERE
+$button_styles: "primary" $action_primary, 
+				"warning" $action_warning,
+				"danger"  $action_danger,
+				"info"    $action_info,
+				"white"   white,
+				"success" $action_success;
+
+/*Primary button*/
+.btn{
+
+	// STYLES FROM $button_styles on top
+	@each $style in $button_styles{
+		$loop_button_name: nth($style, 1);
+		$loop_button_color: nth($style, 2);
+
+		// COLORS
+		&.btn-#{$loop_button_name}{
+			background: $loop_button_color;
+			color: white;
+			border-color: $loop_button_color;
+
+			&:hover{
+				background: lighten($loop_button_color, 5%);
+				border-color: lighten($loop_button_color, 5%);
+			}
+
+			&:active, &.active{
+				background: darken($loop_button_color, 5%);
+				border-color: darken($loop_button_color, 5%);
+				box-shadow: inset 0px 3px 3px darken($loop_button_color, 10%);
+			}
+
+			&.btn-outline{
+				color: $loop_button_color;
+				border: 2px solid $loop_button_color;
+				background: transparent;
+
+				&:hover{
+					color: white;
+					background: $loop_button_color;
+				}
+			}
+		}
+
+	}
+}

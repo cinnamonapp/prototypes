@@ -1,0 +1,8 @@
+
+// font mixins
+@mixin typo_brand_strong {
+	font-family: $font_brand_strong;
+}
+@mixin typo_brand_weak {
+	font-family: $font_brand_weak;
+}

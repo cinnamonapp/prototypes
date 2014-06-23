@@ -1,0 +1,44 @@
+// Color palette
+	$red: 				#f47472;
+
+	$green: 			#d9e027;
+
+	$purple: 			#f9b0db;
+	$fucsia: 			#f680c6;
+	$dark_purple: 		#aa4782;
+	$grey_purple: 		#ad8b9f;
+
+	$light_water_blue: 	#52b5c3;
+	$dark_water_blue: 	#509faa;
+	$light_blue: 		#c9f3f9;
+
+	$yellow: 			#f8e79a;
+	$dark_gold: 		#ada271;
+	$light_gold: 		#c6b978;
+
+// Color denomination
+$base_color: black;
+$primary_color: $red;
+$secondary_color: $purple;
+$strong_color: $dark_purple;
+$weak_color: $light_blue;
+$success_color: $green;
+
+// Fonts
+$font_brand_strong: Archer;
+$font_brand_weak: Archer;
+
+// Actionable colors
+$action_primary: 	$primary_color;
+$action_success: 	$success_color;
+$action_warning: 	$secondary_color;
+$action_danger: 	$strong_color;
+$action_default: 	$weak_color;
+$action_info: 		$dark_water_blue;
+
+// Sections colors
+$section_primary: $primary_color;
+$section_success: $success_color;
+$section_info: $weak_color;
+$section_danger: $strong_color;
+$section_dream: $secondary_color;

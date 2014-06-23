@@ -1,0 +1,19 @@
+/*ANIMATIONS*/
+
+// Eye blink animation
+	// Single eye blink
+	@-webkit-keyframes lc-character-eye-blink {
+		/*Blink 1*/
+	    0% {-webkit-transform: scaleY(1) translateY(0px);}
+	    50% {-webkit-transform: scaleY(0.3) translateY(78px);}
+	    100% {-webkit-transform: scaleY(1) translateY(0px);}
+	}
+
+	// Single eyebrow blink
+	@-webkit-keyframes lc-character-eyebrow-blink {
+		/*Blink 1*/
+	    0% {-webkit-transform: translateY(0px);}
+	    50% {-webkit-transform: translateY(1px);}
+	    100% {-webkit-transform: translateY(0px);}
+	}
+// eye blink ends

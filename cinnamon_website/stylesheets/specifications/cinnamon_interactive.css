@@ -1,0 +1,11 @@
+.ci-place-plant {
+  position: relative;
+  overflow: hidden; }
+  .ci-place-plant .row {
+    position: static; }
+    .ci-place-plant .row .ci-plant-column {
+      position: static; }
+      .ci-place-plant .row .ci-plant-column img.ci-plant-piece {
+        position: absolute;
+        width: 33%;
+        bottom: -200%; }

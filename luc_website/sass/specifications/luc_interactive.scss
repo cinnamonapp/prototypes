@@ -1,0 +1,58 @@
+
+#LCMainCharacterStage{
+	height: 400px;
+
+/* MAIN CHARACTER */
+
+	#LCCharacter{
+
+		/*EYES*/
+		.lc-eyes{
+
+			.lc-eye{
+				-webkit-transform: scaleY(1) translateY(0px);
+			}
+
+			&.animated .lc-eye{
+				/* Chrome, Safari, Opera */
+				-webkit-animation:  lc-character-eye-blink .5s steps(1), 
+									lc-character-eye-blink .3s 2s steps(1), 
+									lc-character-eye-blink .5s 2.3s steps(1); 
+			}
+		}
+
+		/*EYEBROWS*/
+		.lc-eyebrows{
+			.lc-eyebrow{
+				-webkit-transform: scaleY(1) translateY(0px);
+			}
+
+			&.animated .lc-eyebrow{
+				/* Chrome, Safari, Opera */
+				-webkit-animation:  lc-character-eyebrow-blink .5s steps(1), 
+									lc-character-eyebrow-blink .3s 2s steps(1), 
+									lc-character-eyebrow-blink .5s 2.3s steps(1); 
+			}
+		}
+
+	}
+
+}
+
+
+/*LCStageText*/
+#LCStageText{
+	margin-top: 100px;
+
+	h1{
+		font-size: 50px;
+	}
+
+	h3{
+		font-size: 30px;
+	}
+
+	.btn-group{
+		margin-top: 20px;
+	}
+}

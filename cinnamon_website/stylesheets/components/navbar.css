@@ -1,0 +1,4 @@
+.ci-navbar .container {
+  border-bottom: 1px solid black; }
+  .ci-navbar .container .navbar-nav > li > a {
+    color: black; }

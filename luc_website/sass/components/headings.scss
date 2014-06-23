@@ -1,0 +1,9 @@
+$headings_max: 50px;
+$headings_subtraction: 6px;
+
+@each $heading in 1,2,3,4,5,6{
+	h#{$heading}{
+		font-family: $font_brand_strong;
+		font-size: $headings_max - ($headings_subtraction * ($heading - 1));
+	}
+}

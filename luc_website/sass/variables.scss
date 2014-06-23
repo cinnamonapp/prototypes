@@ -1,0 +1,34 @@
+// Palette
+$red: 			#c05127;
+$green: 		#c4bc6e;
+$purple: 		#a98399;
+$violet: 		#422a5f;
+$strong_blue: 	#62859b;
+$weak_blue: 	#c9d5d4;
+$strong_pink:	#f9bdc2;
+$weak_pink:		#fde6db;
+
+// support palette
+$light_red:		#f9bdc2;
+$light_green:	#bbccb3;
+$water_green:	#84cec4;
+
+
+// Fonts
+$font_brand_strong: Dosis;
+$font_brand_weak: Neuton;
+
+// Actionable colors
+$action_primary: 	$red;
+$action_success: 	$green;
+$action_warning: 	$purple;
+$action_danger: 	$violet;
+$action_default: 	$weak_blue;
+$action_info: 		$strong_blue;
+
+// Sections
+$section_primary: $weak_pink;
+$section_success: $light_green;
+$section_info: $weak_blue;
+$section_danger: $light_red;
+$section_dream: $water_green;

@@ -1,0 +1,84 @@
+// SET YOUR STYLES HERE
+$flower_colors: "primary" $action_primary, 
+				"warning" $action_warning,
+				"danger"  $action_danger,
+				"info"    $action_info,
+				"success" $action_success;
+
+$default_size_flower: 80px;
+.animated-flower{
+	padding: 10px;
+	height: $default_size_flower;
+	width: $default_size_flower;
+
+// STYLES FROM $flower_colors on top
+	@each $style in $flower_colors{
+		$loop_flower_name: nth($style, 1);
+		$loop_flower_color: nth($style, 2);
+		&.flower-#{$loop_flower_name}{
+			.circle{
+				fill: $loop_flower_color;
+			}
+		}
+	}
+
+	$small_size_flower: 60px;
+	&.flower-sm{
+		height: $small_size_flower;
+		width: $small_size_flower;
+	}
+
+	$large_size_flower: 100px;
+	&.flower-lg{
+		height: $large_size_flower;
+		width: $large_size_flower;
+	}
+
+	$xlarge_size_flower: 150px;
+	&.flower-xl{
+		height: $xlarge_size_flower;
+		width: $xlarge_size_flower;
+	}
+
+	.circle{
+		opacity: .5;
+		
+		&.circle-sm{
+			-webkit-animation: flower-orbit 5s ease infinite;
+		}
+		&.circle-md{
+			-webkit-animation: flower-orbit 8s ease infinite;
+		}
+		&.circle-lg{
+			-webkit-animation: flower-orbit 7s ease infinite;
+		}
+	}
+
+	// Color carousel
+	&.flower-carousel{
+		.circle{
+
+			&.circle-sm{
+				-webkit-animation: flower-color-carousel 30s linear infinite, flower-orbit 5s ease infinite;
+			}
+			&.circle-md{
+				-webkit-animation: flower-color-carousel 30s linear infinite, flower-orbit 8s ease infinite;
+			}
+			&.circle-lg{
+				-webkit-animation: flower-color-carousel 30s linear infinite, flower-orbit 7s ease infinite;
+			}
+
+		}
+	}
+}
+
+
+.btn,.flower-pot{
+	.animated-flower{
+		position: absolute;
+		right: 80%;
+		top: -100%;
+
+		z-index: -1;
+	}
+}
