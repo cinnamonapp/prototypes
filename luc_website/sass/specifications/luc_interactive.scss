@@ -1,6 +1,25 @@
 
+// Character's variables
+	// Cute pink face
+	$cute_face_background: $strong_pink;
+	$cute_face_elements_color: #DC838C;
+
+	// Invidia green face
+	$invidia_face_background: $water_green;
+	$invidia_face_elements_color: #4cbcac;
+
+	// Night-time violet face
+	$nighttime_face_background: $violet;
+	$nighttime_face_elements_color: $purple;
+
 #LCMainCharacterStage{
 	height: 400px;
+	opacity: 0;
+	@include cB(transition, opacity .5s ease);
+
+	&.ready{
+		opacity: 1;
+	}
 
 /* MAIN CHARACTER */
 
@@ -19,6 +38,13 @@
 									lc-character-eye-blink .3s 2s steps(1), 
 									lc-character-eye-blink .5s 2.3s steps(1); 
 			}
+
+			&.sleepy .lc-eye{
+				/* Chrome, Safari, Opera */
+				@include cB(transform, scaleY(0.3) translateY(78px));
+			}
+
+
 		}
 
 		/*EYEBROWS*/
@@ -33,16 +59,72 @@
 									lc-character-eyebrow-blink .3s 2s steps(1), 
 									lc-character-eyebrow-blink .5s 2.3s steps(1); 
 			}
+
+			&.sleepy .lc-eyebrow{
+				/* Chrome, Safari, Opera */
+				@include cB(transform, scaleY(0.3) translateY(78px));
+			}
 		}
 
 	}
 
 }
 
+#LCBackgroundStage{
+
+	background-position: 60% -30%;
+	@include transition(background-position 5s ease, background-color .5s ease);
+
+	// Character's helper backgrounds
+	&.section-char-cute{
+		background-color: $cute_face_background;
+		color: $violet;
+
+		.lc-eyebrow, .lc-nose, .lc-mouth{
+			stroke: $cute_face_elements_color;
+		}
+	}
+
+	&.section-char-invidia{
+		background-color: $invidia_face_background;
+		color: $violet;
+
+		.lc-eyebrow, .lc-nose, .lc-mouth{
+			stroke: $invidia_face_elements_color;
+		}
+	}	
+	
+	&.section-char-nighttime{
+		background-color: $nighttime_face_background;
+		color: wheat;
+
+
+		background-image: url(../images/stage-moon.png);
+		background-repeat: no-repeat;
+		background-position: 60% 30%;
+		background-size: 130px;
+
+		.lc-eye{
+			fill: wheat;
+		}
+
+		.lc-eyebrow, .lc-nose, .lc-mouth{
+			stroke: $nighttime_face_elements_color;
+		}
+	}
+}
 
 /*LCStageText*/
 #LCStageText{
 	margin-top: 100px;
+	
+	opacity: 0;
+	@include cB(transition, opacity .5s .8s ease);
+
+	&.ready{
+		opacity: 1;
+	}
+
 
 	h1{
 		font-size: 50px;

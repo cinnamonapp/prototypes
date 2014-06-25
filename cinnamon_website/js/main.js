@@ -1,6 +1,5 @@
 require(["lib/jquery.min"], function (jquery) {
-	require(["lib/bootstrap.min"]);
-	require(["lib/window-sized"]);
-	require(["lib/vertical-align"]);
-	require(["cinnamon"]);
+	require(["lib/bootstrap.min", "lib/window-sized", "lib/vertical-align", "lib/jquery.scrollTo.min"], function (){
+		require(["cinnamon"]);
+	});
 });

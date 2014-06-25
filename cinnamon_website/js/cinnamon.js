@@ -1,4 +1,8 @@
 
 $(document).ready(function () {
-	window.scrollTo(0, 1000000);
+	$('a').click(function(){
+	    $.scrollTo($($.attr(this, 'href')), 1000);
+	    return false;
+	});
+
 });

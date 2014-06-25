@@ -284,7 +284,15 @@ p {
 
 #LCMainCharacterStage {
   height: 400px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   /* MAIN CHARACTER */ }
+  #LCMainCharacterStage.ready {
+    opacity: 1; }
   #LCMainCharacterStage #LCCharacter {
     /*EYES*/
     /*EYEBROWS*/ }
@@ -293,15 +301,64 @@ p {
     #LCMainCharacterStage #LCCharacter .lc-eyes.animated .lc-eye {
       /* Chrome, Safari, Opera */
       -webkit-animation: lc-character-eye-blink 0.5s steps(1), lc-character-eye-blink 0.3s 2s steps(1), lc-character-eye-blink 0.5s 2.3s steps(1); }
+    #LCMainCharacterStage #LCCharacter .lc-eyes.sleepy .lc-eye {
+      /* Chrome, Safari, Opera */
+      -webkit-transform: scaleY(0.3) translateY(78px);
+      -moz-transform: scaleY(0.3) translateY(78px);
+      -ms-transform: scaleY(0.3) translateY(78px);
+      -o-transform: scaleY(0.3) translateY(78px);
+      transform: scaleY(0.3) translateY(78px); }
     #LCMainCharacterStage #LCCharacter .lc-eyebrows .lc-eyebrow {
       -webkit-transform: scaleY(1) translateY(0px); }
     #LCMainCharacterStage #LCCharacter .lc-eyebrows.animated .lc-eyebrow {
       /* Chrome, Safari, Opera */
       -webkit-animation: lc-character-eyebrow-blink 0.5s steps(1), lc-character-eyebrow-blink 0.3s 2s steps(1), lc-character-eyebrow-blink 0.5s 2.3s steps(1); }
+    #LCMainCharacterStage #LCCharacter .lc-eyebrows.sleepy .lc-eyebrow {
+      /* Chrome, Safari, Opera */
+      -webkit-transform: scaleY(0.3) translateY(78px);
+      -moz-transform: scaleY(0.3) translateY(78px);
+      -ms-transform: scaleY(0.3) translateY(78px);
+      -o-transform: scaleY(0.3) translateY(78px);
+      transform: scaleY(0.3) translateY(78px); }
+
+#LCBackgroundStage {
+  background-position: 60% -30%;
+  -webkit-transition: background-position 5s ease, background-color 0.5s ease;
+  -moz-transition: background-position 5s ease, background-color 0.5s ease;
+  transition: background-position 5s ease, background-color 0.5s ease; }
+  #LCBackgroundStage.section-char-cute {
+    background-color: #e5a4aa;
+    color: #422a5f; }
+    #LCBackgroundStage.section-char-cute .lc-eyebrow, #LCBackgroundStage.section-char-cute .lc-nose, #LCBackgroundStage.section-char-cute .lc-mouth {
+      stroke: #dc838c; }
+  #LCBackgroundStage.section-char-invidia {
+    background-color: #84cec4;
+    color: #422a5f; }
+    #LCBackgroundStage.section-char-invidia .lc-eyebrow, #LCBackgroundStage.section-char-invidia .lc-nose, #LCBackgroundStage.section-char-invidia .lc-mouth {
+      stroke: #4cbcac; }
+  #LCBackgroundStage.section-char-nighttime {
+    background-color: #422a5f;
+    color: wheat;
+    background-image: url(../images/stage-moon.png);
+    background-repeat: no-repeat;
+    background-position: 60% 30%;
+    background-size: 130px; }
+    #LCBackgroundStage.section-char-nighttime .lc-eye {
+      fill: wheat; }
+    #LCBackgroundStage.section-char-nighttime .lc-eyebrow, #LCBackgroundStage.section-char-nighttime .lc-nose, #LCBackgroundStage.section-char-nighttime .lc-mouth {
+      stroke: #a98399; }
 
 /*LCStageText*/
 #LCStageText {
-  margin-top: 100px; }
+  margin-top: 100px;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s 0.8s ease;
+  -moz-transition: opacity 0.5s 0.8s ease;
+  -ms-transition: opacity 0.5s 0.8s ease;
+  -o-transition: opacity 0.5s 0.8s ease;
+  transition: opacity 0.5s 0.8s ease; }
+  #LCStageText.ready {
+    opacity: 1; }
   #LCStageText h1 {
     font-size: 50px; }
   #LCStageText h3 {

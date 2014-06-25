@@ -8,3 +8,13 @@
 	font-family: $font_brand_weak;
 	font-weight: 400;
 }
+
+
+// Cross-browsers mixins
+@mixin cB($property, $value){
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}

@@ -86,9 +86,8 @@ section {
     padding: 270px 0px; }
   section.section-size-10 {
     padding: 300px 0px; }
-  @media (min-width: 768px) {
-    section .vertically-aligned {
-      width: 100%; } }
+  section .vertically-aligned {
+    width: 100%; }
 
 hr {
   border-color: rgba(0, 0, 0, 0.3); }
@@ -393,14 +392,5 @@ p {
   top: -100%;
   z-index: -1; }
 
-.ci-place-plant {
-  position: relative;
+.ci-place-plant section {
   overflow: hidden; }
-  .ci-place-plant .row {
-    position: static; }
-    .ci-place-plant .row .ci-plant-column {
-      position: static; }
-      .ci-place-plant .row .ci-plant-column img.ci-plant-piece {
-        position: absolute;
-        width: 33%;
-        bottom: -200%; }
