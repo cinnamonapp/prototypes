@@ -15,6 +15,9 @@
 // Basic layout rules
 @import "specifications/layout";
 
+// Simple arrow indicators
+@import "components/indicators";
+
 // Custom buttons and overrides
 @import "components/buttons";
 
@@ -24,12 +27,18 @@
 // H tags style
 @import "components/typography";
 
+// Bullets component
+@import "components/bullets";
+
 
 
 // Character's animations
 @import "helpers/animations";
 // Luc's style
 @import "specifications/luc_interactive";
+
+// Custom stuff
+@import "specifications/custom-inputs";
 
 // A custom carousel style
 @import "specifications/phone-carousel";
@@ -44,6 +53,5 @@
 .hover-spin{
 	-webkit-transition: -webkit-transform .8s ease;
 	&:hover{
-		-webkit-transform: rotate(360deg);
 	}
 }

@@ -1,0 +1,17 @@
+.indicator {
+  position: absolute;
+  left: 48%;
+  font-size: 80px;
+  right: 48%;
+  text-align: center;
+  height: 20px;
+  background: url(../images/resources/sprite-indicator.png);
+  background-size: 100%;
+  opacity: 0.4; }
+  .indicator.indicator-bottom {
+    bottom: 50px;
+    background-position: center top;
+    -webkit-animation: lc-indicator-suggestion 2s infinite; }
+  .indicator.indicator-top {
+    top: 20px;
+    background-position: center top; }

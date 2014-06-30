@@ -228,20 +228,24 @@ $(document).ready(function () {
 	var possibleBackgrounds = ["section-danger", "section-dream", "section-info", "section-warning"];
 	var overviewInterval = 5;
 
+	window.overviewShowSlide = function (index) {
+		$("#Overview").removeClass(possibleBackgrounds.join(" "));
+
+		$("#Overview").addClass(possibleBackgrounds[index]);
+	};
+
 	var overviewSentinelF = function () {
 
 		if(overviewCurrentIndex >= possibleBackgrounds.length)
 			overviewCurrentIndex = 0;
 
-		$("#Overview").removeClass(possibleBackgrounds.join(" "));
-
-		$("#Overview").addClass(possibleBackgrounds[overviewCurrentIndex]);
+		overviewShowSlide(overviewCurrentIndex);
 
 		overviewCurrentIndex++;
 
 	};
 
-	var overviewSentinel = window.setInterval(overviewSentinelF, overviewInterval * 1000);
+	// var overviewSentinel = window.setInterval(overviewSentinelF, overviewInterval * 1000);
 
 
 	// Text image carousel

@@ -4,16 +4,40 @@
 	// Single eye blink
 	@-webkit-keyframes lc-character-eye-blink {
 		/*Blink 1*/
-	    0% {-webkit-transform: scaleY(1) translateY(0px);}
-	    50% {-webkit-transform: scaleY(0.3) translateY(78px);}
-	    100% {-webkit-transform: scaleY(1) translateY(0px);}
+		0% {-webkit-transform: scaleY(1) translateY(0px);}
+		50% {-webkit-transform: scaleY(0.3) translateY(500px);}
+		100% {-webkit-transform: scaleY(1) translateY(0px);}
 	}
 
 	// Single eyebrow blink
 	@-webkit-keyframes lc-character-eyebrow-blink {
 		/*Blink 1*/
-	    0% {-webkit-transform: translateY(0px);}
-	    50% {-webkit-transform: translateY(1px);}
-	    100% {-webkit-transform: translateY(0px);}
+		0% {-webkit-transform: translateY(0px);}
+		50% {-webkit-transform: translateY(15px);}
+		100% {-webkit-transform: translateY(0px);}
 	}
 // eye blink ends
+
+// Mouth trembling
+
+	// @-webkit-keyframes lc-mouth-trembling {
+	// 	/*Blink 1*/
+	// 	0% {-webkit-transform: scaleY(1) translateY(0px);}
+	// 	50% {-webkit-transform: scaleY(0.93) translateY(50px);}
+	// 	100% {-webkit-transform: scaleY(1) translateY(0px);}
+	// }
+
+// Indicator suggestion
+
+	// Single eyebrow blink
+	@-webkit-keyframes lc-indicator-suggestion {
+		/*Blink 1*/
+		0% {-webkit-transform: translateY(-5px);}
+		70% {-webkit-transform: translateY(12px);}
+		100% {-webkit-transform: translateY(-5px);}
+	}
+
+// indicator suggestion ends
+
+
+@import "../lib/animate";

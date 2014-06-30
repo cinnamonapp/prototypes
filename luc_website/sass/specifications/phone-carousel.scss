@@ -4,11 +4,19 @@
 	.phone-image{
 		position: absolute;
 		opacity: 0;
-		width: 75%;
-		margin-top: -30%;
+		width: 65%; //75%;
+		// margin-top: -30%;
 
 		@include transition(opacity .6s ease);
 
+	}
+
+	.bullet-group{
+		position: absolute;
+		top: 80px;
+		text-align: center;
+		width: 30px;
+		left: 67%;
 	}
 }
 

@@ -24,6 +24,7 @@
 /* MAIN CHARACTER */
 
 	#LCCharacter{
+		height:150%;
 
 		/*EYES*/
 		.lc-eyes{
@@ -63,6 +64,30 @@
 			&.sleepy .lc-eyebrow{
 				/* Chrome, Safari, Opera */
 				@include cB(transform, scaleY(0.3) translateY(78px));
+			}
+		}
+
+		.lc-mouth-container{
+
+			-webkit-transform: scaleY(0.90) translateY(70px);
+			-moz-transform: scaleY(0.90) translateY(70px);
+			-ms-transform: scaleY(0.90) translateY(70px);
+			-o-transform: scaleY(0.90) translateY(70px);
+			transform: scaleY(0.90) translateY(70px);
+
+
+			-webkit-transition: -webkit-transform .4s ease;
+			-moz-transition: -moz-transform .4s ease;
+			-ms-transition: -ms-transform .4s ease;
+			-o-transition: -o-transform .4s ease;
+			transition: transform .4s ease;
+
+			&:hover{	
+				-webkit-transform: scaleY(1.08) translateY(-50px);
+				-moz-transform: scaleY(1.08) translateY(-50px);
+				-ms-transform: scaleY(1.08) translateY(-50px);
+				-o-transform: scaleY(1.08) translateY(-50px);
+				transform: scaleY(1.08) translateY(-50px);
 			}
 		}
 
@@ -119,8 +144,24 @@
 /*LCStageText*/
 #LCStageText{
 	margin-top: 100px;
-	
 	opacity: 0;
+
+	background: #A4D6C1;
+	border-radius: 100px;
+	padding: 30px 70px;
+
+	&:before{
+		content: "";
+		border-left: 20px solid transparent;
+		border-right: 20px solid transparent;
+		border-top: 20px solid transparent;
+		border-bottom: 40px solid #A4D6C1;
+		display: inline-block;
+		-webkit-transform: rotate(-120deg);
+		position: absolute;
+		right: 95%;
+		top: 80%;
+	}
 
 	&.ready{
 		@include cB(transition, opacity .5s .8s ease);
@@ -130,6 +171,7 @@
 
 	h1{
 		font-size: 50px;
+		margin-top: 0px;
 	}
 
 	h3{
