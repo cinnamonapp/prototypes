@@ -2,7 +2,8 @@
 	.navbar-nav{
 		>li{
 			>a{
-				color: $purple;
+				color: rgba(0,0,0, 0.5);
+				@include typo_brand_strong;
 			}
 		}
 	}

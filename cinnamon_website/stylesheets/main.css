@@ -88,6 +88,8 @@ section {
     padding: 300px 0px; }
   section .vertically-aligned {
     width: 100%; }
+  section .vertically-aligned {
+    width: 100%; }
 
 hr {
   border-color: rgba(0, 0, 0, 0.3); }
@@ -317,12 +319,12 @@ h1 {
 p {
   font-family: Archer;
   font-weight: 400;
-  font-size: 21px; }
+  font-size: 18px; }
   p.lead {
-    font-size: 21px; }
+    font-size: 18px; }
     @media (min-width: 768px) {
       p.lead {
-        font-size: 26px; } }
+        font-size: 22px; } }
 
 /*ANIMATIONS*/
 @-webkit-keyframes flower-orbit {
@@ -394,3 +396,5 @@ p {
 
 .ci-place-plant section {
   overflow: hidden; }
+  .ci-place-plant section .vertically-aligned {
+    left: -70px; }

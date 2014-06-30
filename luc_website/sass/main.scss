@@ -1,7 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Dosis:400,600,700|Neuton:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600,700|Neuton:200,300,400,700,400italic);
+
 
 // Common sass variables
 @import "variables";
+
+@import "lib/caret-blink";
 
 // Useful mixins
 @import "helpers/mixins";
@@ -15,11 +18,32 @@
 // Custom buttons and overrides
 @import "components/buttons";
 
+// Custom buttons and overrides
+@import "components/links";
+
 // H tags style
 @import "components/typography";
+
 
 
 // Character's animations
 @import "helpers/animations";
 // Luc's style
 @import "specifications/luc_interactive";
+
+// A custom carousel style
+@import "specifications/phone-carousel";
+// A custom carousel style
+@import "specifications/text-image-carousel";
+
+
+
+
+
+// Experimental stuff
+.hover-spin{
+	-webkit-transition: -webkit-transform .8s ease;
+	&:hover{
+		-webkit-transform: rotate(360deg);
+	}
+}

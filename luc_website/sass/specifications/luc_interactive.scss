@@ -15,9 +15,9 @@
 #LCMainCharacterStage{
 	height: 400px;
 	opacity: 0;
-	@include cB(transition, opacity .5s ease);
 
 	&.ready{
+		@include cB(transition, opacity .5s ease);
 		opacity: 1;
 	}
 
@@ -70,6 +70,8 @@
 
 }
 
+
+// Stage background colors
 #LCBackgroundStage{
 
 	background-position: 60% -30%;
@@ -119,9 +121,9 @@
 	margin-top: 100px;
 	
 	opacity: 0;
-	@include cB(transition, opacity .5s .8s ease);
 
 	&.ready{
+		@include cB(transition, opacity .5s .8s ease);
 		opacity: 1;
 	}
 

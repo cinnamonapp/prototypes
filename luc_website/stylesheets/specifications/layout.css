@@ -1,24 +1,24 @@
 /*
-Syntax error: Undefined variable: "$section_primary".
-        on line 41 of /Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss
+Syntax error: Undefined mixin 'transition'.
+        on line 4 of /Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss, in `transition'
+        from line 4 of /Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss
         from line 8 of sass/specifications/layout.scss
 
+1: 
+2: /*Body*\/
+3: body{
+4: 	// @include typo_brand_weak;
+5: }
+6: 
+7: // Content sections style
+8: @import "components/sections";
+9: 
+
 Backtrace:
-/Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss:41
+/Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss:4:in `transition'
+/Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss:4
 sass/specifications/layout.scss:8
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -66,4 +66,4 @@ sass/specifications/layout.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$section_primary\".\A         on line 41 of /Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss\A         from line 8 of sass/specifications/layout.scss"; }
+  content: "Syntax error: Undefined mixin 'transition'.\A         on line 4 of /Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss, in `transition'\A         from line 4 of /Users/alessiosanto/projects/snaphealth/luc_website/sass/components/sections.scss\A         from line 8 of sass/specifications/layout.scss\A \A 1: \A 2: /*Body*/\A 3: body{\A 4: 	// @include typo_brand_weak;\A 5: }\A 6: \A 7: // Content sections style\A 8: @import \"components/sections\";\A 9: "; }

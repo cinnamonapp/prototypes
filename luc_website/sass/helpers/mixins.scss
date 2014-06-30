@@ -49,6 +49,7 @@ $prefix-for-spec: true;
 }
 @mixin typo_brand_weak {
 	font-family: $font_brand_weak;
+  font-weight: 200;
 }
 
 // Cross-browsers mixins

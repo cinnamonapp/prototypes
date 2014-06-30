@@ -1,0 +1,77 @@
+// SET YOUR STYLES HERE
+$link_styles:	"primary" $action_primary, 
+				"warning" $action_warning,
+				"danger"  $action_danger,
+				"info"    $action_info,
+				"white"   white,
+				"success" $action_success;
+
+// Sizes
+$link_sizes:	"xs" 11px, 
+				"sm" 13px,
+				// Standard 14px
+				"lg" 18px,
+				"xl" 22px;
+
+/*Primary button*/
+.link{
+
+	color: inherit;
+	font-size: inherit;
+	padding: 0;
+
+
+	// STYLES FROM $link_styles on top
+	@each $style in $link_styles{
+		$loop_link_name: nth($style, 1);
+		$loop_link_color: nth($style, 2);
+
+		// COLORS
+		&.link-#{$loop_link_name}{
+			color: $loop_link_color;
+			text-decoration: underline;
+
+			&:hover{
+				text-decoration: none;
+			}
+
+			&:active, &.active{
+				color: darken($loop_link_color, 5%);
+			}
+
+		}
+
+	}
+
+	&.disabled, &:disabled{
+		opacity: 0.5;
+		text-decoration: line-through !important;
+		cursor: default;
+	}
+
+	// Sizes from $link_sizes
+	@each $style in $link_sizes{
+		$loop_link_measure: nth($style, 1);
+		$loop_link_size: nth($style, 2);
+
+		// COLORS
+		&.link-#{$loop_link_measure}{
+			font-size: $loop_link_size;
+		}
+
+	}
+}
+
+
+button{
+	&.link{
+		display: inline;
+		background: none;
+		border: none;
+		outline: none;
+
+		:focus{
+			outline: none;
+		}
+	}
+}

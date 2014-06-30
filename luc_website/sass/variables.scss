@@ -4,7 +4,7 @@ $green: 		#c4bc6e;
 $purple: 		#a98399;
 $violet: 		#422a5f;
 $strong_blue: 	#62859b;
-$weak_blue: 	#c9d5d4;
+$weak_blue: 	#cadef4;
 $strong_pink:	#e5a4aa;
 $weak_pink:		#fde6db;
 
@@ -13,6 +13,10 @@ $light_red:		#f9bdc2;
 $light_green:	#bbccb3;
 $water_green:	#84cec4;
 
+// Character palette
+$char_strong_red:	#ce3b1c;
+$char_water_green:	#95cdb5;
+$char_yellow:	#ffd659;
 
 // Fonts
 $font_brand_strong: Dosis;
@@ -30,8 +34,9 @@ $action_info: 		$strong_blue;
 $section_primary: $weak_pink;
 $section_success: $light_green;
 $section_info: $weak_blue;
-$section_danger: $light_red;
-$section_dream: $water_green;
+$section_danger: $char_strong_red;
+$section_dream: $char_water_green;
+$section_warning: $char_yellow;
 
 // Character's face background
 $section_char_pink: $strong_pink;

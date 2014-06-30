@@ -1,22 +1,23 @@
 /*
-Syntax error: Undefined variable: "$purple".
-        on line 5 of websites/sass/components/navbar.scss
+Syntax error: Undefined mixin 'typo_brand_strong'.
+        on line 6 of sass/components/navbar.scss, in `typo_brand_strong'
+        from line 6 of sass/components/navbar.scss
 
 1: .lc-navbar{
 2: 	.navbar-nav{
 3: 		>li{
 4: 			>a{
-5: 				color: $purple;
-6: 			}
-7: 		}
-8: 	}
-9: }
+5: 				color: rgba(0,0,0, 0.5);
+6: 				@include typo_brand_strong;
+7: 			}
+8: 		}
+9: 	}
+10: }
 
 Backtrace:
-websites/sass/components/navbar.scss:5
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+sass/components/navbar.scss:6:in `typo_brand_strong'
+sass/components/navbar.scss:6
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -89,4 +90,4 @@ websites/sass/components/navbar.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$purple\".\A         on line 5 of websites/sass/components/navbar.scss\A \A 1: .lc-navbar{\A 2: 	.navbar-nav{\A 3: 		>li{\A 4: 			>a{\A 5: 				color: $purple;\A 6: 			}\A 7: 		}\A 8: 	}\A 9: }"; }
+  content: "Syntax error: Undefined mixin 'typo_brand_strong'.\A         on line 6 of sass/components/navbar.scss, in `typo_brand_strong'\A         from line 6 of sass/components/navbar.scss\A \A 1: .lc-navbar{\A 2: 	.navbar-nav{\A 3: 		>li{\A 4: 			>a{\A 5: 				color: rgba(0,0,0, 0.5);\A 6: 				@include typo_brand_strong;\A 7: 			}\A 8: 		}\A 9: 	}\A 10: }"; }

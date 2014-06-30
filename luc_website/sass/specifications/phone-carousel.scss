@@ -1,0 +1,45 @@
+.phone-carousel{
+	position: relative;
+
+	.phone-image{
+		position: absolute;
+		opacity: 0;
+		width: 75%;
+		margin-top: -30%;
+
+		@include transition(opacity .6s ease);
+
+	}
+}
+
+section.section-danger{
+	.phone-carousel .phone-image{
+		&.phone-danger{
+			opacity: 1;
+		}
+	}
+}
+
+section.section-dream{
+	.phone-carousel .phone-image{
+		&.phone-dream{
+			opacity: 1;
+		}
+	}
+}
+
+section.section-info{
+	.phone-carousel .phone-image{
+		&.phone-info{
+			opacity: 1;
+		}
+	}
+}
+
+section.section-warning{
+	.phone-carousel .phone-image{
+		&.phone-warning{
+			opacity: 1;
+		}
+	}
+}

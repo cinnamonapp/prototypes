@@ -18,7 +18,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="../" class="navbar-brand">
+				<a href="#" class="navbar-brand">
 					<strong class="typo-brand-strong text-primary">LYN</strong>
 					<span class="typo-brand-strong text-info">| Glucose Thirsty</span>
 				</a>
@@ -26,19 +26,16 @@
 			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="#LCBackgroundStage">Overview</a>
+						<a href="#Overview">Overview</a>
 					</li>
 					<li>
 						<a href="#Nurture">Nurture</a>
 					</li>
 					<li>
-						<a href="#Measure">Measure</a>
+						<a href="#Measure-grow">Measure & Grow</a>
 					</li>
 					<li>
-						<a href="#Grow">Grow</a>
-					</li>
-					<li>
-						<a href="#Try1">Try</a>
+						<a href="#Try">Try</a>
 					</li>
 				</ul>
 			</nav>
@@ -46,7 +43,7 @@
 	</header>
 
 	<!-- THE MAIN BLOCK - WITH CTA -->
-	<section id="LCBackgroundStage" class="da-row-container da-row-base da-row-main section-char-cute">
+	<section id="LCBackgroundStage" class="da-row-base da-row-main section-char-cute">
 		<div class="vertically-aligned">
 			<div class="container">
 				<div class="row">
@@ -109,7 +106,7 @@
 	</section>
 
 	<!-- THE PROBLEM BLOCK -->
-	<section id="Nurture" class="section-dream section-size-7 window-sized">
+	<section id="Overview" class="section-danger section-size-7 window-sized">
 		<div class="vertically-aligned">
 			<div class="container">
 				<div class="row">
@@ -123,8 +120,13 @@
 						</p>
 					</div>
 
-					<div class="col-lg-6">
-
+					<div class="col-lg-offset-1 col-lg-5">
+						<div class="phone-carousel">
+							<img src="images/main-interface/face-screen-01.png" class="img-responsive phone-image phone-danger">
+							<img src="images/main-interface/face-screen-02.png" class="img-responsive phone-image phone-dream">
+							<img src="images/main-interface/face-screen-03.png" class="img-responsive phone-image phone-info">
+							<img src="images/main-interface/face-screen-04.png" class="img-responsive phone-image phone-warning">
+						</div>
 					</div>
 				</div>
 
@@ -133,48 +135,51 @@
 	</section>
 
 	<!-- SET OF FEATURES -->
-	<section id="Measure" class="da-row-container text-center section-info window-sized">
-		<div class="vertically-aligned">
+	<section id="Nurture" class="section-default section-size-3 window-sized">
+		<div>
 			<div class="container">
 				<!-- REFACTOR HERE => -->
-				<br>
-				<br>
-				<br>
 				<!-- <= REFACTOR HERE -->
-				<h2>WHAT MAKES LYN SPECIAL?</h2>
-				<p class="lead text-info">(and super cute)</p>
-				<br>
-
 				<!-- <hr class="half-rule"> -->
 
-				<div class="row">
+				<div class="row text-image-carousel">
 					<div class="col-sm-4">
-						<img src="images/blood.png" alt="Sass and Less support" class="img-responsive">
-						<h3>GLUCOSE LOG</h3>
-						<p class="text-info">
-							Every time you tap on LYN's mouth, you can feed it by adding the value
-							you just measured with you blood glucose meter. Watch LYN enjoy its meal
-							and inform you on how adherent and thorough you've been in capturing
-							your readings.
-						</p>
+						<img class="image-block img-responsive active" src="images/main-interface/feature-screen-01.png" class="img-responsive">
+						<img class="image-block img-responsive" src="images/main-interface/feature-screen-02.png" class="img-responsive">
+						<img class="image-block img-responsive" src="images/main-interface/feature-screen-01.png" class="img-responsive">
 					</div>
-					<div class="col-sm-4">
-						<img src="images/blood.png" alt="Responsive across devices" class="img-responsive">
-						<h3>INSIGHTS ENGINE</h3>
-						<p class="text-info">
-							LYN remembers when and where you capture the information. After a few days LYN
-							starts nudging you, supporting you and acknowledging your patterns. In a few weeks'
-							time you'll be inseparable.
-						</p>
+					<div class="col-sm-offset-0 col-sm-8">
+						<h2>WHAT MAKES LYN SPECIAL?</h2>
+						<br>				
+						<div class="text-image-block active" data-carousel-number="0">
+							<h3>GLUCOSE LOG</h3>
+							<p>
+								Every time you tap on LYN's mouth, you can feed it by adding the value
+								you just measured with you blood glucose meter. Watch LYN enjoy its meal
+								and inform you on how adherent and thorough you've been in capturing
+								your readings.
+							</p>
+						</div>
+
+						<div class="text-image-block" data-carousel-number="1">
+							<h3>INSIGHTS ENGINE</h3>
+							<p>
+								LYN remembers when and where you capture the information. After a few days LYN
+								starts nudging you, supporting you and acknowledging your patterns. In a few weeks'
+								time you'll be inseparable.
+							</p>
+						</div>
+
+						<div class="text-image-block" data-carousel-number="2">
+							<h3>HEALTHY GAMES</h3>
+							<p>
+								Every action counts. Especially if you want to see LYN change color or shape and start to personalize it. Whenever you hit a good average or sustain your tracking behavior,
+								LYN presents you with micro challenges that can unlock nice little surprises.
+							</p>
+						</div>
+
 					</div>
-					<div class="col-sm-4">
-						<img src="images/blood.png" alt="Components" class="img-responsive">
-						<h3>HEALTHY GAMES</h3>
-						<p class="text-info">
-							Every action counts. Especially if you want to see LYN change color or shape and start to personalize it. Whenever you hit a good average or sustain your tracking behavior,
-							LYN presents you with micro challenges that can unlock nice little surprises.
-						</p>
-					</div>
+
 				</div>
 
 			</div>
@@ -182,7 +187,7 @@
 	</section>
 
 	<!-- THE SOLUTION BLOCK -->
-	<section id="Grow" class="section-danger section-size-7">
+	<section id="Measure-grow" class="section-info section-size-7">
 		<div class="container">
 			<div class="hero-unit da-hero-secondary">
 				<div class="row">
@@ -209,24 +214,44 @@
 	</section>
 
 
-	<!-- THE SOLUTION BLOCK -->
-	<section id="Grow" class="section-dream window-sized">
+	<!-- THE SOLUTION BLOCK - OPTION A -->
+	<section id="Try" class="section-warning window-sized">
 		<div class="vertically-aligned">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						<h2>MAKE LYN AMAZING WITH US!</h2>
+						<form id="custom-email-form"></form>
+						<h2 class="">MAKE LYN AMAZING WITH US!</h2>
 						<p class="lead">
-							We are almost ready to release our first version of LYN app and we would love your help
-							to make it better. If you are an healthcare professional, diabetes expert, a curious parent
-							or caregiver, just drop us a note. We would love to hear you questions and, possibly,
-							join our pilot program.<br><br>Thank you - The SnapHealth team
+							We are almost ready to release our first version of LYN app and we would love your help to make it better. <br>
+							If you are a healthcare professional, diabetes expert, a curious parent
+							or caregiver, just <a href="#drop-note" class="link link-primary">drop us a note</a>. <br>
+							We would love to hear you questions and, possibly,
+							join our pilot program. <br>
+							Or we could just keep you in the loop if you want.	<br>
+							<span class="form-group transparent-input custom-caret">
+								<span class="input-substitute placeholder active">
+									Type your email in
+								</span>
+								<input class="form-control" type="email" name="email" required autocomplete="off" spellcheck="false" onkeyup="$('#btnLetMeKnow1').removeAttr('disabled')" form="custom-email-form" />
+							</span>
+							and
+							<button id="btnLetMeKnow1" href="#" class="link link-primary" form="custom-email-form" disabled>hit send!</button>
+<!-- 						<div class="form-group transparent-input custom-caret">
+								<p class="input-substitute placeholder lead text-info">
+									If you want type a message here
+								</p>
+								<textarea class="form-control" name="message" spellcheck="false"></textarea>
+							</div>
+ -->
+
+							<br><br>Thank you - The SnapHealth team
 						</p>
 						
 					</div>
 
-					<div class="col-lg-6">
-						
+					<div class="col-lg-6" id="emailform">
+						<img class="img-responsive hover-spin" src="images/helper-yellow-star.png" />
 					</div>
 				</div>
 			</div>
@@ -234,25 +259,5 @@
 	</section>
 
 
-	<!-- <section class="da-row-container da-row-cta da-row-size1">
-		<div class="container">
-			<div class="row">
-				<form>
-					<div class="col-sm-9">
-						<input type="email" autocomplete="off" name="email" placeholder="Enter your email here" class="da-flat-text">
-					</div>
-					<div class="col-sm-3">
-						<button class="btn btn-primary" style="margin: 20px 0px;">Send me updates</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</section> -->
-<!-- 	<footer class="da-footer">
-		<div class="container">
-			<p>Made with love by </p>
-		</div>
-	</footer>
- -->
 </body>
 </html>

@@ -1,2 +1,4 @@
 .ci-place-plant section {
   overflow: hidden; }
+  .ci-place-plant section .vertically-aligned {
+    left: -70px; }

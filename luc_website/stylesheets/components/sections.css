@@ -1,34 +1,22 @@
 /*
-Syntax error: Undefined variable: "$section_primary".
-        on line 41 of sass/components/sections.scss
+Syntax error: Undefined mixin 'transition'.
+        on line 4 of sass/components/sections.scss, in `transition'
+        from line 4 of sass/components/sections.scss
 
-36: 
-37: // Colored sections
-38: section{
-39: 	padding: 50px 0;
-40: 	&.section-primary{
-41: 		background: $section_primary; 
-42: 		color: $violet;
-43: 	}
-44: 
-45: 	&.section-info{
-46: 		background: $section_info;
+1: // Colored sections
+2: section{
+3: 	padding: 50px 0;
+4: 	@include transition(background-color .5s ease-out);
+5: 	
+6: 	color: rgba(0,0,0,.6);
+7: 
+8: 	&.section-primary{
+9: 		background: $section_primary; 
 
 Backtrace:
-sass/components/sections.scss:41
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+sass/components/sections.scss:4:in `transition'
+sass/components/sections.scss:4
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -71,4 +59,4 @@ sass/components/sections.scss:41
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$section_primary\".\A         on line 41 of sass/components/sections.scss\A \A 36: \A 37: // Colored sections\A 38: section{\A 39: 	padding: 50px 0;\A 40: 	&.section-primary{\A 41: 		background: $section_primary; \A 42: 		color: $violet;\A 43: 	}\A 44: \A 45: 	&.section-info{\A 46: 		background: $section_info;"; }
+  content: "Syntax error: Undefined mixin 'transition'.\A         on line 4 of sass/components/sections.scss, in `transition'\A         from line 4 of sass/components/sections.scss\A \A 1: // Colored sections\A 2: section{\A 3: 	padding: 50px 0;\A 4: 	@include transition(background-color .5s ease-out);\A 5: 	\A 6: 	color: rgba(0,0,0,.6);\A 7: \A 8: 	&.section-primary{\A 9: 		background: $section_primary; "; }

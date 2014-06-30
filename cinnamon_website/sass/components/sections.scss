@@ -36,6 +36,7 @@
 // Colored sections
 section{
 	padding: 50px 0;
+
 	&.section-primary{
 		background: $section_primary;
 		color: $base_color;
@@ -72,6 +73,12 @@ section{
 
 	position: relative;
 
+	.vertically-aligned{
+		// @media(min-width: 768px){
+			width: 100%;
+		// }
+	}
+	
 	.vertically-aligned{
 		// @media(min-width: 768px){
 			width: 100%;

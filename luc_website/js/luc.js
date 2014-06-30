@@ -198,4 +198,92 @@ $(document).ready(function () {
 		// lc_stage.changeBackground("section-char-nighttime");
 
 	// ========================================
+
+	var previousKey;
+	var firstApproach = true;
+
+	$("body").keydown(function (key) {
+		console.log(key.which);
+		if(firstApproach){
+			if(key.which >= 65 && key.which <= 90 && previousKey != 91){
+				$("input").focus();
+				firstApproach = false;
+			}
+		}
+
+		previousKey = key.which;
+	});
+
+
+
+
+
+
+
+
+
+
+	// Phone carousel
+	var overviewCurrentIndex = 1;
+	var possibleBackgrounds = ["section-danger", "section-dream", "section-info", "section-warning"];
+	var overviewInterval = 5;
+
+	var overviewSentinelF = function () {
+
+		if(overviewCurrentIndex >= possibleBackgrounds.length)
+			overviewCurrentIndex = 0;
+
+		$("#Overview").removeClass(possibleBackgrounds.join(" "));
+
+		$("#Overview").addClass(possibleBackgrounds[overviewCurrentIndex]);
+
+		overviewCurrentIndex++;
+
+	};
+
+	var overviewSentinel = window.setInterval(overviewSentinelF, overviewInterval * 1000);
+
+
+	// Text image carousel
+	var textImageCurrentIndex = 1, textImageInterval = 20;
+	var blocks = $(".text-image-carousel .text-image-block");
+	var imageBlocks = $(".text-image-carousel .image-block");
+
+	var showSlide =	function (index, clearit) {
+		if(clearit)
+			clearInterval(textImageCarouselSentinel);
+
+		console.log(index);
+		blocks.removeClass("active");
+		imageBlocks.removeClass("active");
+
+		$(blocks[index]).addClass("active");
+		$(imageBlocks[index]).addClass("active");
+	};
+
+	var textImageCarouselSentinelF = function () {
+
+		if(textImageCurrentIndex >= blocks.length){	
+			textImageCurrentIndex = 0;
+			textImageCarouselSentinel();
+		}
+
+		showSlide(textImageCurrentIndex);
+
+		textImageCurrentIndex++;
+
+	};
+
+	var textImageCarouselSentinel = window.setInterval(textImageCarouselSentinelF, textImageInterval * 1000);
+
+	blocks.click(function () {
+		console.log(this);
+		var number = $(this).attr("data-carousel-number");
+
+		showSlide(number, true);
+	});
+
+
 });
+
+
