@@ -44,4 +44,16 @@ $button_styles: "primary" $action_primary,
 		}
 
 	}
+
+	&.btn-maincta{
+		color: rgba(0,0,0, .6);
+		border: 2px solid rgba(0,0,0, .7);
+		background: transparent;
+
+		&:hover{
+			color: rgba(#fff, 0.8);
+			background: #61C1A2;
+			border-color: #61C1A2;
+		}
+	}
 }

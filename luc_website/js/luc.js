@@ -253,9 +253,9 @@ $(document).ready(function () {
 	var blocks = $(".text-image-carousel .text-image-block");
 	var imageBlocks = $(".text-image-carousel .image-block");
 
-	var showSlide =	function (index, clearit) {
-		if(clearit)
-			clearInterval(textImageCarouselSentinel);
+	window.nurtureShowSlide =	function (index, clearit) {
+		// if(clearit)
+			// clearInterval(textImageCarouselSentinel);
 
 		console.log(index);
 		blocks.removeClass("active");
@@ -272,20 +272,20 @@ $(document).ready(function () {
 			textImageCarouselSentinel();
 		}
 
-		showSlide(textImageCurrentIndex);
+		nurtureShowSlide(textImageCurrentIndex);
 
 		textImageCurrentIndex++;
 
 	};
 
-	var textImageCarouselSentinel = window.setInterval(textImageCarouselSentinelF, textImageInterval * 1000);
+	// var textImageCarouselSentinel = window.setInterval(textImageCarouselSentinelF, textImageInterval * 1000);
 
-	blocks.click(function () {
-		console.log(this);
-		var number = $(this).attr("data-carousel-number");
+	// blocks.click(function () {
+	// 	console.log(this);
+	// 	var number = $(this).attr("data-carousel-number");
 
-		showSlide(number, true);
-	});
+	// 	nurtureShowSlide(number, true);
+	// });
 
 
 });

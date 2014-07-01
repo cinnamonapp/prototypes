@@ -48,7 +48,7 @@
 		<div class="vertically-aligned">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-7">
+					<div class="col-sm-4">
 						<div id="LCMainCharacterStage">
 
 							<svg version="1.1" id="LCCharacter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -88,55 +88,16 @@
 								</g>
 							</svg>
 
-
-
-							<!-- CHARACTER MAIN SVG -->
-							<!-- <svg version="1.1" id="LCCharacter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 102 80.833" enable-background="new 0 0 102 80.833" xml:space="preserve">
-								<g>
-									<g>
-										<path class="lc-nose" fill="#E5A5AB" stroke="#DC838C" stroke-width="4.6258" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-										M53.984,45.887h-0.014h-5.949c-0.415,0-0.744-0.334-0.744-0.742c0-2.051,1.67-3.717,3.719-3.717c1.998,0,3.632,1.586,3.713,3.564
-										c0.012,0.047,0.016,0.1,0.016,0.152C54.725,45.553,54.396,45.887,53.984,45.887z"/>
-									</g>
-									<g>
-										<path class="lc-mouth" fill="#E5A5AB" stroke="#DC838C" stroke-width="4.6258" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-										M60.183,58.049c0-0.402-0.085-0.793-0.228-1.166c-5.437,3.734-12.477,3.734-17.915,0c-0.144,0.373-0.222,0.764-0.222,1.166"/>
-									</g>
-									<g class="lc-eyebrows">
-										<g>
-											<path class="lc-eyebrow lc-eyebrow-right" fill="#E5A5AB" stroke="#DC838C" stroke-width="4.6258" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-											M74.164,21.148c2.555,0,4.953,0.995,6.759,2.801"/>
-										</g>
-										<g>
-											
-											<path class="lc-eyebrow lc-eyebrow-left" fill="#E5A5AB" stroke="#DC838C" stroke-width="4.6258" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-											M21.077,23.949c1.803-1.806,4.204-2.801,6.76-2.801"/>
-										</g>
-									</g>
-									<g class="lc-eyes">
-										<path class="lc-eye lc-eye-right" fill="#654E42" d="M32.408,35.331c0,3.613-2.098,4.867-4.676,4.867c-2.587,0-4.679-1.254-4.679-4.867
-											s2.092-6.541,4.679-6.541C30.311,28.79,32.408,31.717,32.408,35.331z"/>
-										<path class="lc-eye lc-eye-left" fill="#654E42" d="M78.947,35.331c0,3.613-2.094,4.867-4.678,4.867c-2.582,0-4.68-1.254-4.68-4.867s2.098-6.541,4.68-6.541
-											C76.854,28.79,78.947,31.717,78.947,35.331z"/>
-									</g>
-								</g>
-							</svg>
- -->
 						</div>
 					</div>
-					<div class="col-sm-5">
+					<div class="col-sm-offset-1 col-sm-7" style="padding: 0;">
 						<div id="LCStageText">
 							<h1>LYN IS HERE!</h1>
-							<h3>"A pocket-sized friend that makes tracking your glucose effortless"</h3>
-							<!-- <div class="btn-group">
-								<a href="javascript: lc_stage.switchMeridian();" class="btn btn-lg btn-primary btn-outline">
-									<i class="glyphicon glyphicon-time"></i>
-								</a>
-
-								<a href="javascript: lc_stage.changeBackground('section-char-invidia');" class="btn btn-lg btn-primary btn-outline">
-									<i class="glyphicon glyphicon-record"></i>
-								</a>
-							</div> -->
+							<h2>"A pocket-sized friend that makes tracking your glucose effortless"</h2>
+							
+							<a href="#Overview" class="btn btn-lg btn-maincta">
+								Meet LYN
+							</a>
 						</div>
 					</div>
 				</div>
@@ -161,6 +122,20 @@
 							LYN is a reflection of your committment to care for what matters. Because healthcare should be personal, joyful and inspired by people.
 						</p>
 
+						<br><br><br>
+
+						<div class="bullet-group bullet-toggle-radio bullet-vertical">
+							<a href="javascript: overviewShowSlide(3);" class="bullet bullet-default active">
+							</a>
+							<a href="javascript: overviewShowSlide(0);" class="bullet bullet-danger">
+							</a>
+							<a href="javascript: overviewShowSlide(1);" class="bullet bullet-dream">
+							</a>
+							<a href="javascript: overviewShowSlide(2);" class="bullet bullet-info">
+							</a>
+						</div>
+
+
 					</div>
 
 					<div class="col-lg-offset-1 col-lg-5">
@@ -169,19 +144,6 @@
 							<img src="images/main-interface/face-screen-02.png" class="img-responsive phone-image phone-dream">
 							<img src="images/main-interface/face-screen-03.png" class="img-responsive phone-image phone-info">
 							<img src="images/main-interface/face-screen-04.png" class="img-responsive phone-image phone-warning">
-
-							<div class="bullet-group bullet-toggle-radio bullet-vertical">
-								<a href="javascript: overviewShowSlide(3);" class="bullet bullet-warning active">
-								</a>
-								<a href="javascript: overviewShowSlide(0);" class="bullet bullet-danger">
-								</a>
-								<a href="javascript: overviewShowSlide(1);" class="bullet bullet-dream">
-								</a>
-								<a href="javascript: overviewShowSlide(2);" class="bullet bullet-info">
-								</a>
-							</div>
-
-
 						</div>
 					</div>
 				</div>
@@ -191,25 +153,37 @@
 	</section>
 
 	<!-- SET OF FEATURES -->
-	<section id="Nurture" class="section-default section-size-3 window-sized">
-		<div>
+	<section id="Nurture" class="section-default section-size-4 window-sized">
+		<div class="vertically-aligned">
 			<div class="container">
 				<!-- REFACTOR HERE => -->
 				<!-- <= REFACTOR HERE -->
 				<!-- <hr class="half-rule"> -->
 
 				<div class="row text-image-carousel">
-					<div class="col-sm-4">
+					<div class="col-lg-offset-1 col-lg-5 images-box">
 						<img class="image-block img-responsive active" src="images/main-interface/feature-screen-01.png" class="img-responsive">
 						<img class="image-block img-responsive" src="images/main-interface/feature-screen-02.png" class="img-responsive">
 						<img class="image-block img-responsive" src="images/main-interface/feature-screen-01.png" class="img-responsive">
+
+
+						<div class="bullet-group bullet-toggle-radio">
+							<a href="javascript: nurtureShowSlide(0);" class="bullet bullet-danger active">
+							</a>
+							<a href="javascript: nurtureShowSlide(1);" class="bullet bullet-dream">
+							</a>
+							<a href="javascript: nurtureShowSlide(2);" class="bullet bullet-info">
+							</a>
+						</div>
+
 					</div>
-					<div class="col-sm-offset-5 col-sm-6">
+
+					<div class="col-lg-6">
 						<h2>WHAT MAKES LYN SPECIAL?</h2>
 						<br>				
 						<div class="text-image-block active" data-carousel-number="0">
-							<h3>GLUCOSE LOG</h3>
-							<p>
+							<h4>GLUCOSE LOG</h4>
+							<p class="small">
 								Every time you tap on LYN's mouth, you can feed it by adding the value
 								you just measured with you blood glucose meter. Watch LYN enjoy its meal
 								and inform you on how adherent and thorough you've been in capturing
@@ -218,8 +192,8 @@
 						</div>
 
 						<div class="text-image-block" data-carousel-number="1">
-							<h3>INSIGHTS ENGINE</h3>
-							<p>
+							<h4>INSIGHTS ENGINE</h4>
+							<p class="small">
 								LYN remembers when and where you capture the information. After a few days LYN
 								starts nudging you, supporting you and acknowledging your patterns. In a few weeks'
 								time you'll be inseparable.
@@ -227,8 +201,8 @@
 						</div>
 
 						<div class="text-image-block" data-carousel-number="2">
-							<h3>HEALTHY GAMES</h3>
-							<p>
+							<h4>HEALTHY GAMES</h4>
+							<p class="small">
 								Every action counts. Especially if you want to see LYN change color or shape and start to personalize it. Whenever you hit a good average or sustain your tracking behavior,
 								LYN presents you with micro challenges that can unlock nice little surprises.
 							</p>

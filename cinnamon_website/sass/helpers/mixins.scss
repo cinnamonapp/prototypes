@@ -2,7 +2,8 @@
 // font mixins
 @mixin typo_brand_strong {
 	font-family: $font_brand_strong;
-	font-weight: 400;
+	font-style: bold;
+	font-weight: 800;
 }
 @mixin typo_brand_weak {
 	font-family: $font_brand_weak;

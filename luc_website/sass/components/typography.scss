@@ -33,13 +33,29 @@ $text_color_styles: "primary" $action_primary,
 p{
 
 	@include typo_brand_weak;
-	font-size: 21px;
 
+	// Base stuff
+	font-size: 18px;
+
+	@media (min-width: 768px){
+		font-size: 21px;
+	}
+
+	// Lead text
 	&.lead{
 		font-size: 21px;
 
 		@media (min-width: 768px){
 			font-size: 26px;
+		}
+	}
+
+	// Small text
+	&.small{
+		font-size: 16px;
+
+		@media (min-width: 768px){
+			font-size: 18px;
 		}
 	}
 }

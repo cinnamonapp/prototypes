@@ -5,4 +5,6 @@ $(document).ready(function () {
 	    return false;
 	});
 
+	$.scrollTo($(window).innerHeight(), 1000);
+
 });

@@ -1,9 +1,49 @@
+#CIPlantIllustration{
+	position: absolute;
+	left: 0; right: 0;
+}
+
 .ci-place-plant{
 	section{
 		overflow: hidden;
 
-		.vertically-aligned{
-			left: -70px;
+		.img-responsive{
+			position: absolute; 
+			bottom: 0;
+
 		}
+
+		&:first-child .img-responsive{
+			top: 0;
+			bottom: auto;
+		}
+
+	}
+}
+
+
+#LCTextScene{
+	.ci-slide-four, .ci-slide-three{
+		margin-top: 50px;
+	}
+}
+
+
+#LCIntroTextScene{
+	.ci-text-container{
+		margin-top: 100px;
+	}
+}
+
+#LCIntroTextScene{
+	position: relative;
+	overflow: hidden;
+	#CIPrimaryPlantIllustrationContainer{
+		position: absolute;
+		overflow: hidden;
+		width: 65%;
+		bottom: 0;
+		right: 0;
+		z-index: -1;
 	}
 }

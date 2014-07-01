@@ -132,7 +132,7 @@ hr {
   font-size: 80px;
   right: 48%;
   text-align: center;
-  height: 20px;
+  height: 15px;
   background: url(../images/resources/sprite-indicator.png);
   background-size: 100%;
   opacity: 0.4; }
@@ -253,6 +253,14 @@ hr {
     .btn.btn-success.btn-outline:hover {
       color: white;
       background: #c4bc6e; }
+.btn.btn-maincta {
+  color: rgba(0, 0, 0, 0.6);
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  background: transparent; }
+  .btn.btn-maincta:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background: #61C1A2;
+    border-color: #61C1A2; }
 
 /*Primary button*/
 .link {
@@ -374,12 +382,20 @@ h6 {
 p {
   font-family: Neuton;
   font-weight: 200;
-  font-size: 21px; }
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 21px; } }
   p.lead {
     font-size: 21px; }
     @media (min-width: 768px) {
       p.lead {
         font-size: 26px; } }
+  p.small {
+    font-size: 16px; }
+    @media (min-width: 768px) {
+      p.small {
+        font-size: 18px; } }
 
 .bullet {
   display: inline-block;
@@ -423,6 +439,11 @@ p {
     border-color: white; }
     .bullet.bullet-white:active, .bullet.bullet-white.active {
       border-color: #e6e6e6; }
+  .bullet.bullet-default {
+    background: transparent;
+    border-color: #654e42; }
+    .bullet.bullet-default:active, .bullet.bullet-default.active {
+      border-color: #46362e; }
   .bullet.bullet-success {
     background: transparent;
     border-color: #bbccb3; }
@@ -3157,8 +3178,9 @@ Copyright (c) 2013 Daniel Eden
   animation-name: zoomOutUp; }
 
 #LCMainCharacterStage {
-  height: 400px;
+  height: 530px;
   opacity: 0;
+  margin-top: 70px;
   /* MAIN CHARACTER */ }
   #LCMainCharacterStage.ready {
     -webkit-transition: opacity 0.5s ease;
@@ -3168,7 +3190,7 @@ Copyright (c) 2013 Daniel Eden
     transition: opacity 0.5s ease;
     opacity: 1; }
   #LCMainCharacterStage #LCCharacter {
-    height: 150%;
+    height: 100%;
     /*EYES*/
     /*EYEBROWS*/ }
     #LCMainCharacterStage #LCCharacter .lc-eyes .lc-eye {
@@ -3242,22 +3264,8 @@ Copyright (c) 2013 Daniel Eden
 
 /*LCStageText*/
 #LCStageText {
-  margin-top: 100px;
-  opacity: 0;
-  background: #A4D6C1;
-  border-radius: 100px;
-  padding: 30px 70px; }
-  #LCStageText:before {
-    content: "";
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid transparent;
-    border-bottom: 40px solid #A4D6C1;
-    display: inline-block;
-    -webkit-transform: rotate(-120deg);
-    position: absolute;
-    right: 95%;
-    top: 80%; }
+  margin-top: 150px;
+  opacity: 0; }
   #LCStageText.ready {
     -webkit-transition: opacity 0.5s 0.8s ease;
     -moz-transition: opacity 0.5s 0.8s ease;
@@ -3266,12 +3274,17 @@ Copyright (c) 2013 Daniel Eden
     transition: opacity 0.5s 0.8s ease;
     opacity: 1; }
   #LCStageText h1 {
-    font-size: 50px;
+    font-size: 70px;
+    margin-bottom: 40px; }
+  #LCStageText h2 {
+    font-size: 53px;
+    margin-bottom: 50px;
     margin-top: 0px; }
-  #LCStageText h3 {
-    font-size: 30px; }
-  #LCStageText .btn-group {
-    margin-top: 20px; }
+  #LCStageText .btn {
+    font-size: 36px; }
+
+#Nurture h2 {
+  margin-top: 0; }
 
 .colored-background-input {
   background: #FFBC58;
@@ -3320,28 +3333,27 @@ section.section-warning .phone-carousel .phone-image.phone-warning {
   position: relative; }
   .text-image-carousel .text-image-block {
     opacity: 0.1;
-    margin-bottom: 50px;
-    cursor: pointer;
+    margin-bottom: 30px;
     -webkit-transition: opacity 0.6s ease;
     -moz-transition: opacity 0.6s ease;
     transition: opacity 0.6s ease; }
-    .text-image-carousel .text-image-block:hover {
-      opacity: 0.5;
-      -webkit-transition: opacity 0.3s ease;
-      -moz-transition: opacity 0.3s ease;
-      transition: opacity 0.3s ease; }
     .text-image-carousel .text-image-block.active {
       opacity: 1;
       cursor: default; }
-  .text-image-carousel .image-block {
+  .text-image-carousel .images-box .image-block {
     opacity: 0;
     position: absolute;
-    width: 90%;
+    width: 61%;
     -webkit-transition: opacity 0.6s ease;
     -moz-transition: opacity 0.6s ease;
     transition: opacity 0.6s ease; }
-    .text-image-carousel .image-block.active {
+    .text-image-carousel .images-box .image-block.active {
       opacity: 1; }
+  .text-image-carousel .images-box .bullet-group {
+    position: absolute;
+    top: 620px;
+    width: 60%;
+    text-align: center; }
 
 .hover-spin {
   -webkit-transition: -webkit-transform .8s ease; }
