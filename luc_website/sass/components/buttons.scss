@@ -9,6 +9,8 @@ $button_styles: "primary" $action_primary,
 /*Primary button*/
 .btn{
 
+	@include typo_brand_strong;
+
 	// STYLES FROM $button_styles on top
 	@each $style in $button_styles{
 		$loop_button_name: nth($style, 1);

@@ -8,7 +8,12 @@
 .ci-navbar .container {
   border-bottom: 1px solid #897c46; }
   .ci-navbar .container .navbar-nav > li > a {
-    color: #897c46; }
+    color: #897c46;
+    font-size: 15px; }
+    .ci-navbar .container .navbar-nav > li > a:hover {
+      background: transparent;
+      text-decoration: underline;
+      color: black; }
 
 /*Body*/
 body {
@@ -310,38 +315,56 @@ hr {
 h1 {
   font-family: Titillium;
   font-weight: 800;
-  font-size: 42px;
+  font-size: 36px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 42px; } }
 
 h2 {
   font-family: Titillium;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 30px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 36px; } }
 
 h3 {
   font-family: Titillium;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 30px; } }
 
 h4 {
   font-family: Titillium;
   font-weight: 800;
-  font-size: 24px;
+  font-size: 18px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 24px; } }
 
 h5 {
   font-family: Titillium;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 12px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 18px; } }
 
 h6 {
   font-family: Titillium;
   font-weight: 800;
-  font-size: 12px;
+  font-size: 6px;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h6 {
+      font-size: 12px; } }
 
 .typo-brand-strong {
   font-family: Titillium;
@@ -377,12 +400,12 @@ p {
     p {
       font-size: 22px; } }
   p.general {
-    font-size: 26px; }
+    font-size: 24px; }
     @media (min-width: 768px) {
       p.general {
         font-size: 30px; } }
   p.captain {
-    font-size: 24px; }
+    font-size: 22px; }
     @media (min-width: 768px) {
       p.captain {
         font-size: 26px; } }

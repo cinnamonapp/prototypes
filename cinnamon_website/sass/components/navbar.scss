@@ -5,6 +5,12 @@
 			>li{
 				>a{
 					color: $base_color;
+					font-size: 15px;
+					&:hover{
+						background: transparent;
+						text-decoration: underline;
+						color: black;
+					}
 				}
 			}
 		}
