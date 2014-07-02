@@ -6,56 +6,56 @@ Syntax error: Undefined mixin 'typo_brand_weak'.
 1: /*Body*\/
 2: body{
 3: 	@include typo_brand_weak;
-4: }
-5: 
-6: // Content sections style
-7: @import "components/sections";
-8: 
+4: 	color: $base_color;
+5: }
+6: 
+7: // Content sections style
+8: @import "components/sections";
 
 Backtrace:
 sass/specifications/layout.scss:3:in `typo_brand_weak'
 sass/specifications/layout.scss:3
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:283:in `block in watch'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:198:in `call'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'typo_brand_weak'.\A         on line 3 of sass/specifications/layout.scss, in `typo_brand_weak'\A         from line 3 of sass/specifications/layout.scss\A \A 1: /*Body*/\A 2: body{\A 3: 	@include typo_brand_weak;\A 4: }\A 5: \A 6: // Content sections style\A 7: @import \"components/sections\";\A 8: "; }
+  content: "Syntax error: Undefined mixin 'typo_brand_weak'.\A         on line 3 of sass/specifications/layout.scss, in `typo_brand_weak'\A         from line 3 of sass/specifications/layout.scss\A \A 1: /*Body*/\A 2: body{\A 3: 	@include typo_brand_weak;\A 4: 	color: $base_color;\A 5: }\A 6: \A 7: // Content sections style\A 8: @import \"components/sections\";"; }

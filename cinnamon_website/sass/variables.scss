@@ -1,23 +1,25 @@
 // Color palette
 	$red: 				#f47472;
 
-	$green: 			#d9e027;
+	$green: 			#E1EA2A;
 
-	$purple: 			#f9b0db;
+	$purple: 			#F9B0DB;
 	$fucsia: 			#f680c6;
 	$dark_purple: 		#aa4782;
 	$grey_purple: 		#ad8b9f;
 
 	$light_water_blue: 	#52b5c3;
-	$dark_water_blue: 	#509faa;
+	$dark_water_blue: 	#C9F3F9;
 	$light_blue: 		#c9f3f9;
 
 	$yellow: 			#f8e79a;
 	$dark_gold: 		#ada271;
 	$light_gold: 		#c6b978;
 
+	$green_gold: 		#897C46;
+
 // Color denomination
-$base_color: black;
+$base_color: $green_gold;
 $primary_color: $red;
 $secondary_color: $purple;
 $strong_color: $dark_purple;
@@ -33,7 +35,7 @@ $action_primary: 	$primary_color;
 $action_success: 	$success_color;
 $action_warning: 	$secondary_color;
 $action_danger: 	$strong_color;
-$action_default: 	$weak_color;
+$action_default: 	$base_color;
 $action_info: 		$dark_water_blue;
 
 // Sections colors

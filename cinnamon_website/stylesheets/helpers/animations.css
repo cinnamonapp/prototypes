@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$weak_color".
-        on line 23 of sass/helpers/animations.scss
+        on line 50 of sass/helpers/animations.scss
 
-18: 		from	{ -webkit-transform: rotate(0deg); }
-19: 		to		{ -webkit-transform: rotate(-360deg); }
-20: 	}
-21: 
-22: 	@-webkit-keyframes flower-color-carousel {
-23: 		0%		{ fill: $weak_color }
-24: 		25%		{ fill: $primary_color }
-25: 		50%		{ fill: $secondary_color }
-26: 		75%		{ fill: $success_color }
-27: 		100%	{ fill: $weak_color }
-28: 	}
+45: 		to		{ -webkit-transform: rotate(-5deg); }
+46: 	}
+47: 
+48: 	// flower-color-carousel: Changes a petal's colour every definite time
+49: 	@-webkit-keyframes flower-color-carousel {
+50: 		0%		{ fill: $weak_color }
+51: 		25%		{ fill: $primary_color }
+52: 		50%		{ fill: $secondary_color }
+53: 		75%		{ fill: $success_color }
+54: 		100%	{ fill: $weak_color }
+55: 	}
 
 Backtrace:
-sass/helpers/animations.scss:23
+sass/helpers/animations.scss:50
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -71,4 +71,4 @@ sass/helpers/animations.scss:23
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$weak_color\".\A         on line 23 of sass/helpers/animations.scss\A \A 18: 		from	{ -webkit-transform: rotate(0deg); }\A 19: 		to		{ -webkit-transform: rotate(-360deg); }\A 20: 	}\A 21: \A 22: 	@-webkit-keyframes flower-color-carousel {\A 23: 		0%		{ fill: $weak_color }\A 24: 		25%		{ fill: $primary_color }\A 25: 		50%		{ fill: $secondary_color }\A 26: 		75%		{ fill: $success_color }\A 27: 		100%	{ fill: $weak_color }\A 28: 	}"; }
+  content: "Syntax error: Undefined variable: \"$weak_color\".\A         on line 50 of sass/helpers/animations.scss\A \A 45: 		to		{ -webkit-transform: rotate(-5deg); }\A 46: 	}\A 47: \A 48: 	// flower-color-carousel: Changes a petal's colour every definite time\A 49: 	@-webkit-keyframes flower-color-carousel {\A 50: 		0%		{ fill: $weak_color }\A 51: 		25%		{ fill: $primary_color }\A 52: 		50%		{ fill: $secondary_color }\A 53: 		75%		{ fill: $success_color }\A 54: 		100%	{ fill: $weak_color }\A 55: 	}"; }

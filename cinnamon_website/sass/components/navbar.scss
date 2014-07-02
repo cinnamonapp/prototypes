@@ -1,10 +1,10 @@
 .ci-navbar{
 	.container{
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid $base_color;
 		.navbar-nav{
 			>li{
 				>a{
-					color: black;
+					color: $base_color;
 				}
 			}
 		}
