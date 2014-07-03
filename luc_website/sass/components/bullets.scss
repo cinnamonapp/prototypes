@@ -14,9 +14,9 @@ $bullet_styles: "primary" $section_primary,
 
 	display: inline-block;
 	width: 26px; height: 26px;
-	background: #ccc;
+	background: transparent;
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 3px solid $base_color;
 
 	@include cB(transition, border-width .1s ease);
 

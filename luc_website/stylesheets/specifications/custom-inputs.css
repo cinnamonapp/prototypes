@@ -1,5 +1,5 @@
 .colored-background-input {
-  background: #FFBC58;
+  border: 3px solid #FFBC58;
   padding: 10px;
   border-radius: 3px;
   width: 75%;
@@ -8,7 +8,10 @@
   .colored-background-input h3 {
     margin: 0;
     white-space: nowrap; }
+    .colored-background-input h3.placeholder {
+      color: #FFBC58; }
 
 #btnLetMeKnow1 {
   font-size: 30px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  height: 67px; }

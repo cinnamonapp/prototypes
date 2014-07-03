@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'typo_brand_strong'.
-        on line 8 of sass/components/navbar.scss, in `typo_brand_strong'
-        from line 8 of sass/components/navbar.scss
+        on line 10 of sass/components/navbar.scss, in `typo_brand_strong'
+        from line 10 of sass/components/navbar.scss
 
-3: 	background: white;
-4: 	.navbar-nav{
-5: 		>li{
-6: 			>a{
-7: 				color: rgba(0,0,0, 0.5);
-8: 				@include typo_brand_strong;
-9: 				font-weight: 600;
-10: 
-11: 				padding-top: 25px;
-12: 				padding-bottom: 25px;
-13: 			}
+5: 
+6: 	.navbar-nav{
+7: 		>li{
+8: 			>a{
+9: 				color: rgba(0,0,0, 0.5);
+10: 				@include typo_brand_strong;
+11: 				font-weight: 600;
+12: 
+13: 				padding-top: 20px;
+14: 				padding-bottom: 20px;
+15: 			}
 
 Backtrace:
-sass/components/navbar.scss:8:in `typo_brand_strong'
-sass/components/navbar.scss:8
+sass/components/navbar.scss:10:in `typo_brand_strong'
+sass/components/navbar.scss:10
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -91,4 +91,4 @@ sass/components/navbar.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'typo_brand_strong'.\A         on line 8 of sass/components/navbar.scss, in `typo_brand_strong'\A         from line 8 of sass/components/navbar.scss\A \A 3: 	background: white;\A 4: 	.navbar-nav{\A 5: 		>li{\A 6: 			>a{\A 7: 				color: rgba(0,0,0, 0.5);\A 8: 				@include typo_brand_strong;\A 9: 				font-weight: 600;\A 10: \A 11: 				padding-top: 25px;\A 12: 				padding-bottom: 25px;\A 13: 			}"; }
+  content: "Syntax error: Undefined mixin 'typo_brand_strong'.\A         on line 10 of sass/components/navbar.scss, in `typo_brand_strong'\A         from line 10 of sass/components/navbar.scss\A \A 5: \A 6: 	.navbar-nav{\A 7: 		>li{\A 8: 			>a{\A 9: 				color: rgba(0,0,0, 0.5);\A 10: 				@include typo_brand_strong;\A 11: 				font-weight: 600;\A 12: \A 13: 				padding-top: 20px;\A 14: 				padding-bottom: 20px;\A 15: 			}"; }

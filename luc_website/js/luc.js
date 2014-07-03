@@ -280,12 +280,11 @@ $(document).ready(function () {
 
 	// var textImageCarouselSentinel = window.setInterval(textImageCarouselSentinelF, textImageInterval * 1000);
 
-	// blocks.click(function () {
-	// 	console.log(this);
-	// 	var number = $(this).attr("data-carousel-number");
-
-	// 	nurtureShowSlide(number, true);
-	// });
+	blocks.click(function () {
+		var number = $(this).attr("data-carousel-number");
+		$("#Nurture .bullet-group").bullets("select", number);
+		nurtureShowSlide(number, true);
+	});
 
 
 });

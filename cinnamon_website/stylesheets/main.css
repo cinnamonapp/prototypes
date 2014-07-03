@@ -646,7 +646,7 @@ svg.ci-plant .ci-animated-flower.ci-flower-info.ci-windy {
   background-image: url(../images/resources/gradient-03.png), url(../images/resources/gradient-04.png);
   background-repeat: repeat-x;
   background-position: bottom, top; }
-  #LCTextScene .ci-slide-four, #LCTextScene .ci-slide-three {
+  #LCTextScene .ci-slide-four {
     margin-top: 50px; }
 
 #LCIntroTextScene {

@@ -1,6 +1,8 @@
 
 .lc-navbar{
 	background: white;
+	border: none;
+
 	.navbar-nav{
 		>li{
 			>a{
@@ -8,13 +10,13 @@
 				@include typo_brand_strong;
 				font-weight: 600;
 
-				padding-top: 25px;
-				padding-bottom: 25px;
+				padding-top: 20px;
+				padding-bottom: 20px;
 			}
 		}
 	}
 
 	.navbar-brand{
-		height: 70px;
+		height: 60px;
 	}
 }

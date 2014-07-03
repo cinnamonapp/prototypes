@@ -4,16 +4,16 @@ Syntax error: Undefined mixin 'transition'.
         from line 10 of sass/specifications/text-image-carousel.scss
 
 5: 	.text-image-block{
-6: 		opacity: 0.1;
+6: 		opacity: 0.4;
 7: 		margin-bottom: 30px;
-8: 		// cursor: pointer;
+8: 		cursor: pointer;
 9: 
 10: 		@include transition(opacity .6s ease);
 11: 
-12: 		// &:hover{
-13: 		// 	opacity: 0.5;
-14: 		// 	@include transition(opacity .3s ease);
-15: 		// }
+12: 		&:hover{
+13: 			opacity: 0.5;
+14: 			@include transition(opacity .3s ease);
+15: 		}
 
 Backtrace:
 sass/specifications/text-image-carousel.scss:10:in `transition'
@@ -71,4 +71,4 @@ sass/specifications/text-image-carousel.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'transition'.\A         on line 10 of sass/specifications/text-image-carousel.scss, in `transition'\A         from line 10 of sass/specifications/text-image-carousel.scss\A \A 5: 	.text-image-block{\A 6: 		opacity: 0.1;\A 7: 		margin-bottom: 30px;\A 8: 		// cursor: pointer;\A 9: \A 10: 		@include transition(opacity .6s ease);\A 11: \A 12: 		// &:hover{\A 13: 		// 	opacity: 0.5;\A 14: 		// 	@include transition(opacity .3s ease);\A 15: 		// }"; }
+  content: "Syntax error: Undefined mixin 'transition'.\A         on line 10 of sass/specifications/text-image-carousel.scss, in `transition'\A         from line 10 of sass/specifications/text-image-carousel.scss\A \A 5: 	.text-image-block{\A 6: 		opacity: 0.4;\A 7: 		margin-bottom: 30px;\A 8: 		cursor: pointer;\A 9: \A 10: 		@include transition(opacity .6s ease);\A 11: \A 12: 		&:hover{\A 13: 			opacity: 0.5;\A 14: 			@include transition(opacity .3s ease);\A 15: 		}"; }

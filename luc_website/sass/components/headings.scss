@@ -7,3 +7,8 @@ $headings_subtraction: 6px;
 		font-size: $headings_max - ($headings_subtraction * ($heading - 1));
 	}
 }
+
+
+.section-header{
+	@extend .margin-bottom-4;
+}

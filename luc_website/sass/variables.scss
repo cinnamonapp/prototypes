@@ -19,6 +19,9 @@ $char_water_green:	#95cdb5;
 $char_yellow:	#ffd659;
 $char_brown:	#654E42;
 
+// Denomination
+$base_color: rgba(0, 0, 0, 0.6);
+
 // Fonts
 $font_brand_strong: Dosis;
 $font_brand_weak: Neuton;
@@ -28,7 +31,7 @@ $action_primary: 	$red;
 $action_success: 	$green;
 $action_warning: 	$char_yellow;
 $action_danger: 	$char_strong_red;
-$action_default: 	$weak_blue;
+$action_default: 	$char_brown;
 $action_info: 		$strong_blue;
 
 // Sections
