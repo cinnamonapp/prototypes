@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'cB'.
-        on line 65 of sass/specifications/cinnamon_interactive.scss, in `cB'
-        from line 65 of sass/specifications/cinnamon_interactive.scss
+        on line 68 of sass/specifications/cinnamon_interactive.scss, in `cB'
+        from line 68 of sass/specifications/cinnamon_interactive.scss
 
-60: }
-61: 
-62: 
-63: 
-64: #cinnamon-seed{
-65: 	@include cB(transition, opacity .8s ease);
-66: 	opacity: 1;
-67: 
-68: 	&.fadeout{
-69: 		opacity: 0;
-70: 	}
+63: }
+64: 
+65: 
+66: 
+67: #cinnamon-seed{
+68: 	@include cB(transition, opacity .8s ease);
+69: 	opacity: 1;
+70: 
+71: 	&.fadeout{
+72: 		opacity: 0;
+73: 	}
 
 Backtrace:
-sass/specifications/cinnamon_interactive.scss:65:in `cB'
-sass/specifications/cinnamon_interactive.scss:65
+sass/specifications/cinnamon_interactive.scss:68:in `cB'
+sass/specifications/cinnamon_interactive.scss:68
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -61,4 +61,4 @@ sass/specifications/cinnamon_interactive.scss:65
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'cB'.\A         on line 65 of sass/specifications/cinnamon_interactive.scss, in `cB'\A         from line 65 of sass/specifications/cinnamon_interactive.scss\A \A 60: }\A 61: \A 62: \A 63: \A 64: #cinnamon-seed{\A 65: 	@include cB(transition, opacity .8s ease);\A 66: 	opacity: 1;\A 67: \A 68: 	&.fadeout{\A 69: 		opacity: 0;\A 70: 	}"; }
+  content: "Syntax error: Undefined mixin 'cB'.\A         on line 68 of sass/specifications/cinnamon_interactive.scss, in `cB'\A         from line 68 of sass/specifications/cinnamon_interactive.scss\A \A 63: }\A 64: \A 65: \A 66: \A 67: #cinnamon-seed{\A 68: 	@include cB(transition, opacity .8s ease);\A 69: 	opacity: 1;\A 70: \A 71: 	&.fadeout{\A 72: 		opacity: 0;\A 73: 	}"; }

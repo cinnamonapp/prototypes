@@ -4,6 +4,7 @@ $link_styles:	"primary" $action_primary,
 				"danger"  $action_danger,
 				"info"    $action_info,
 				"white"   white,
+				"default" $base_color,
 				"success" $action_success;
 
 // Sizes
@@ -60,6 +61,20 @@ $link_sizes:	"xs" 11px,
 		}
 
 	}
+
+	&.link-square{
+		display: inline-block;
+		width: 50px;
+		text-align: center;
+	}
+
+	&.link-social{
+		color: #FFBC58;
+
+		&:hover{
+			color: $base_color;
+		}
+	}
 }
 
 
@@ -70,7 +85,7 @@ button{
 		border: none;
 		outline: none;
 
-		:focus{
+		&:focus{
 			outline: none;
 		}
 	}

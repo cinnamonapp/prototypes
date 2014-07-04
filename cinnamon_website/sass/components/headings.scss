@@ -19,3 +19,8 @@ $headings_subtraction: 6px;
 h1{
 	// font-weight: 600;
 }
+
+
+.section-header{
+	@extend .margin-bottom-3;
+}

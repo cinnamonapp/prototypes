@@ -1,15 +1,16 @@
 .ci-navbar{
+	top: 5px;
 	.container{
-		border-bottom: 1px solid $base_color;
+		border-bottom: 2px solid $base_color;
 		.navbar-nav{
 			>li{
 				>a{
 					color: $base_color;
 					font-size: 15px;
+					font-weight: 400;
 					&:hover{
 						background: transparent;
 						text-decoration: underline;
-						color: black;
 					}
 				}
 			}

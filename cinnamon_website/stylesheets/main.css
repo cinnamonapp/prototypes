@@ -5,15 +5,17 @@
   font-weight: 800;
   src: url("../fonts/titillium-bold-webfont.ttf"); }
 
-.ci-navbar .container {
-  border-bottom: 1px solid #897c46; }
-  .ci-navbar .container .navbar-nav > li > a {
-    color: #897c46;
-    font-size: 15px; }
-    .ci-navbar .container .navbar-nav > li > a:hover {
-      background: transparent;
-      text-decoration: underline;
-      color: black; }
+.ci-navbar {
+  top: 5px; }
+  .ci-navbar .container {
+    border-bottom: 2px solid #897c46; }
+    .ci-navbar .container .navbar-nav > li > a {
+      color: #897c46;
+      font-size: 15px;
+      font-weight: 400; }
+      .ci-navbar .container .navbar-nav > li > a:hover {
+        background: transparent;
+        text-decoration: underline; }
 
 /*Body*/
 body {
@@ -628,19 +630,172 @@ svg.ci-plant .ci-animated-flower.ci-flower-info.ci-windy {
   top: -100%;
   z-index: -1; }
 
+.no-margin {
+  margin: 0 !important; }
+
+.no-padding {
+  padding: 0 !important; }
+
+.no-padding-top {
+  padding-top: 0 !important; }
+
+.no-margin-top {
+  margin-top: 0 !important; }
+
+.margin-top, .wrapper1080 .main-content .margin-top {
+  margin-top: 10px; }
+
+.padding-top, .wrapper1080 .main-content .padding-top {
+  padding-top: 10px; }
+
+.margin-top-2, .wrapper1080 .main-content .margin-top-2 {
+  margin-top: 20px; }
+
+.padding-top-2, .wrapper1080 .main-content .padding-top-2 {
+  padding-top: 20px; }
+
+.margin-top-3, .wrapper1080 .main-content .margin-top-3 {
+  margin-top: 30px; }
+
+.padding-top-3, .wrapper1080 .main-content .padding-top-3 {
+  padding-top: 30px; }
+
+.margin-top-4, .wrapper1080 .main-content .margin-top-4 {
+  margin-top: 40px; }
+
+.padding-top-4, .wrapper1080 .main-content .padding-top-4 {
+  padding-top: 40px; }
+
+.margin-top-5, .wrapper1080 .main-content .margin-top-5 {
+  margin-top: 50px; }
+
+.padding-top-5, .wrapper1080 .main-content .padding-top-5 {
+  padding-top: 50px; }
+
+.no-padding-left {
+  padding-left: 0 !important; }
+
+.no-margin-left {
+  margin-left: 0 !important; }
+
+.margin-left, .wrapper1080 .main-content .margin-left {
+  margin-left: 10px; }
+
+.padding-left, .wrapper1080 .main-content .padding-left {
+  padding-left: 10px; }
+
+.margin-left-2, .wrapper1080 .main-content .margin-left-2 {
+  margin-left: 20px; }
+
+.padding-left-2, .wrapper1080 .main-content .padding-left-2 {
+  padding-left: 20px; }
+
+.margin-left-3, .wrapper1080 .main-content .margin-left-3 {
+  margin-left: 30px; }
+
+.padding-left-3, .wrapper1080 .main-content .padding-left-3 {
+  padding-left: 30px; }
+
+.margin-left-4, .wrapper1080 .main-content .margin-left-4 {
+  margin-left: 40px; }
+
+.padding-left-4, .wrapper1080 .main-content .padding-left-4 {
+  padding-left: 40px; }
+
+.margin-left-5, .wrapper1080 .main-content .margin-left-5 {
+  margin-left: 50px; }
+
+.padding-left-5, .wrapper1080 .main-content .padding-left-5 {
+  padding-left: 50px; }
+
+.no-padding-right {
+  padding-right: 0 !important; }
+
+.no-margin-right {
+  margin-right: 0 !important; }
+
+.margin-right, .wrapper1080 .main-content .margin-right {
+  margin-right: 10px; }
+
+.padding-right, .wrapper1080 .main-content .padding-right {
+  padding-right: 10px; }
+
+.margin-right-2, .wrapper1080 .main-content .margin-right-2 {
+  margin-right: 20px; }
+
+.padding-right-2, .wrapper1080 .main-content .padding-right-2 {
+  padding-right: 20px; }
+
+.margin-right-3, .wrapper1080 .main-content .margin-right-3 {
+  margin-right: 30px; }
+
+.padding-right-3, .wrapper1080 .main-content .padding-right-3 {
+  padding-right: 30px; }
+
+.margin-right-4, .wrapper1080 .main-content .margin-right-4 {
+  margin-right: 40px; }
+
+.padding-right-4, .wrapper1080 .main-content .padding-right-4 {
+  padding-right: 40px; }
+
+.margin-right-5, .wrapper1080 .main-content .margin-right-5 {
+  margin-right: 50px; }
+
+.padding-right-5, .wrapper1080 .main-content .padding-right-5 {
+  padding-right: 50px; }
+
+.no-padding-bottom {
+  padding-bottom: 0 !important; }
+
+.no-margin-bottom {
+  margin-bottom: 0 !important; }
+
+.margin-bottom, .wrapper1080 .main-content .margin-bottom {
+  margin-bottom: 10px; }
+
+.padding-bottom, .wrapper1080 .main-content .padding-bottom {
+  padding-bottom: 10px; }
+
+.margin-bottom-2, .wrapper1080 .main-content .margin-bottom-2 {
+  margin-bottom: 20px; }
+
+.padding-bottom-2, .wrapper1080 .main-content .padding-bottom-2 {
+  padding-bottom: 20px; }
+
+.margin-bottom-3, .section-header, .wrapper1080 .main-content .margin-bottom-3, .wrapper1080 .main-content .section-header {
+  margin-bottom: 30px; }
+
+.padding-bottom-3, .wrapper1080 .main-content .padding-bottom-3 {
+  padding-bottom: 30px; }
+
+.margin-bottom-4, .wrapper1080 .main-content .margin-bottom-4 {
+  margin-bottom: 40px; }
+
+.padding-bottom-4, .wrapper1080 .main-content .padding-bottom-4 {
+  padding-bottom: 40px; }
+
+.margin-bottom-5, .wrapper1080 .main-content .margin-bottom-5 {
+  margin-bottom: 50px; }
+
+.padding-bottom-5, .wrapper1080 .main-content .padding-bottom-5 {
+  padding-bottom: 50px; }
+
 #CIPlantIllustration {
   position: absolute;
   left: 0;
   right: 0; }
 
-.ci-place-plant section {
-  overflow: hidden; }
-  .ci-place-plant section .img-responsive {
-    position: absolute;
-    bottom: 0; }
-  .ci-place-plant section:first-child .img-responsive {
-    top: 0;
-    bottom: auto; }
+.ci-place-plant {
+  position: relative;
+  left: -100px; }
+  .ci-place-plant section {
+    overflow: hidden; }
+    .ci-place-plant section .img-responsive {
+      position: absolute;
+      bottom: 0; }
+    .ci-place-plant section:first-child .img-responsive {
+      top: 0;
+      bottom: auto; }
 
 #LCTextScene {
   background-image: url(../images/resources/gradient-03.png), url(../images/resources/gradient-04.png);
@@ -676,3 +831,25 @@ svg.ci-plant .ci-animated-flower.ci-flower-info.ci-windy {
   opacity: 1; }
   #cinnamon-seed.fadeout {
     opacity: 0; }
+
+.custom-form .form-control {
+  border: 2px solid #897c46;
+  border-radius: 0;
+  background: transparent;
+  outline: none !important;
+  color: #897c46;
+  box-shadow: none; }
+
+::-webkit-input-placeholder {
+  color: #897c46; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #897c46; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #897c46; }
+
+:-ms-input-placeholder {
+  color: #897c46; }
