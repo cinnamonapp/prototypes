@@ -8,6 +8,7 @@
 			>a{
 				color: rgba(0,0,0, 0.5);
 				@include typo_brand_strong;
+				@include cB(transition, color .3s ease);
 				font-weight: 600;
 
 				padding-top: 20px;
@@ -16,7 +17,58 @@
 		}
 	}
 
+
+	&.section-dream .navbar-nav>li>a, &.section-dream .navbar-brand{
+		color: darken($section_dream, 15%);
+	}
+
+	&.section-warning .navbar-nav>li>a, &.section-warning .navbar-brand{
+		color: darken($section_warning, 15%);
+	}
+
+	&.section-info .navbar-nav>li>a, &.section-info .navbar-brand{
+		color: darken($section_info, 15%);
+	}
+
+	&.section-danger .navbar-nav>li>a, &.section-danger .navbar-brand{
+		color: darken($section_danger, 15%);
+	}
+
+	&.section-dream .navbar-nav>li>a, &.section-dream .navbar-brand{
+		color: darken($section_dream, 15%);
+	}
+
 	.navbar-brand{
 		height: 60px;
+		color: rgba(0,0,0, 0.5);
+		@include cB(transition, color .3s ease);
+	}
+}
+
+
+#ConstructedLogo{
+	width: 200px;
+	.main-name{
+		font-size: 35px;
+		letter-spacing: 2px;
+		line-height: 30px;
+		float: left;
+		margin-right: 5px;
+	}
+
+	.first-subtitle{
+		font-size: 14px;
+		line-height: 1em;
+		display: block;
+		letter-spacing: 1px;
+	}
+
+	.second-subtitle{
+		font-size: 14px;
+		line-height: 1em;
+		display: block;
+		letter-spacing: 2px;
+		margin-top: 2px;
+		position: relative;
 	}
 }

@@ -40,7 +40,8 @@
     border: 0;
     outline: none;
     box-shadow: none;
-    resize: none; }
+    resize: none;
+    overflow: hidden; }
   .custom-caret .input-substitute:after, .custom-caret .input-substitute:before {
     content: "";
     display: none;
@@ -54,6 +55,8 @@
     -webkit-animation: blinky 1s steps(1) infinite; }
   .custom-caret .input-substitute.placeholder {
     opacity: 0.8; }
+  .custom-caret .input-substitute.overpassed {
+    float: right; }
   .custom-caret .input-substitute.active:after {
     display: inline-block; }
   .custom-caret .input-substitute.active.placeholder {
@@ -219,11 +222,53 @@
   .lc-navbar .navbar-nav > li > a {
     color: rgba(0, 0, 0, 0.5);
     font-family: Dosis;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
     font-weight: 600;
     padding-top: 20px;
     padding-bottom: 20px; }
+  .lc-navbar.section-dream .navbar-nav > li > a, .lc-navbar.section-dream .navbar-brand {
+    color: #61b491; }
+  .lc-navbar.section-warning .navbar-nav > li > a, .lc-navbar.section-warning .navbar-brand {
+    color: #ffc30d; }
+  .lc-navbar.section-info .navbar-nav > li > a, .lc-navbar.section-info .navbar-brand {
+    color: #8bb7e7; }
+  .lc-navbar.section-danger .navbar-nav > li > a, .lc-navbar.section-danger .navbar-brand {
+    color: #8b2813; }
+  .lc-navbar.section-dream .navbar-nav > li > a, .lc-navbar.section-dream .navbar-brand {
+    color: #61b491; }
   .lc-navbar .navbar-brand {
-    height: 60px; }
+    height: 60px;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease; }
+
+#ConstructedLogo {
+  width: 200px; }
+  #ConstructedLogo .main-name {
+    font-size: 35px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    float: left;
+    margin-right: 5px; }
+  #ConstructedLogo .first-subtitle {
+    font-size: 14px;
+    line-height: 1em;
+    display: block;
+    letter-spacing: 1px; }
+  #ConstructedLogo .second-subtitle {
+    font-size: 14px;
+    line-height: 1em;
+    display: block;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    position: relative; }
 
 /*Body*/
 section {

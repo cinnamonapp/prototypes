@@ -9,11 +9,11 @@ Syntax error: Undefined mixin 'typo_brand_strong'.
 8: 			>a{
 9: 				color: rgba(0,0,0, 0.5);
 10: 				@include typo_brand_strong;
-11: 				font-weight: 600;
-12: 
-13: 				padding-top: 20px;
-14: 				padding-bottom: 20px;
-15: 			}
+11: 				@include cB(transition, color .3s ease);
+12: 				font-weight: 600;
+13: 
+14: 				padding-top: 20px;
+15: 				padding-bottom: 20px;
 
 Backtrace:
 sass/components/navbar.scss:10:in `typo_brand_strong'
@@ -91,4 +91,4 @@ sass/components/navbar.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'typo_brand_strong'.\A         on line 10 of sass/components/navbar.scss, in `typo_brand_strong'\A         from line 10 of sass/components/navbar.scss\A \A 5: \A 6: 	.navbar-nav{\A 7: 		>li{\A 8: 			>a{\A 9: 				color: rgba(0,0,0, 0.5);\A 10: 				@include typo_brand_strong;\A 11: 				font-weight: 600;\A 12: \A 13: 				padding-top: 20px;\A 14: 				padding-bottom: 20px;\A 15: 			}"; }
+  content: "Syntax error: Undefined mixin 'typo_brand_strong'.\A         on line 10 of sass/components/navbar.scss, in `typo_brand_strong'\A         from line 10 of sass/components/navbar.scss\A \A 5: \A 6: 	.navbar-nav{\A 7: 		>li{\A 8: 			>a{\A 9: 				color: rgba(0,0,0, 0.5);\A 10: 				@include typo_brand_strong;\A 11: 				@include cB(transition, color .3s ease);\A 12: 				font-weight: 600;\A 13: \A 14: 				padding-top: 20px;\A 15: 				padding-bottom: 20px;"; }

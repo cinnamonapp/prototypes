@@ -9,7 +9,7 @@
 <body>
 
 	<!-- THE SITE HEADER -->
-	<header class="navbar navbar-fixed-top lc-navbar" id="top" role="banner">
+	<header class="navbar navbar-fixed-top lc-navbar" id="TopMainNavigation" role="banner">
 		<div class="container">
 			<div class="navbar-header">
 				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
@@ -18,8 +18,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#LCBackgroundStage" class="navbar-brand">
-					<img src="images/logo-lyn.png" alt="Lyn logo" height="100%">
+				<a href="#LCBackgroundStage" id="ConstructedLogo" class="navbar-brand">
+					<span class="typo-brand-strong main-name">LYN</span>
+					<span class="typo-brand-strong first-subtitle">Glucose</span>
+					<span class="typo-brand-strong second-subtitle">Thirsy</span>
 					<!-- <strong class="typo-brand-strong text-primary">LYN</strong>
 					<span class="typo-brand-strong text-info">| Glucose Thirsty</span> -->
 				</a>
@@ -125,13 +127,13 @@
 						</p>
 
 						<div class="bullet-group bullet-toggle-radio bullet-vertical margin-top-5 text-center">
-							<a href="javascript: overviewShowSlide(3);" class="bullet bullet-sm bullet-default active">
+							<a href="javascript: overviewShowSlide(3); changeNavColor('section-warning');" class="bullet bullet-sm bullet-default active">
 							</a>
-							<a href="javascript: overviewShowSlide(0);" class="bullet bullet-sm bullet-danger">
+							<a href="javascript: overviewShowSlide(0); changeNavColor('section-danger');" class="bullet bullet-sm bullet-danger">
 							</a>
-							<a href="javascript: overviewShowSlide(1);" class="bullet bullet-sm bullet-dream">
+							<a href="javascript: overviewShowSlide(1); changeNavColor('section-dream');" class="bullet bullet-sm bullet-dream">
 							</a>
-							<a href="javascript: overviewShowSlide(2);" class="bullet bullet-sm bullet-info">
+							<a href="javascript: overviewShowSlide(2); changeNavColor('section-info');" class="bullet bullet-sm bullet-info">
 							</a>
 						</div>
 
@@ -267,12 +269,12 @@
 							join our pilot program. <br>
 						</p>
 
-						<form id="custom-email-form" onsubmit="$('#custom-email-form').addClass('hidden');$('#form-mascotte').addClass('bounce animated'); $('#thankyou-message').removeClass('hidden'); return false;">
+						<form id="custom-email-form" action="https://docs.google.com/a/pazienti.org/forms/d/19Bxzg0VC6nFuzjRVtXdrdLyIdB-f2kw9Ge2amhO-JM0/formResponse" method="POST">
 							<div class="form-group transparent-input custom-caret colored-background-input">
 								<h3 class="input-substitute placeholder active">
 									Insert your email here
 								</h3>
-								<input class="form-control" type="email" name="email" required autocomplete="off" spellcheck="false" onkeyup="$('#btnLetMeKnow1').removeAttr('disabled')" form="custom-email-form" />
+								<input class="form-control" type="email" name="entry.296781366" required autocomplete="off" spellcheck="false" onkeyup="$('#btnLetMeKnow1').removeAttr('disabled')" />
 							</div>
 							<button id="btnLetMeKnow1" class="btn btn-default btn-outline btn-lg" form="custom-email-form" disabled>Send</button>
 						</form>

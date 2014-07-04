@@ -26,6 +26,15 @@ $(document).ready(function() {
 				substitute.addClass("placeholder");
 				substitute.html(placeholder);
 			}
+
+			if(substitute[0].scrollWidth !== undefined){
+				if(input.width() <= substitute[0].scrollWidth)
+					substitute.addClass("overpassed");
+				else
+					substitute.removeClass("overpassed");
+			}
+
+			console.log("Input is %d. Substitute is: %d.", input.width(), substitute[0].scrollWidth);
 		});
 
 		input.focus(function (){

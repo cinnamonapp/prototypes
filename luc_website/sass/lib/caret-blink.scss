@@ -52,6 +52,7 @@ $caret_color: $red;
 		outline: none;
 		box-shadow: none;
 		resize: none;
+		overflow: hidden;
 
 	}
 
@@ -74,6 +75,10 @@ $caret_color: $red;
 
 		&.placeholder{
 			opacity: 0.8;
+		}
+
+		&.overpassed{
+			float: right;
 		}
 
 		&.active{

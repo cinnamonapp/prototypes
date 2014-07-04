@@ -1,18 +1,14 @@
 requirejs.config({
    "paths": {
-     "jquery": "lib/jquery.min"
+     "jquery": "lib/jquery.min",
+     "waypoints": "lib/waypoints"
    }
 });
 
 
-require(["jquery"], function ($) {
+require(["jquery", "waypoints"], function ($, W) {
 
-	require(["lib/bootstrap.min"]);
-	require(["lib/window-sized"]);
-	require(["lib/vertical-align"]);
-	require(["lib/caret-blink"]);
-	require(["lib/bullets"]);
-	require(["lib/jquery.scrollTo.min"], function(){
+	require(["lib/remove-class-regexp", "lib/bootstrap.min","lib/window-sized","lib/vertical-align","lib/caret-blink","lib/bullets", "lib/jquery.scrollTo.min"], function(){
 		$('a').click(function (event) {
 			var href = $(this).attr("href");
 
@@ -24,8 +20,11 @@ require(["jquery"], function ($) {
 			}
 
 		});
+
+		require(["luc"]);
+		require(["helpers"]);
+
 	});
 	
-	require(["luc"]);
 
 });
