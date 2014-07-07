@@ -36,6 +36,7 @@ svg.ci-plant{
 	// A single animated flower - With everything it could have
 	.ci-animated-flower{
 
+		@include cB(transition, opacity .5s ease);
 
 		.ci-flower-petals{
 			padding: 10px;
@@ -61,69 +62,78 @@ svg.ci-plant{
 				width: $xlarge_size_flower;
 			}
 
-
-			// Single petal definition
-			.ci-flower-petal {
+			.ci-flower-petal{
 				opacity: .7;
-				
-				// Petal rotation
-				&.ci-petal-rotate-slow{
-					-webkit-transform-origin: 50% 50%;
-					-webkit-animation: flower-disc-rotation 15s linear infinite;
-				}
-
-				&.ci-petal-rotate{
-					-webkit-transform-origin: 50% 50%;
-					-webkit-animation: flower-disc-rotation 10s linear infinite;
-				}
-
-				&.ci-petal-rotate-fast{
-					-webkit-transform-origin: 50% 50%;
-					-webkit-animation: flower-disc-rotation 5s linear infinite;
-				}
-
-
-				// Petal ellipse
-				&.ci-petal-orbit-slow{
-					-webkit-animation: flower-orbit 8s ease infinite;
-				}
-
-				&.ci-petal-orbit{
-					-webkit-animation: flower-orbit 6s ease infinite;
-				}
-
-				&.ci-petal-orbit-reverse{
-					-webkit-animation: flower-orbit-reverse 6s ease infinite;
-				}
-
-				&.ci-petal-orbit-fast{
-					-webkit-animation: flower-orbit 4s ease infinite;
-				}
-
-
-				// Petal pulse
-				&.ci-petal-pulse-slow{
-					-webkit-transform-origin: 50% 50%;
-					-webkit-animation: flower-pulsation 10s ease infinite;
-				}
-
-				&.ci-petal-pulse{
-					-webkit-transform-origin: 50% 50%;
-					-webkit-animation: flower-pulsation 6s ease infinite;
-				}
-
-				&.ci-petal-pulse-fast{
-					-webkit-transform-origin: 50% 50%;
-					-webkit-animation: flower-pulsation 4s ease infinite;
-				}
-
-
-
 			}
 
 		}
 
 
+		// NON FOCUSED FLOWER
+		&.ci-flower-blur{
+			opacity: 0.1;
+			z-index: -1;
+		}
+
+
+		// Single petal animation
+		.ci-flower-petal {
+			-webkit-transition: -webkit-transform .5s ease;
+			
+			// Petal rotation
+			&.ci-petal-rotate-slow{
+				@include cB(transform-origin, 50% 50%);
+				@include cB(animation, flower-disc-rotation 15s linear infinite);
+			}
+
+			&.ci-petal-rotate{
+				@include cB(transform-origin, 50% 50%);
+				@include cB(animation, flower-disc-rotation 10s linear infinite);
+			}
+
+			&.ci-petal-rotate-fast{
+				@include cB(transform-origin, 50% 50%);
+				@include cB(animation, flower-disc-rotation 5s linear infinite);
+			}
+
+
+			// Petal ellipse
+			&.ci-petal-orbit-slow{
+				@include cB(animation, flower-orbit 8s ease infinite);
+			}
+
+			&.ci-petal-orbit{
+				@include cB(animation, flower-orbit 6s ease infinite);
+			}
+
+			&.ci-petal-orbit-reverse{
+				@include cB(animation, flower-orbit-reverse 6s ease infinite);
+			}
+
+			&.ci-petal-orbit-fast{
+				@include cB(animation, flower-orbit 4s ease infinite);
+			}
+
+
+			// Petal pulse
+			&.ci-petal-pulse-slow{
+				@include cB(transform-origin, 50% 50%);
+				@include cB(animation, flower-pulsation 10s ease infinite);
+			}
+
+			&.ci-petal-pulse{
+				@include cB(transform-origin, 50% 50%);
+				@include cB(animation, flower-pulsation 6s ease infinite);
+			}
+
+			&.ci-petal-pulse-fast{
+				@include cB(transform-origin, 50% 50%);
+				@include cB(animation, flower-pulsation 4s ease infinite);
+			}
+
+		}
+
+		// DISC FLOWER ANIMATION
 		.ci-flower-disc{
 			-webkit-transform-origin: 50% 50%;
 			-webkit-animation-name: flower-disc-rotation;
@@ -151,6 +161,7 @@ svg.ci-plant{
 		}
 
 
+		// POLLEN FLOWER ANIMATION
 		.ci-flower-pollen{
 
 			// Petal pulse
@@ -170,6 +181,25 @@ svg.ci-plant{
 			}
 
 		}
+
+		&.ci-flower-info{
+			&.ci-windy{
+				-webkit-transform-origin: right bottom;
+				-webkit-animation: flower-wind-effect 10s ease infinite;
+			}
+		}
+
+
+		// Stop animation
+		&.ci-flower-stop-animation, 
+		&.ci-flower-stop-animation.ci-windy, 
+		&.ci-flower-stop-animation .ci-flower-petals .ci-flower-petal,
+		&.ci-flower-stop-animation .ci-flower-disc,
+		&.ci-flower-stop-animation .ci-flower-pollen{
+			-webkit-animation-play-state: paused;
+		}
+
+
 
 
 		// Flower styles [E.g. .ci-flower-primary] - Pick from above => $flower_colors
@@ -198,12 +228,6 @@ svg.ci-plant{
 		}
 
 
-		&.ci-flower-info{
-			&.ci-windy{
-				-webkit-transform-origin: right bottom;
-				-webkit-animation: flower-wind-effect 10s ease infinite;
-			}
-		}
 
 		// Color carousel
 		// &.flower-carousel{

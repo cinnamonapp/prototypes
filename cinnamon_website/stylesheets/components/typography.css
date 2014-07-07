@@ -6,15 +6,15 @@ Syntax error: Undefined mixin 'typo_brand_strong'.
 
 1: // H tags style
 2: @import "components/headings";
-3: 
-4: 
-5: .typo-brand-strong{
-6: 	@include typo_brand_strong;
-7: }
-8: 
-9: .typo-brand-weak{
-10: 	@include typo_brand_weak;
-11: }
+3: // Links style
+4: @import "components/links";
+5: 
+6: 
+7: .typo-brand-strong{
+8: 	@include typo_brand_strong;
+9: }
+10: 
+11: .typo-brand-weak{
 
 Backtrace:
 /Users/alessiosanto/projects/snaphealth-websites/cinnamon_website/sass/components/headings.scss:6:in `typo_brand_strong'
@@ -77,4 +77,4 @@ sass/components/typography.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'typo_brand_strong'.\A         on line 6 of /Users/alessiosanto/projects/snaphealth-websites/cinnamon_website/sass/components/headings.scss, in `typo_brand_strong'\A         from line 6 of /Users/alessiosanto/projects/snaphealth-websites/cinnamon_website/sass/components/headings.scss\A         from line 2 of sass/components/typography.scss\A \A 1: // H tags style\A 2: @import \"components/headings\";\A 3: \A 4: \A 5: .typo-brand-strong{\A 6: 	@include typo_brand_strong;\A 7: }\A 8: \A 9: .typo-brand-weak{\A 10: 	@include typo_brand_weak;\A 11: }"; }
+  content: "Syntax error: Undefined mixin 'typo_brand_strong'.\A         on line 6 of /Users/alessiosanto/projects/snaphealth-websites/cinnamon_website/sass/components/headings.scss, in `typo_brand_strong'\A         from line 6 of /Users/alessiosanto/projects/snaphealth-websites/cinnamon_website/sass/components/headings.scss\A         from line 2 of sass/components/typography.scss\A \A 1: // H tags style\A 2: @import \"components/headings\";\A 3: // Links style\A 4: @import \"components/links\";\A 5: \A 6: \A 7: .typo-brand-strong{\A 8: 	@include typo_brand_strong;\A 9: }\A 10: \A 11: .typo-brand-weak{"; }

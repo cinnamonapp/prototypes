@@ -18,5 +18,14 @@ require(["jquery", "waypoints"], function ($, W) {
 			else
 				$(this).addClass("fadeout");
 		});
+
+		$("#cinnamon-download").waypoint(function (direction) {
+			if(direction == "down")
+				$("#cinnaphone").removeClass("bounceout");
+			else
+				$("#cinnaphone").addClass("bounceout");
+		},{
+			offset: -200
+		});
 	});
 });

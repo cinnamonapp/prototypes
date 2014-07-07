@@ -72,3 +72,59 @@
 		opacity: 0;
 	}
 }
+
+
+
+
+#cinnaphone{
+	width: 300px; height: 622px;
+
+	// position: absolute;
+	// bottom: 279px;
+
+	-webkit-transition: -webkit-transform .5s ease;
+	-moz-transition: -moz-transform .5s ease;
+	-ms-transition: -ms-transform .5s ease;
+	-o-transition: -o-transform .5s ease;
+	transition: transform .5s ease;
+	@include cB(transform, translateY(-25%));
+
+
+	&.bounceout{
+		@include cB(transform, translateY(0%));
+	}
+
+	.ci-presentation-phone{
+		background: url(../images/resources/sprite-cinnaphone.png);
+		background-size: 100%;
+		position: absolute;
+		left: 0; bottom: 0; top: 0; right: 0;
+		opacity: 0;
+
+		@include cB(transition, opacity .5s ease);
+
+		&.first-phone{
+			background-position: 0px 0px;
+		}
+		&.second-phone{
+			background-position: 0px -672px;
+		}
+		&.third-phone{
+			background-position: 0px -1352px;
+		}
+
+		&.active{
+			opacity: 1;
+		}
+
+	}
+
+	.ci-presentation-back{
+		background: url(../images/resources/sprite-cinnaphone.png);
+		background-size: 100%;
+		position: absolute;
+		left: 0; bottom: 0; top: 0; right: 0;
+		background-position: 0px -2042px;
+
+	}
+}

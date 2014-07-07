@@ -368,6 +368,89 @@ h6 {
     h6 {
       font-size: 12px; } }
 
+/*Primary button*/
+.link {
+  color: inherit;
+  font-size: inherit;
+  padding: 0; }
+  .link.link-primary {
+    color: #f47472;
+    text-decoration: underline; }
+    .link.link-primary:hover {
+      text-decoration: none; }
+    .link.link-primary:active, .link.link-primary.active {
+      color: #f25d5a; }
+  .link.link-warning {
+    color: #f9b0db;
+    text-decoration: underline; }
+    .link.link-warning:hover {
+      text-decoration: none; }
+    .link.link-warning:active, .link.link-warning.active {
+      color: #f798d0; }
+  .link.link-danger {
+    color: #aa4782;
+    text-decoration: underline; }
+    .link.link-danger:hover {
+      text-decoration: none; }
+    .link.link-danger:active, .link.link-danger.active {
+      color: #983f74; }
+  .link.link-info {
+    color: #c9f3f9;
+    text-decoration: underline; }
+    .link.link-info:hover {
+      text-decoration: none; }
+    .link.link-info:active, .link.link-info.active {
+      color: #b2eef6; }
+  .link.link-white {
+    color: white;
+    text-decoration: underline; }
+    .link.link-white:hover {
+      text-decoration: none; }
+    .link.link-white:active, .link.link-white.active {
+      color: #f2f2f2; }
+  .link.link-default {
+    color: #897c46;
+    text-decoration: underline; }
+    .link.link-default:hover {
+      text-decoration: none; }
+    .link.link-default:active, .link.link-default.active {
+      color: #786d3d; }
+  .link.link-success {
+    color: #e1ea2a;
+    text-decoration: underline; }
+    .link.link-success:hover {
+      text-decoration: none; }
+    .link.link-success:active, .link.link-success.active {
+      color: #dae416; }
+  .link.disabled, .link:disabled {
+    opacity: 0.5;
+    text-decoration: line-through !important;
+    cursor: default; }
+  .link.link-xs {
+    font-size: 11px; }
+  .link.link-sm {
+    font-size: 13px; }
+  .link.link-lg {
+    font-size: 18px; }
+  .link.link-xl {
+    font-size: 22px; }
+  .link.link-square {
+    display: inline-block;
+    width: 50px;
+    text-align: center; }
+  .link.link-social {
+    color: #FFBC58; }
+    .link.link-social:hover {
+      color: #897c46; }
+
+button.link {
+  display: inline;
+  background: none;
+  border: none;
+  outline: none; }
+  button.link:focus {
+    outline: none; }
+
 .typo-brand-strong {
   font-family: Titillium;
   font-weight: 800; }
@@ -510,119 +593,196 @@ p {
 	========================================================================================================================
 	
 */
-svg.ci-plant .ci-animated-flower .ci-flower-petals {
-  padding: 10px;
-  height: 80px;
-  width: 80px; }
-  svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-sm {
-    height: 60px;
-    width: 60px; }
-  svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-lg {
-    height: 100px;
-    width: 100px; }
-  svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-xl {
-    height: 150px;
-    width: 150px; }
-  svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal {
-    opacity: .7; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-rotate-slow {
+svg.ci-plant .ci-animated-flower {
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; }
+  svg.ci-plant .ci-animated-flower .ci-flower-petals {
+    padding: 10px;
+    height: 80px;
+    width: 80px; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-sm {
+      height: 60px;
+      width: 60px; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-lg {
+      height: 100px;
+      width: 100px; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-xl {
+      height: 150px;
+      width: 150px; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal {
+      opacity: .7; }
+  svg.ci-plant .ci-animated-flower.ci-flower-blur {
+    opacity: 0.1;
+    z-index: -1; }
+  svg.ci-plant .ci-animated-flower .ci-flower-petal {
+    -webkit-transition: -webkit-transform .5s ease; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-rotate-slow {
       -webkit-transform-origin: 50% 50%;
-      -webkit-animation: flower-disc-rotation 15s linear infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-rotate {
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-disc-rotation 15s linear infinite;
+      -moz-animation: flower-disc-rotation 15s linear infinite;
+      -ms-animation: flower-disc-rotation 15s linear infinite;
+      -o-animation: flower-disc-rotation 15s linear infinite;
+      animation: flower-disc-rotation 15s linear infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-rotate {
       -webkit-transform-origin: 50% 50%;
-      -webkit-animation: flower-disc-rotation 10s linear infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-rotate-fast {
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-disc-rotation 10s linear infinite;
+      -moz-animation: flower-disc-rotation 10s linear infinite;
+      -ms-animation: flower-disc-rotation 10s linear infinite;
+      -o-animation: flower-disc-rotation 10s linear infinite;
+      animation: flower-disc-rotation 10s linear infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-rotate-fast {
       -webkit-transform-origin: 50% 50%;
-      -webkit-animation: flower-disc-rotation 5s linear infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-orbit-slow {
-      -webkit-animation: flower-orbit 8s ease infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-orbit {
-      -webkit-animation: flower-orbit 6s ease infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-orbit-reverse {
-      -webkit-animation: flower-orbit-reverse 6s ease infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-orbit-fast {
-      -webkit-animation: flower-orbit 4s ease infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-pulse-slow {
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-disc-rotation 5s linear infinite;
+      -moz-animation: flower-disc-rotation 5s linear infinite;
+      -ms-animation: flower-disc-rotation 5s linear infinite;
+      -o-animation: flower-disc-rotation 5s linear infinite;
+      animation: flower-disc-rotation 5s linear infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-orbit-slow {
+      -webkit-animation: flower-orbit 8s ease infinite;
+      -moz-animation: flower-orbit 8s ease infinite;
+      -ms-animation: flower-orbit 8s ease infinite;
+      -o-animation: flower-orbit 8s ease infinite;
+      animation: flower-orbit 8s ease infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-orbit {
+      -webkit-animation: flower-orbit 6s ease infinite;
+      -moz-animation: flower-orbit 6s ease infinite;
+      -ms-animation: flower-orbit 6s ease infinite;
+      -o-animation: flower-orbit 6s ease infinite;
+      animation: flower-orbit 6s ease infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-orbit-reverse {
+      -webkit-animation: flower-orbit-reverse 6s ease infinite;
+      -moz-animation: flower-orbit-reverse 6s ease infinite;
+      -ms-animation: flower-orbit-reverse 6s ease infinite;
+      -o-animation: flower-orbit-reverse 6s ease infinite;
+      animation: flower-orbit-reverse 6s ease infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-orbit-fast {
+      -webkit-animation: flower-orbit 4s ease infinite;
+      -moz-animation: flower-orbit 4s ease infinite;
+      -ms-animation: flower-orbit 4s ease infinite;
+      -o-animation: flower-orbit 4s ease infinite;
+      animation: flower-orbit 4s ease infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-pulse-slow {
       -webkit-transform-origin: 50% 50%;
-      -webkit-animation: flower-pulsation 10s ease infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-pulse {
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-pulsation 10s ease infinite;
+      -moz-animation: flower-pulsation 10s ease infinite;
+      -ms-animation: flower-pulsation 10s ease infinite;
+      -o-animation: flower-pulsation 10s ease infinite;
+      animation: flower-pulsation 10s ease infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-pulse {
       -webkit-transform-origin: 50% 50%;
-      -webkit-animation: flower-pulsation 6s ease infinite; }
-    svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-pulse-fast {
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-pulsation 6s ease infinite;
+      -moz-animation: flower-pulsation 6s ease infinite;
+      -ms-animation: flower-pulsation 6s ease infinite;
+      -o-animation: flower-pulsation 6s ease infinite;
+      animation: flower-pulsation 6s ease infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-petal.ci-petal-pulse-fast {
       -webkit-transform-origin: 50% 50%;
-      -webkit-animation: flower-pulsation 4s ease infinite; }
-svg.ci-plant .ci-animated-flower .ci-flower-disc {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-name: flower-disc-rotation;
-  -webkit-animation-duration: normal;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-duration: 10s; }
-  svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-slow {
-    -webkit-animation-duration: 20s; }
-  svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-veryslow {
-    -webkit-animation-duration: 30s; }
-  svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-fast {
-    -webkit-animation-duration: 4s; }
-  svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-reverse {
-    -webkit-animation-name: flower-disc-rotation-reverse; }
-svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse-slow {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flower-pollen-pulsation 15s ease infinite; }
-svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flower-pollen-pulsation 8s ease infinite; }
-svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse-fast {
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation: flower-pollen-pulsation 5s ease infinite; }
-svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal {
-  fill: #f04543;
-  stroke: none; }
-  svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal path {
-    fill: #f04543; }
-  svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal:last-child {
-    fill: #ee2e2b; }
-  svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal:first-child {
-    fill: #f25d5a; }
-svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal {
-  fill: #f581c5;
-  stroke: none; }
-  svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal path {
-    fill: #f581c5; }
-  svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal:last-child {
-    fill: #f469bb; }
-  svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal:first-child {
-    fill: #f798d0; }
-svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal {
-  fill: #863866;
-  stroke: none; }
-  svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal path {
-    fill: #863866; }
-  svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal:last-child {
-    fill: #743059; }
-  svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal:first-child {
-    fill: #983f74; }
-svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal {
-  fill: #9be9f4;
-  stroke: none; }
-  svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal path {
-    fill: #9be9f4; }
-  svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal:last-child {
-    fill: #84e4f1; }
-  svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal:first-child {
-    fill: #b2eef6; }
-svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal {
-  fill: #c4cd14;
-  stroke: none; }
-  svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal path {
-    fill: #c4cd14; }
-  svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal:last-child {
-    fill: #aeb612; }
-  svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal:first-child {
-    fill: #dae416; }
-svg.ci-plant .ci-animated-flower.ci-flower-info.ci-windy {
-  -webkit-transform-origin: right bottom;
-  -webkit-animation: flower-wind-effect 10s ease infinite; }
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-pulsation 4s ease infinite;
+      -moz-animation: flower-pulsation 4s ease infinite;
+      -ms-animation: flower-pulsation 4s ease infinite;
+      -o-animation: flower-pulsation 4s ease infinite;
+      animation: flower-pulsation 4s ease infinite; }
+  svg.ci-plant .ci-animated-flower .ci-flower-disc {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-name: flower-disc-rotation;
+    -webkit-animation-duration: normal;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s; }
+    svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-slow {
+      -webkit-animation-duration: 20s; }
+    svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-veryslow {
+      -webkit-animation-duration: 30s; }
+    svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-fast {
+      -webkit-animation-duration: 4s; }
+    svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-reverse {
+      -webkit-animation-name: flower-disc-rotation-reverse; }
+  svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse-slow {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation: flower-pollen-pulsation 15s ease infinite; }
+  svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation: flower-pollen-pulsation 8s ease infinite; }
+  svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse-fast {
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation: flower-pollen-pulsation 5s ease infinite; }
+  svg.ci-plant .ci-animated-flower.ci-flower-info.ci-windy {
+    -webkit-transform-origin: right bottom;
+    -webkit-animation: flower-wind-effect 10s ease infinite; }
+  svg.ci-plant .ci-animated-flower.ci-flower-stop-animation, svg.ci-plant .ci-animated-flower.ci-flower-stop-animation.ci-windy, svg.ci-plant .ci-animated-flower.ci-flower-stop-animation .ci-flower-petals .ci-flower-petal, svg.ci-plant .ci-animated-flower.ci-flower-stop-animation .ci-flower-disc, svg.ci-plant .ci-animated-flower.ci-flower-stop-animation .ci-flower-pollen {
+    -webkit-animation-play-state: paused; }
+  svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal {
+    fill: #f04543;
+    stroke: none; }
+    svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal path {
+      fill: #f04543; }
+    svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal:last-child {
+      fill: #ee2e2b; }
+    svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal:first-child {
+      fill: #f25d5a; }
+  svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal {
+    fill: #f581c5;
+    stroke: none; }
+    svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal path {
+      fill: #f581c5; }
+    svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal:last-child {
+      fill: #f469bb; }
+    svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal:first-child {
+      fill: #f798d0; }
+  svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal {
+    fill: #863866;
+    stroke: none; }
+    svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal path {
+      fill: #863866; }
+    svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal:last-child {
+      fill: #743059; }
+    svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal:first-child {
+      fill: #983f74; }
+  svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal {
+    fill: #9be9f4;
+    stroke: none; }
+    svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal path {
+      fill: #9be9f4; }
+    svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal:last-child {
+      fill: #84e4f1; }
+    svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal:first-child {
+      fill: #b2eef6; }
+  svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal {
+    fill: #c4cd14;
+    stroke: none; }
+    svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal path {
+      fill: #c4cd14; }
+    svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal:last-child {
+      fill: #aeb612; }
+    svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal:first-child {
+      fill: #dae416; }
 
 .btn .ci-animated-flower, .flower-pot .ci-animated-flower {
   position: absolute;
@@ -831,6 +991,57 @@ svg.ci-plant .ci-animated-flower.ci-flower-info.ci-windy {
   opacity: 1; }
   #cinnamon-seed.fadeout {
     opacity: 0; }
+
+#cinnaphone {
+  width: 300px;
+  height: 622px;
+  -webkit-transition: -webkit-transform .5s ease;
+  -moz-transition: -moz-transform .5s ease;
+  -ms-transition: -ms-transform .5s ease;
+  -o-transition: -o-transform .5s ease;
+  transition: transform .5s ease;
+  -webkit-transform: translateY(-25%);
+  -moz-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  -o-transform: translateY(-25%);
+  transform: translateY(-25%); }
+  #cinnaphone.bounceout {
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+    transform: translateY(0%); }
+  #cinnaphone .ci-presentation-phone {
+    background: url(../images/resources/sprite-cinnaphone.png);
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; }
+    #cinnaphone .ci-presentation-phone.first-phone {
+      background-position: 0px 0px; }
+    #cinnaphone .ci-presentation-phone.second-phone {
+      background-position: 0px -672px; }
+    #cinnaphone .ci-presentation-phone.third-phone {
+      background-position: 0px -1352px; }
+    #cinnaphone .ci-presentation-phone.active {
+      opacity: 1; }
+  #cinnaphone .ci-presentation-back {
+    background: url(../images/resources/sprite-cinnaphone.png);
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-position: 0px -2042px; }
 
 .custom-form .form-control {
   border: 2px solid #897c46;
