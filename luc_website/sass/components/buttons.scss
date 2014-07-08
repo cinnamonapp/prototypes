@@ -65,5 +65,12 @@ $button_styles: "primary" $action_primary,
 			background: #61C1A2;
 			border-color: #61C1A2;
 		}
+
+		&:active, &.active{
+			background: darken(#61C1A2, 5%);
+			border-color: darken(#61C1A2, 5%);
+			box-shadow: none;
+		}
+
 	}
 }

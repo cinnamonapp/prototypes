@@ -740,6 +740,10 @@ hr {
       color: rgba(255, 255, 255, 0.8);
       background: #61C1A2;
       border-color: #61C1A2; }
+    .btn.btn-maincta:active, .btn.btn-maincta.active {
+      background: #4fba97;
+      border-color: #4fba97;
+      box-shadow: none; }
 
 /*Primary button*/
 .link {
