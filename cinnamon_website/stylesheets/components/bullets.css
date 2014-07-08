@@ -1,21 +1,18 @@
 /*
-Syntax error: Undefined variable: "$action_primary".
-        on line 27 of sass/helpers/flowers.scss
+Syntax error: Undefined variable: "$section_primary".
+        on line 3 of sass/components/bullets.scss
 
-22: 	
-23: *\/
-24: 
-25: 
-26: // SET YOUR STYLES HERE
-27: $flower_colors: "primary" $action_primary, 
-28: 				"warning" $action_warning,
-29: 				"danger"  $action_danger,
-30: 				"info"    $action_info,
-31: 				"success" $action_success;
-32: 
+1: 
+2: // SET YOUR STYLES HERE
+3: $bullet_styles: "primary" $section_primary, 
+4: 				"default" $base_color,
+5: 				"success" $section_success;
+6: 
+7: // Bullet default style
+8: .bullet{
 
 Backtrace:
-sass/helpers/flowers.scss:27
+sass/components/bullets.scss:3
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `block in _perform'
@@ -59,4 +56,4 @@ sass/helpers/flowers.scss:27
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$action_primary\".\A         on line 27 of sass/helpers/flowers.scss\A \A 22: 	\A 23: */\A 24: \A 25: \A 26: // SET YOUR STYLES HERE\A 27: $flower_colors: \"primary\" $action_primary, \A 28: 				\"warning\" $action_warning,\A 29: 				\"danger\"  $action_danger,\A 30: 				\"info\"    $action_info,\A 31: 				\"success\" $action_success;\A 32: "; }
+  content: "Syntax error: Undefined variable: \"$section_primary\".\A         on line 3 of sass/components/bullets.scss\A \A 1: \A 2: // SET YOUR STYLES HERE\A 3: $bullet_styles: \"primary\" $section_primary, \A 4: 				\"default\" $base_color,\A 5: 				\"success\" $section_success;\A 6: \A 7: // Bullet default style\A 8: .bullet{"; }

@@ -8,7 +8,7 @@ requirejs.config({
 
 
 require(["jquery", "waypoints"], function ($, W) {
-	require(["lib/caret-blink", "lib/bootstrap.min", "lib/window-sized", "lib/vertical-align", "lib/jquery.scrollTo.min", "lib/snap.svg-min"], function (){
+	require(["lib/caret-blink", "lib/bootstrap.min", "lib/window-sized", "lib/vertical-align", "lib/jquery.scrollTo.min", "lib/snap.svg-min", "lib/bullets"], function (){
 		require(["cinnamon"]);
 
 

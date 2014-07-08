@@ -10,8 +10,12 @@
 						.ci-flower-petal		 - Every single petal
 					.ci-flower-disc				 - A group of shapes that form a flower skeleton
 					.ci-flower-pollen			 - The yellow center circle of a flower
+					.ci-flower-body
 
 				.ci-body						 - It's the main usually bottom branch of the plant (Not so useful actually)
+
+				.ci-leaves
+					.ci-leave
 
 
 	========================================================================================================================
@@ -29,231 +33,223 @@ $flower_colors: "primary" $action_primary,
 $default_size_flower: 80px;
 
 
-// The svg container of the plant
-svg.ci-plant{
+/* ================== THE SVG.ci-plant CONTAINER ================== */
+
+	svg.ci-plant{
 
 
-	// A single animated flower - With everything it could have
-	.ci-animated-flower{
+		/* ================== SINGLE ANIMATED FLOWER g.ci-animated-flower ================== */
 
-		@include cB(transition, opacity .5s ease);
-
-		.ci-flower-petals{
-			padding: 10px;
-			height: $default_size_flower;
-			width: $default_size_flower;
-
-			// Flower sizes
-			$small_size_flower: 60px;
-			&.flower-sm{
-				height: $small_size_flower;
-				width: $small_size_flower;
-			}
-
-			$large_size_flower: 100px;
-			&.flower-lg{
-				height: $large_size_flower;
-				width: $large_size_flower;
-			}
-
-			$xlarge_size_flower: 150px;
-			&.flower-xl{
-				height: $xlarge_size_flower;
-				width: $xlarge_size_flower;
-			}
-
-			.ci-flower-petal{
-				opacity: .7;
-			}
-
-		}
+			.ci-animated-flower{
+				@include cB(transition, opacity .5s ease);
 
 
-		// NON FOCUSED FLOWER
-		&.ci-flower-blur{
-			opacity: 0.1;
-			z-index: -1;
-		}
+				/* ================== FLOWER PETALS GROUP g.ci-flower-petals ================== */
+
+					.ci-flower-petals{
+						padding: 10px;
+						height: $default_size_flower;
+						width: $default_size_flower;
+
+						// Flower sizes
+						$small_size_flower: 60px;
+						&.flower-sm{
+							height: $small_size_flower;
+							width: $small_size_flower;
+						}
+
+						$large_size_flower: 100px;
+						&.flower-lg{
+							height: $large_size_flower;
+							width: $large_size_flower;
+						}
+
+						$xlarge_size_flower: 150px;
+						&.flower-xl{
+							height: $xlarge_size_flower;
+							width: $xlarge_size_flower;
+						}
 
 
-		// Single petal animation
-		.ci-flower-petal {
-			-webkit-transition: -webkit-transform .5s ease;
-			
-			// Petal rotation
-			&.ci-petal-rotate-slow{
-				@include cB(transform-origin, 50% 50%);
-				@include cB(animation, flower-disc-rotation 15s linear infinite);
-			}
+						/* ================== SINGLE PETAL OF THE GROUP ================== */
 
-			&.ci-petal-rotate{
-				@include cB(transform-origin, 50% 50%);
-				@include cB(animation, flower-disc-rotation 10s linear infinite);
-			}
+						.ci-flower-petal {
+							opacity: .7; // Generic opacity on petal
+							
+							// Petal rotation
+							&.ci-petal-rotate-slow{
+								@include cB(transform-origin, 50% 50%);
+								@include cB(animation, flower-disc-rotation 15s linear infinite);
+							}
 
-			&.ci-petal-rotate-fast{
-				@include cB(transform-origin, 50% 50%);
-				@include cB(animation, flower-disc-rotation 5s linear infinite);
-			}
+							&.ci-petal-rotate{
+								@include cB(transform-origin, 50% 50%);
+								@include cB(animation, flower-disc-rotation 10s linear infinite);
+							}
 
-
-			// Petal ellipse
-			&.ci-petal-orbit-slow{
-				@include cB(animation, flower-orbit 8s ease infinite);
-			}
-
-			&.ci-petal-orbit{
-				@include cB(animation, flower-orbit 6s ease infinite);
-			}
-
-			&.ci-petal-orbit-reverse{
-				@include cB(animation, flower-orbit-reverse 6s ease infinite);
-			}
-
-			&.ci-petal-orbit-fast{
-				@include cB(animation, flower-orbit 4s ease infinite);
-			}
+							&.ci-petal-rotate-fast{
+								@include cB(transform-origin, 50% 50%);
+								@include cB(animation, flower-disc-rotation 5s linear infinite);
+							}
 
 
-			// Petal pulse
-			&.ci-petal-pulse-slow{
-				@include cB(transform-origin, 50% 50%);
-				@include cB(animation, flower-pulsation 10s ease infinite);
-			}
+							// Petal ellipse
+							&.ci-petal-orbit-slow{
+								@include cB(animation, flower-orbit 8s ease infinite);
+							}
 
-			&.ci-petal-pulse{
-				@include cB(transform-origin, 50% 50%);
-				@include cB(animation, flower-pulsation 6s ease infinite);
-			}
+							&.ci-petal-orbit{
+								@include cB(animation, flower-orbit 6s ease infinite);
+							}
 
-			&.ci-petal-pulse-fast{
-				@include cB(transform-origin, 50% 50%);
-				@include cB(animation, flower-pulsation 4s ease infinite);
-			}
+							&.ci-petal-orbit-reverse{
+								@include cB(animation, flower-orbit-reverse 6s ease infinite);
+							}
 
-		}
-
-		// DISC FLOWER ANIMATION
-		.ci-flower-disc{
-			-webkit-transform-origin: 50% 50%;
-			-webkit-animation-name: flower-disc-rotation;
-			-webkit-animation-duration: normal;
-			-webkit-animation-timing-function: linear;
-			-webkit-animation-iteration-count: infinite;
-
-			-webkit-animation-duration: 10s;
-
-			&.ci-disc-slow{
-				-webkit-animation-duration: 20s;
-			}
-
-			&.ci-disc-veryslow{
-				-webkit-animation-duration: 30s;
-			}
-
-			&.ci-disc-fast{
-				-webkit-animation-duration: 4s;
-			}
-
-			&.ci-disc-reverse{
-				-webkit-animation-name: flower-disc-rotation-reverse;
-			}
-		}
+							&.ci-petal-orbit-fast{
+								@include cB(animation, flower-orbit 4s ease infinite);
+							}
 
 
-		// POLLEN FLOWER ANIMATION
-		.ci-flower-pollen{
+							// Petal pulse
+							&.ci-petal-pulse-slow{
+								@include cB(transform-origin, 50% 50%);
+								@include cB(animation, flower-pulsation 10s ease infinite);
+							}
 
-			// Petal pulse
-			&.ci-pollen-pulse-slow{
-				-webkit-transform-origin: 50% 50%;
-				-webkit-animation: flower-pollen-pulsation 15s ease infinite;
-			}
+							&.ci-petal-pulse{
+								@include cB(transform-origin, 50% 50%);
+								@include cB(animation, flower-pulsation 6s ease infinite);
+							}
 
-			&.ci-pollen-pulse{
-				-webkit-transform-origin: 50% 50%;
-				-webkit-animation: flower-pollen-pulsation 8s ease infinite;
-			}
+							&.ci-petal-pulse-fast{
+								@include cB(transform-origin, 50% 50%);
+								@include cB(animation, flower-pulsation 4s ease infinite);
+							}
 
-			&.ci-pollen-pulse-fast{
-				-webkit-transform-origin: 50% 50%;
-				-webkit-animation: flower-pollen-pulsation 5s ease infinite;
-			}
+						}
 
-		}
-
-		&.ci-flower-info{
-			&.ci-windy{
-				-webkit-transform-origin: right bottom;
-				-webkit-animation: flower-wind-effect 10s ease infinite;
-			}
-		}
-
-
-		// Stop animation
-		&.ci-flower-stop-animation, 
-		&.ci-flower-stop-animation.ci-windy, 
-		&.ci-flower-stop-animation .ci-flower-petals .ci-flower-petal,
-		&.ci-flower-stop-animation .ci-flower-disc,
-		&.ci-flower-stop-animation .ci-flower-pollen{
-			-webkit-animation-play-state: paused;
-		}
-
-
-
-
-		// Flower styles [E.g. .ci-flower-primary] - Pick from above => $flower_colors
-		@each $style in $flower_colors{
-			$loop_flower_name: nth($style, 1);
-			$loop_flower_color: nth($style, 2);
-
-			&.ci-flower-#{$loop_flower_name} {
-				.ci-flower-petals .ci-flower-petal {
-					fill: darken($loop_flower_color, 10%);
-					stroke: none;
-
-					path{
-						fill: darken($loop_flower_color, 10%);
 					}
 
-					&:last-child{
-						fill: darken($loop_flower_color, 15%);
+
+				// NON FOCUSED FLOWER
+				&.ci-flower-blur{
+					opacity: 0.1;
+					z-index: -1;
+				}
+
+
+				// DISC FLOWER ANIMATION
+				.ci-flower-disc{
+					@include cB(transform-origin, 50% 50%);
+					@include cB(animation-name, flower-disc-rotation);
+					@include cB(animation-duration, normal);
+					@include cB(animation-timing-function, linear);
+					@include cB(animation-iteration-count, infinite);
+
+					@include cB(animation-duration, 10s);
+
+					&.ci-disc-slow{
+						@include cB(animation-duration, 20s);
 					}
 
-					&:first-child{
-						fill: darken($loop_flower_color, 5%);
+					&.ci-disc-veryslow{
+						@include cB(animation-duration, 30s);
+					}
+
+					&.ci-disc-fast{
+						@include cB(animation-duration, 4s);
+					}
+
+					&.ci-disc-reverse{
+						@include cB(animation-name, flower-disc-rotation-reverse);
 					}
 				}
+
+
+				// POLLEN FLOWER ANIMATION
+				.ci-flower-pollen{
+
+					// Petal pulse
+					&.ci-pollen-pulse-slow{
+						@include cB(transform-origin, 50% 50%);
+						@include cB(animation, flower-pollen-pulsation 15s ease infinite);
+					}
+
+					&.ci-pollen-pulse{
+						@include cB(transform-origin, 50% 50%);
+						@include cB(animation, flower-pollen-pulsation 8s ease infinite);
+					}
+
+					&.ci-pollen-pulse-fast{
+						@include cB(transform-origin, 50% 50%);
+						@include cB(animation, flower-pollen-pulsation 5s ease infinite);
+					}
+
+				}
+
+
+				/* ================== FLOWER ANIMATION CONTROLS ================== */
+
+				// Stop animation
+				&.ci-flower-stop-animation, 
+				&.ci-flower-stop-animation.ci-windy, 
+				&.ci-flower-stop-animation .ci-flower-petals .ci-flower-petal,
+				&.ci-flower-stop-animation .ci-flower-disc,
+				&.ci-flower-stop-animation .ci-flower-pollen{
+					@include cB(animation-play-state, paused);
+				}
+
+
+
+				/* ======================== FLOWER COLORS ======================== */
+
+				// Flower styles [E.g. .ci-flower-primary] - Pick from above => $flower_colors
+				@each $style in $flower_colors{
+					$loop_flower_name: nth($style, 1);
+					$loop_flower_color: nth($style, 2);
+
+					&.ci-flower-#{$loop_flower_name} {
+						.ci-flower-petals .ci-flower-petal {
+							fill: darken($loop_flower_color, 10%);
+							stroke: none;
+
+							path{
+								fill: darken($loop_flower_color, 10%);
+							}
+
+							&:last-child{
+								fill: darken($loop_flower_color, 15%);
+							}
+
+							&:first-child{
+								fill: darken($loop_flower_color, 5%);
+							}
+						}
+					}
+				}
+
+				// Custom rule for blue flower wind effect
+				&.ci-flower-info{
+					&.ci-windy{
+						@include cB(transform-origin, right bottom);
+						@include cB(animation, flower-wind-effect 10s ease infinite);
+					}
+				}
+
+
+
 			}
-		}
 
 
 
-		// Color carousel
-		// &.flower-carousel{
-		// 	// Style for petal carousel
-		// 	.ci-flower-petals{
-		// 		.ci-flower-petal {
-
-		// 			&.ci-petal-sm{
-		// 				-webkit-animation: flower-color-carousel 30s linear infinite, flower-orbit 5s ease infinite;
-		// 			}
-		// 			&.ci-petal-md{
-		// 				-webkit-animation: flower-color-carousel 30s linear infinite, flower-orbit 8s ease infinite;
-		// 			}
-		// 			&.ci-petal-lg{
-		// 				-webkit-animation: flower-color-carousel 30s linear infinite, flower-orbit 7s ease infinite;
-		// 			}
-
-		// 		}
-		// 	}
-		// }
 	}
 
+/* ================== END OF SVG CONTAINER ================== */
 
 
-}
 
+// CUSTOM RULES OF FLOWER POT
 .btn,.flower-pot{
 	.ci-animated-flower{
 		position: absolute;
