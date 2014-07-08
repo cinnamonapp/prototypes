@@ -3,6 +3,7 @@
 		<title>Deployd website</title>
 		<script data-main="js/main" src="js/require.js"></script>
 		<link rel="stylesheet" type="text/css" href="stylesheets/lib/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/lib/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	</head>
@@ -234,16 +235,27 @@
 									We would love your help to make the product better!
 									<br>
 									<br>
-									<form action="#" class="custom-form" method="get" accept-charset="utf-8">
+									<form id="custom-email-form" action="https://docs.google.com/a/pazienti.org/forms/d/1pJLqnQucOgWsrmxxqFD6XhZp62V-WBAzsvBj4XYAeSM/formResponse" class="custom-form" method="POST" accept-charset="utf-8">
 										<div class="row">
 											<div class="col-xs-6 padding-right">
-												<input type="email" name="email" class="form-control input-lg" placeholder="Type your email here...">
+												<input type="email" name="entry.1874447563" class="form-control input-lg" placeholder="Type your email here...">
 											</div>
 											<div class="col-xs-4 no-padding-left">
 												<button type="submit" class="btn btn-lg btn-default btn-outline">Sign up</button>
 											</div>
 										</div>
 									</form>
+
+									<p id="thankyou-message" class="hidden">
+										<i>Thank your for your interest! We'll be in touch soon.</i>
+									</p>
+
+									<h2 class="margin-top-5 no-margin-bottom">
+										<a href="#" target="_blank" title="Reach us by Email" class="link link-social link-square"><i class="fa fa-envelope-o"></i></a>
+										<a href="#" target="_blank" title="Follow us on Facebook" class="link link-social link-square"><i class="fa fa-facebook"></i></a>
+										<a href="#" target="_blank" title="Follow us on Twitter" class="link link-social link-square"><i class="fa fa-twitter"></i></a>
+									</h2>
+
 								</p>
 							</div>
 						</div>

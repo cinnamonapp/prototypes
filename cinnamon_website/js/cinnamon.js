@@ -10,13 +10,16 @@ $(document).ready(function () {
 		});
 	};
 
-	$('#TopNavigation a').click(function (event) {
+	$('a').click(function (event) {
 		var href = $(this).attr("href");
-		var offset = parseInt($(href).attr("data-scroll-offset") || 0);
 
 		if(href.indexOf("#") == 0){
+			var offset = parseInt($(href).attr("data-scroll-offset") || 0);
+			
 			event.preventDefault();
 
+			$.scrollTo.window().queue([]).stop();
+			
 			scrollTo(href, offset);
 		}
 
@@ -60,6 +63,27 @@ $(document).ready(function () {
 		$(cinnaphones[index]).addClass("active");
 	};
 
-	var time = window.setInterval(function () {
-	}, 5000);
+
+
+
+
+	// Custom email form
+	// Email addresses form
+	$("#custom-email-form").submit(function (event) {
+		event.preventDefault();
+
+		var data = $(this).serialize();
+
+		$.ajax({
+			url: $(this).attr("action"),
+			type: $(this).attr("method"),
+			data: data
+		});
+
+		$('#custom-email-form').addClass('hidden');
+		$('#thankyou-message').removeClass('hidden');
+
+		return false;
+	});
+
 });
