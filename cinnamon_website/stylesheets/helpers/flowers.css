@@ -1,20 +1,21 @@
 /*
 Syntax error: Undefined variable: "$action_primary".
-        on line 23 of sass/helpers/flowers.scss
+        on line 27 of sass/helpers/flowers.scss
 
-18: 	
-19: *\/
-20: 
-21: 
-22: // SET YOUR STYLES HERE
-23: $flower_colors: "primary" $action_primary, 
-24: 				"warning" $action_warning,
-25: 				"danger"  $action_danger,
-26: 				"info"    $action_info,
-27: 				"success" $action_success;
-28: 
+22: 	
+23: *\/
+24: 
+25: 
+26: // SET YOUR STYLES HERE
+27: $flower_colors: "primary" $action_primary, 
+28: 				"warning" $action_warning,
+29: 				"danger"  $action_danger,
+30: 				"info"    $action_info,
+31: 				"success" $action_success;
+32: 
 
 Backtrace:
+<<<<<<< HEAD
 sass/helpers/flowers.scss:23
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
@@ -55,8 +56,50 @@ sass/helpers/flowers.scss:23
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p353/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+=======
+sass/helpers/flowers.scss:27
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `block in _perform'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `map'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `_perform'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `block in _perform'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `map'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/list.rb:71:in `_perform'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:327:in `visit_variable'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+>>>>>>> 11c89b573e6e4e512765618dd82187ad2e9adad8
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$action_primary\".\A         on line 23 of sass/helpers/flowers.scss\A \A 18: 	\A 19: */\A 20: \A 21: \A 22: // SET YOUR STYLES HERE\A 23: $flower_colors: \"primary\" $action_primary, \A 24: 				\"warning\" $action_warning,\A 25: 				\"danger\"  $action_danger,\A 26: 				\"info\"    $action_info,\A 27: 				\"success\" $action_success;\A 28: "; }
+  content: "Syntax error: Undefined variable: \"$action_primary\".\A         on line 27 of sass/helpers/flowers.scss\A \A 22: 	\A 23: */\A 24: \A 25: \A 26: // SET YOUR STYLES HERE\A 27: $flower_colors: \"primary\" $action_primary, \A 28: 				\"warning\" $action_warning,\A 29: 				\"danger\"  $action_danger,\A 30: 				\"info\"    $action_info,\A 31: 				\"success\" $action_success;\A 32: "; }

@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Neuton:400,700,400italic);
 @import "lib/titillium";
+@import "lib/archer";
 
 // @import "lib/bourbon/bourbon";
 
@@ -20,6 +21,9 @@
 
 // H tags style
 @import "components/typography";
+
+// Bullets radio buttons
+@import "components/bullets";
 
 
 // Helpers animations

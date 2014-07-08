@@ -13,6 +13,8 @@ require(["jquery", "waypoints"], function ($, W) {
 			var href = $(this).attr("href");
 
 			if(href.indexOf("#") == 0){
+				$.scrollTo.window().queue([]).stop();
+
 				event.preventDefault();
 				$.scrollTo($(href), 1000, function () {
 					window.location.hash = href;

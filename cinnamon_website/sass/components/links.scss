@@ -20,7 +20,7 @@ $link_sizes:	"xs" 11px,
 	color: inherit;
 	font-size: inherit;
 	padding: 0;
-
+	font-weight: 600;
 
 	// STYLES FROM $link_styles on top
 	@each $style in $link_styles{
@@ -69,10 +69,10 @@ $link_sizes:	"xs" 11px,
 	}
 
 	&.link-social{
-		color: #FFBC58;
+		color: $base_color;
 
 		&:hover{
-			color: $base_color;
+			color: lighten($base_color, 5%);
 		}
 	}
 }
