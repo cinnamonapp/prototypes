@@ -11,6 +11,7 @@ $button_styles: "primary" $action_primary,
 .btn{
 
 	@include typo_brand_strong;
+	outline: none !important;
 
 	// STYLES FROM $button_styles on top
 	@each $style in $button_styles{
@@ -34,7 +35,8 @@ $button_styles: "primary" $action_primary,
 			&:active, &.active{
 				background: darken($loop_button_color, 5%);
 				border-color: darken($loop_button_color, 5%);
-				box-shadow: inset 0px 3px 3px darken($loop_button_color, 10%);
+				box-shadow: none;
+				// box-shadow: inset 0px 3px 3px darken($loop_button_color, 10%);
 			}
 
 			&.btn-outline{
@@ -42,9 +44,15 @@ $button_styles: "primary" $action_primary,
 				border: 2px solid $loop_button_color;
 				background: transparent;
 
-				&:hover{
+				&:hover, &.hover{
 					color: white;
 					background: $loop_button_color;
+				}
+
+				&:active, &.active{
+					color: white;
+					background: darken($loop_button_color, 5%);
+
 				}
 			}
 

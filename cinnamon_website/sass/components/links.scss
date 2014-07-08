@@ -1,11 +1,11 @@
 // SET YOUR STYLES HERE
 $link_styles:	"primary" $action_primary, 
-				"warning" $action_warning,
+				"warning" darken($action_warning, 10%),
 				"danger"  $action_danger,
-				"info"    $action_info,
+				"info"    darken($action_info, 15%),
 				"white"   white,
 				"default" $base_color,
-				"success" $action_success;
+				"success" darken($action_success, 10%);
 
 // Sizes
 $link_sizes:	"xs" 11px, 
@@ -20,7 +20,7 @@ $link_sizes:	"xs" 11px,
 	color: inherit;
 	font-size: inherit;
 	padding: 0;
-	font-weight: 600;
+	font-weight: 400;
 
 	// STYLES FROM $link_styles on top
 	@each $style in $link_styles{
@@ -32,7 +32,8 @@ $link_sizes:	"xs" 11px,
 			color: $loop_link_color;
 			text-decoration: underline;
 
-			&:hover{
+			&:hover, &.hover{
+				color: $loop_link_color;
 				text-decoration: none;
 			}
 
@@ -43,6 +44,12 @@ $link_sizes:	"xs" 11px,
 		}
 
 	}
+
+	// Pokerface
+	&.link-pokerface{
+		color: $base_color;
+	}
+
 
 	&.disabled, &:disabled{
 		opacity: 0.5;
@@ -64,7 +71,7 @@ $link_sizes:	"xs" 11px,
 
 	&.link-square{
 		display: inline-block;
-		width: 50px;
+		width: 40px;
 		text-align: center;
 	}
 

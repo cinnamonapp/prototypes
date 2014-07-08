@@ -63,17 +63,19 @@
 				</section>
 
 				<section class="section section-size-10">
-					<svg version="1.1" id="SmallFlowers" class="img-responsive ci-plant" style="height: 200%;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 viewBox="0 0 1314.5 1368.2" enable-background="new 0 0 1314.5 1368.2" xml:space="preserve">
-						<g>
-							<g>
-								<path fill="#C6B978" d="M296.9,890.9H64.4c0,0,89.2,63.2,142.9,63.2C261,954.2,296.9,890.9,296.9,890.9z"/>
-							</g>
-						</g>
-						<g>
-							<g>
-								<path fill="#C6B978" d="M342.3,925.9H51.5c0,0,111.6,79.1,178.8,79.1C297.4,1005,342.3,925.9,342.3,925.9z"/>
-							</g>
+					<svg version="1.1" id="SmallFlowers" 
+						 class="img-responsive ci-plant" 
+						 style="height: 200%; z-index: 10;" 
+						 xmlns="http://www.w3.org/2000/svg" 
+						 xmlns:xlink="http://www.w3.org/1999/xlink" 
+						 x="0px" 
+						 y="0px"
+						 viewBox="0 0 1314.5 1368.2" 
+						 enable-background="new 0 0 1314.5 1368.2" 
+						 xml:space="preserve">
+						<g class="ci-leaves">
+							<path class="ci-leave" fill="#C6B978" d="M296.9,890.9H64.4c0,0,89.2,63.2,142.9,63.2C261,954.2,296.9,890.9,296.9,890.9z"/>
+							<path class="ci-leave" fill="#C6B978" d="M342.3,925.9H51.5c0,0,111.6,79.1,178.8,79.1C297.4,1005,342.3,925.9,342.3,925.9z"/>
 						</g>
 						<g>
 							<g>
@@ -90,7 +92,7 @@
 						<line fill="none" stroke="#8A7C46" stroke-width="2.5093" x1="388" y1="1327.8" x2="388" y2="1340.6"/>
 						<line fill="none" stroke="#8A7C46" stroke-width="2.5093" x1="388" y1="1346.8" x2="388" y2="1359.6"/>
 
-						<g class="ci-animated-flower ci-flower-success">
+						<g class="ci-animated-flower ci-flower-success" data-cmdlink="link-success">
 							<g class="ci-flower-petals">
 								<polygon class="ci-flower-petal ci-petal-rotate-slow" fill="#D8DE3B" stroke="#D8DE3B" stroke-width="0.5129" points="467.3,1298.8 474.1,1294.3 
 									481.9,1296.9 487.3,1290.8 495.4,1291.2 499.1,1284 507.1,1282.3 508.8,1274.3 516.1,1270.6 515.6,1262.5 521.7,1257 
@@ -122,7 +124,7 @@
 							<path class="ci-flower-pollen" fill="#F7E799" d="M472.3,1226.2c-4.6-1.4-9.6,1.2-11,5.9c-1.4,4.7,1.2,9.6,5.9,11
 								c4.7,1.4,9.6-1.2,11-5.9C479.6,1232.5,477,1227.6,472.3,1226.2z"/>
 						</g>
-						<g class="ci-animated-flower ci-flower-warning">
+						<g class="ci-animated-flower ci-flower-warning" data-cmdlink="link-warning">
 							<g class="ci-flower-petals">
 								<path class="ci-flower-petal ci-petal-orbit-fast" fill="#E683B4" d="M666.1,1185.9c-8.7-36.7-45.6-59.4-82.3-50.7c-36.7,8.7-59.4,45.6-50.7,82.3
 									c8.7,36.7,45.6,59.4,82.3,50.7C652.1,1259.5,674.8,1222.6,666.1,1185.9z"/>
@@ -148,7 +150,7 @@
 						
 						<polyline fill="none" stroke="#8A7C46" stroke-width="2.5093" points="388,1145.6 487.8,1145.6"/>
 						
-						<g class="ci-animated-flower ci-flower-primary">
+						<g class="ci-animated-flower ci-flower-primary" data-cmdlink="link-primary">
 							<g class="ci-flower-petals">
 								<g class="ci-flower-petal ci-petal-rotate">
 									<circle fill="#F07472" cx="552.1" cy="1069.4" r="50.8"/>
@@ -193,7 +195,7 @@
 								<line fill="none" stroke="#8A7C46" stroke-width="2.5093" x1="486.7" y1="1145.6" x2="542.4" y2="1089.9"/>
 							</g>
 						</g>
-						<g class="ci-animated-flower ci-flower-info ci-windy">
+						<g class="ci-animated-flower ci-flower-info ci-windy" data-cmdlink="link-info">
 							<g class="ci-flower-petals">
 								<circle class="ci-flower-petal ci-petal-pulse-fast" fill="#CCEBF2" cx="458" cy="1037" r="39.5"/>
 								<circle class="ci-flower-petal ci-petal-orbit" fill="#CCEBF2" cx="468.9" cy="1052" r="27.3"/>
@@ -240,8 +242,15 @@
 											<div class="col-xs-6 padding-right">
 												<input type="email" name="entry.1874447563" class="form-control input-lg" placeholder="Type your email here..." required>
 											</div>
-											<div class="col-xs-4 no-padding-left">
+											<div class="col-xs-2 no-padding-left no-padding-right">
 												<button type="submit" class="btn btn-lg btn-default btn-outline">Sign up</button>
+											</div>
+											<div class="col-xs-4">
+												<h3 class="captain half-margin-top text-center" style="margin-top: 6px;">
+													<a href="#" target="_blank" title="Reach us by Email" class="link link-social link-square"><i class="fa fa-envelope-o"></i></a>
+													<a href="#" target="_blank" title="Follow us on Facebook" class="link link-social link-square"><i class="fa fa-facebook"></i></a>
+													<a href="#" target="_blank" title="Follow us on Twitter" class="link link-social link-square"><i class="fa fa-twitter"></i></a>
+												</h2>
 											</div>
 										</div>
 									</form>
@@ -249,12 +258,6 @@
 									<p id="thankyou-message" class="hidden">
 										<i>Thank your for your interest! We'll be in touch soon.</i>
 									</p>
-
-									<h2 class="margin-top-5 no-margin-bottom">
-										<a href="#" target="_blank" title="Reach us by Email" class="link link-social link-square"><i class="fa fa-envelope-o"></i></a>
-										<a href="#" target="_blank" title="Follow us on Facebook" class="link link-social link-square"><i class="fa fa-facebook"></i></a>
-										<a href="#" target="_blank" title="Follow us on Twitter" class="link link-social link-square"><i class="fa fa-twitter"></i></a>
-									</h2>
 
 								</p>
 							</div>
@@ -268,7 +271,7 @@
 
 						<div class="row">
 							<div class="col-sm-6" style="position: static;">
-								<div id="cinnaphone">
+								<div id="cinnaphone" onclick="changeCinnaphoneSlide('next');">
 									<div class="ci-presentation-back"></div>
 									<div class="ci-presentation-phone first-phone active first"></div>
 									<div class="ci-presentation-phone second-phone"></div>
@@ -284,7 +287,7 @@
 									It also nudges you to do better<br> and alerts you when the goals you set are unmet.
 								</p>
 
-								<div class="bullet-group bullet-toggle-radio margin-top-5">
+								<div id="cinnaphone-bullet" class="bullet-group bullet-toggle-radio margin-top-5">
 									<a href="javascript: window.changeCinnaphoneSlide(0);" class="bullet bullet-sm active">
 									</a>
 									<a href="javascript: window.changeCinnaphoneSlide(1);" class="bullet bullet-sm">
@@ -319,17 +322,32 @@
 					<div class="ci-slide-one">
 
 						<div class="row">
-							<div class="col-sm-offset-6 col-sm-6">
+							<div class="col-sm-offset-6 col-sm-6" style="z-index: 10;">
 								<div class="section-header">
 									<h2>Growing a healthy life</h2>
 								</div>
 								<p class="sergent">
 									Cinnamon is a plant that reflects choices in your life. <br>
 									With its colorful and engaging system you can track 
-									<a href="javascript: void(0);" class="link link-default cmd-flower-animate" title="Track Blood Glucose"		data-flower-class="ci-flower-primary">blood glucose</a>, 
-									<a href="javascript: void(0);" class="link link-default cmd-flower-animate" title="Track Calories intake"	data-flower-class="ci-flower-warning">calories intake</a>, 
-									<a href="javascript: void(0);" class="link link-default cmd-flower-animate" title="Track Hydration"			data-flower-class="ci-flower-info">hydration</a> and 
-									<a href="javascript: void(0);" class="link link-default cmd-flower-animate" title="Track Steps"				data-flower-class="ci-flower-success">steps</a>.
+									<a href="javascript: void(0);" 
+										class="link link-primary link-pokerface cmd-flower-animate" 
+										title="Track Blood Glucose"		
+										data-flower-class="ci-flower-primary">blood glucose</a>, 
+
+									<a href="javascript: void(0);" 
+										class="link link-warning link-pokerface cmd-flower-animate" 
+										title="Track Calories intake"	
+										data-flower-class="ci-flower-warning">calories intake</a>, 
+
+									<a href="javascript: void(0);" 
+										class="link link-info link-pokerface cmd-flower-animate" 
+										title="Track Hydration"			
+										data-flower-class="ci-flower-info">hydration</a> and 
+
+									<a href="javascript: void(0);" 
+										class="link link-success link-pokerface cmd-flower-animate" 
+										title="Track Steps"				
+										data-flower-class="ci-flower-success">steps</a>.
 
 								</p>
 								<br>
