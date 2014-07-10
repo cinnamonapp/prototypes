@@ -132,4 +132,44 @@ $(document).ready(function () {
 		if($(this).val() == $(this).attr("placeholder"))
 			$(this).val("");
 	});
+
+
+
+
+
+
+
+	// FLOWER CORRECTIONS
+	adjust = function (need_adjustment) {
+		need_adjustment.forEach(function (element, index){
+			var box = element.getBBox();
+			var x = box.x;
+			var y = box.y;
+
+			var where = element.attr("data-origin") || "center center";
+
+			switch(where){
+				case "center center":
+					x += (box.width / 2);
+					y += (box.height / 2);
+				break;
+				case "bottom right":
+					x += (box.width);
+					y += (box.height);
+				break;
+			}
+
+			element.attr("style", "transform-origin: " + x + "px " + y + "px;");
+		});
+	}
+
+	var plant = Snap("#CIPrimaryPlantIllustrationSVG");
+	var need_adjustment1 = plant.selectAll(".ci-need-adjustment");
+
+	var plant = Snap("#CIPlantIllustration");
+	var need_adjustment2 = plant.selectAll(".ci-need-adjustment");
+
+	adjust(need_adjustment1);
+	adjust(need_adjustment2);
+
 });

@@ -601,12 +601,26 @@ p {
   to {
     -webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg); } }
 
+@keyframes flower-orbit {
+  from {
+    transform: rotate(0deg) translateX(10px) rotate(0deg); }
+
+  to {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg); } }
+
 @-webkit-keyframes flower-orbit-reverse {
   from {
     -webkit-transform: rotate(0deg) translateX(-10px) rotate(0deg); }
 
   to {
     -webkit-transform: rotate(-360deg) translateX(-10px) rotate(360deg); } }
+
+@keyframes flower-orbit-reverse {
+  from {
+    transform: rotate(0deg) translateX(-10px) rotate(0deg); }
+
+  to {
+    transform: rotate(-360deg) translateX(-10px) rotate(360deg); } }
 
 @-webkit-keyframes flower-pulsation {
   from {
@@ -618,6 +632,16 @@ p {
   to {
     -webkit-transform: scale(1); } }
 
+@keyframes flower-pulsation {
+  from {
+    transform: scale(1); }
+
+  50% {
+    transform: scale(1.2); }
+
+  to {
+    transform: scale(1); } }
+
 @-webkit-keyframes flower-pollen-pulsation {
   from {
     -webkit-transform: scale(1); }
@@ -628,6 +652,16 @@ p {
   to {
     -webkit-transform: scale(1); } }
 
+@keyframes flower-pollen-pulsation {
+  from {
+    transform: scale(1); }
+
+  50% {
+    transform: scale(1.5); }
+
+  to {
+    transform: scale(1); } }
+
 @-webkit-keyframes flower-disc-rotation {
   from {
     -webkit-transform: rotate(0deg); }
@@ -635,12 +669,26 @@ p {
   to {
     -webkit-transform: rotate(360deg); } }
 
+@keyframes flower-disc-rotation {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
+
 @-webkit-keyframes flower-disc-rotation-reverse {
   from {
     -webkit-transform: rotate(0deg); }
 
   to {
     -webkit-transform: rotate(-360deg); } }
+
+@keyframes flower-disc-rotation-reverse {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(-360deg); } }
 
 @-webkit-keyframes flower-wind-effect {
   from {
@@ -653,6 +701,22 @@ p {
     -webkit-transform: rotate(-5deg); } }
 
 @-webkit-keyframes flower-color-carousel {
+  0% {
+    fill: #c9f3f9; }
+
+  25% {
+    fill: #f47472; }
+
+  50% {
+    fill: #f9b0db; }
+
+  75% {
+    fill: #e1ea2a; }
+
+  100% {
+    fill: #c9f3f9; } }
+
+@keyframes flower-color-carousel {
   0% {
     fill: #c9f3f9; }
 
