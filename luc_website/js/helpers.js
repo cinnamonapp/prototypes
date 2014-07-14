@@ -131,6 +131,13 @@ $(document).ready(function () {
 			data: data
 		});
 
+		// FACEBOOK PIXEL TRACKING
+		window._fbq.push(['track', '6017665108426', {'value':'0.01','currency':'EUR'}]);
+		var img = document.createElement('img');
+		img.src = "https://www.facebook.com/tr?ev=6017665108426&amp;cd[value]=0.01&amp;cd[currency]=EUR&amp;noscript=1";
+		img.height = 0; img.width = 0;
+		document.body.appendChild(img);
+
 		$('#custom-email-form').addClass('hidden');
 		$('#form-mascotte').addClass('bounce animated');
 		$('#thankyou-message').removeClass('hidden');
