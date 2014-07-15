@@ -39,7 +39,7 @@ $(document).ready(function () {
 	var unlockAction = function () {
 		window.setTimeout(function () {
 			lock = false;
-		}, 1200)
+		}, 1500)
 	};
 
 	var slidesArray = $("#cinnamon-seed, #cinnamon-plant, #cinnamon-routines, #cinnamon-outcomes, #cinnamon-download");
