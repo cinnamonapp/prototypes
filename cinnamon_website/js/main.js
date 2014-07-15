@@ -17,6 +17,8 @@ require(["jquery", "waypoints"], function ($, W) {
 				$(this).removeClass("fadeout");
 			else
 				$(this).addClass("fadeout");
+		}, {
+			offset: 200
 		});
 
 		$("#cinnamon-download").waypoint(function (direction) {

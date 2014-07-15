@@ -39,7 +39,7 @@ $(document).ready(function () {
 	var unlockAction = function () {
 		window.setTimeout(function () {
 			lock = false;
-		}, 2000)
+		}, 1200)
 	};
 
 	var slidesArray = $("#cinnamon-seed, #cinnamon-plant, #cinnamon-routines, #cinnamon-outcomes, #cinnamon-download");
@@ -54,12 +54,12 @@ $(document).ready(function () {
 			var its_the_moment = false;
 
 			// Scroll down
-			if(event.deltaY < 0){
+			if(event.deltaY < 0 && event.deltaY > -50){
 				its_the_moment = true;
 				selectedSlide++;
 			}
 			// Scroll up
-			else if(event.deltaY > 0){
+			else if(event.deltaY > 0 && event.deltaY > 50){
 				$("#scroll-up-indicator").addClass("fadeout");
 				its_the_moment = true;
 				selectedSlide--;
