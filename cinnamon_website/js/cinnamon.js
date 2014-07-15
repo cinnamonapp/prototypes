@@ -1,10 +1,14 @@
 
 $(document).ready(function () {
 
+	// NAVIGATION CONTROLS
+
 	var scrollTo = function (href, offset) {
 		$.scrollTo($(href), 1000, {
 			onAfter: function () {
 				// window.location.hash = href;
+				$(".scroll-to-active-right-now").removeClass("scroll-to-active-right-now");
+				$(href).addClass("scroll-to-active-right-now");
 			},
 			offset: offset
 		});
@@ -25,7 +29,60 @@ $(document).ready(function () {
 
 	});
 
-	scrollTo("#cinnamon-seed", 0);
+	$.scrollTo("#cinnamon-seed", 100, function(){
+		$("body").addClass("ready");
+	});
+
+	var lock = false;
+	var unlockAction = function () {
+		window.setTimeout(function () {
+			lock = false;
+		}, 2000)
+	};
+
+	var slidesArray = $("#cinnamon-seed, #cinnamon-plant, #cinnamon-routines, #cinnamon-outcomes, #cinnamon-download");
+	slidesArray.each(function (index) {
+		$(this).attr("data-slide-number", index);
+	});
+	
+	$(window).on("mousewheel", function (event) {
+		if(lock == false){
+			var selectedSlide = $("#cinnamon-seed.scroll-to-active-right-now, #cinnamon-plant.scroll-to-active-right-now, #cinnamon-routines.scroll-to-active-right-now, #cinnamon-outcomes.scroll-to-active-right-now, #cinnamon-download.scroll-to-active-right-now").attr("data-slide-number");
+			var nextSlide;
+			var its_the_moment = false;
+
+			// Scroll down
+			if(event.deltaY < -10){
+				its_the_moment = true;
+				selectedSlide++;
+			}
+			// Scroll up
+			else if(event.deltaY > 10){
+				$("#scroll-up-indicator").addClass("fadeout");
+				its_the_moment = true;
+				selectedSlide--;
+			}
+
+			if(its_the_moment){
+				nextSlide = slidesArray[selectedSlide];
+				var offset = parseInt($(nextSlide).attr("data-scroll-offset") || 0);
+				scrollTo(nextSlide, offset);
+				lock = true;
+				unlockAction();
+			}
+		}
+
+
+	});
+
+
+	window.setTimeout(function () {
+		$("#scroll-up-indicator").removeClass("fadeout");
+	}, 7000);
+
+	// -- ENDS NAVIGATION CONTROLS
+
+
 
 
 	// Flower cmd animation ========================

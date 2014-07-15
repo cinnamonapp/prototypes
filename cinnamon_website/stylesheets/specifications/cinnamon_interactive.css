@@ -1,23 +1,21 @@
 /*
 Syntax error: Undefined mixin 'cB'.
-        on line 69 of sass/specifications/cinnamon_interactive.scss, in `cB'
-        from line 69 of sass/specifications/cinnamon_interactive.scss
+        on line 4 of sass/specifications/cinnamon_interactive.scss, in `cB'
+        from line 4 of sass/specifications/cinnamon_interactive.scss
 
-64: }
-65: 
-66: 
-67: 
-68: #cinnamon-seed{
-69: 	@include cB(transition, opacity .8s ease);
-70: 	opacity: 1;
-71: 
-72: 	&.fadeout{
-73: 		opacity: 0;
-74: 	}
+1: body{
+2: 	overflow: hidden;
+3: 	opacity: 0;
+4: 	@include cB(transition, opacity .5s ease);
+5: 
+6: 	&.ready{
+7: 		opacity: 1;
+8: 	}
+9: }
 
 Backtrace:
-sass/specifications/cinnamon_interactive.scss:69:in `cB'
-sass/specifications/cinnamon_interactive.scss:69
+sass/specifications/cinnamon_interactive.scss:4:in `cB'
+sass/specifications/cinnamon_interactive.scss:4
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/alessiosanto/.rvm/gems/ruby-2.0.0-p247/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -61,4 +59,4 @@ sass/specifications/cinnamon_interactive.scss:69
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'cB'.\A         on line 69 of sass/specifications/cinnamon_interactive.scss, in `cB'\A         from line 69 of sass/specifications/cinnamon_interactive.scss\A \A 64: }\A 65: \A 66: \A 67: \A 68: #cinnamon-seed{\A 69: 	@include cB(transition, opacity .8s ease);\A 70: 	opacity: 1;\A 71: \A 72: 	&.fadeout{\A 73: 		opacity: 0;\A 74: 	}"; }
+  content: "Syntax error: Undefined mixin 'cB'.\A         on line 4 of sass/specifications/cinnamon_interactive.scss, in `cB'\A         from line 4 of sass/specifications/cinnamon_interactive.scss\A \A 1: body{\A 2: 	overflow: hidden;\A 3: 	opacity: 0;\A 4: 	@include cB(transition, opacity .5s ease);\A 5: \A 6: 	&.ready{\A 7: 		opacity: 1;\A 8: 	}\A 9: }"; }

@@ -1,3 +1,27 @@
+body{
+	overflow: hidden;
+	opacity: 0;
+	@include cB(transition, opacity .5s ease);
+
+	&.ready{
+		opacity: 1;
+	}
+}
+
+#scroll-up-indicator{
+	opacity: 1;
+
+	@include cB(animation, scroll-up-indicator-animation 1.5s ease infinite);
+	@include cB(transition, opacity .3s ease);
+
+	position: relative;
+	left: -40px;
+	top: -10px;
+	&.fadeout{
+		display: block;
+		opacity: 0;
+	}
+}
 
 #CIPlantIllustration{
 	position: absolute;

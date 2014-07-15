@@ -732,6 +732,28 @@ p {
   100% {
     fill: #c9f3f9; } }
 
+@-webkit-keyframes scroll-up-indicator-animation {
+  /*Blink 1*/
+  0% {
+    -webkit-transform: translateY(5px); }
+
+  70% {
+    -webkit-transform: translateY(-12px); }
+
+  100% {
+    -webkit-transform: translateY(5px); } }
+
+@keyframes scroll-up-indicator-animation {
+  /*Blink 1*/
+  0% {
+    transform: translateY(5px); }
+
+  70% {
+    transform: translateY(-12px); }
+
+  100% {
+    transform: translateY(5px); } }
+
 /* 
 
 	Animated flowers in SVG + CSS3 =========================================================================================
@@ -1184,6 +1206,36 @@ svg.ci-plant {
 
 .padding-bottom-5, .wrapper1080 .main-content .padding-bottom-5 {
   padding-bottom: 50px; }
+
+body {
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; }
+  body.ready {
+    opacity: 1; }
+
+#scroll-up-indicator {
+  opacity: 1;
+  -webkit-animation: scroll-up-indicator-animation 1.5s ease infinite;
+  -moz-animation: scroll-up-indicator-animation 1.5s ease infinite;
+  -ms-animation: scroll-up-indicator-animation 1.5s ease infinite;
+  -o-animation: scroll-up-indicator-animation 1.5s ease infinite;
+  animation: scroll-up-indicator-animation 1.5s ease infinite;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+  position: relative;
+  left: -40px;
+  top: -10px; }
+  #scroll-up-indicator.fadeout {
+    display: block;
+    opacity: 0; }
 
 #CIPlantIllustration {
   position: absolute;

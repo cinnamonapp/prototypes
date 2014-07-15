@@ -102,3 +102,25 @@
 		75%		{ fill: $success_color }
 		100%	{ fill: $weak_color }
 	}
+
+
+
+	// Indicator suggestion
+
+		// Single eyebrow blink
+		@-webkit-keyframes scroll-up-indicator-animation {
+			/*Blink 1*/
+			0% {-webkit-transform: translateY(5px);}
+			70% {-webkit-transform: translateY(-12px);}
+			100% {-webkit-transform: translateY(5px);}
+		}
+
+		@keyframes scroll-up-indicator-animation {
+			/*Blink 1*/
+			0% {transform: translateY(5px);}
+			70% {transform: translateY(-12px);}
+			100% {transform: translateY(5px);}
+		}
+
+	// indicator suggestion ends
+
