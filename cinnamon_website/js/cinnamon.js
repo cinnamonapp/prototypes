@@ -47,7 +47,7 @@ $(document).ready(function () {
 		$(this).attr("data-slide-number", index);
 	});
 	
-	$(window).on("mousewheel", function (event) {
+	$("html,body").on("mousewheel", function (event) {
 		if(lock == false){
 			var selectedSlide = $("#cinnamon-seed.scroll-to-active-right-now, #cinnamon-plant.scroll-to-active-right-now, #cinnamon-routines.scroll-to-active-right-now, #cinnamon-outcomes.scroll-to-active-right-now, #cinnamon-download.scroll-to-active-right-now").attr("data-slide-number");
 			var nextSlide;
