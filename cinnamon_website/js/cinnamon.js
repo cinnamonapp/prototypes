@@ -54,12 +54,12 @@ $(document).ready(function () {
 			var its_the_moment = false;
 
 			// Scroll down
-			if(event.deltaY < -10){
+			if(event.deltaY < 0){
 				its_the_moment = true;
 				selectedSlide++;
 			}
 			// Scroll up
-			else if(event.deltaY > 10){
+			else if(event.deltaY > 0){
 				$("#scroll-up-indicator").addClass("fadeout");
 				its_the_moment = true;
 				selectedSlide--;
