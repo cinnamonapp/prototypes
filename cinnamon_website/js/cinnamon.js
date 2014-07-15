@@ -31,6 +31,8 @@ $(document).ready(function () {
 
 	$.scrollTo("#cinnamon-seed", 100, function(){
 		$("body").addClass("ready");
+		$(".scroll-to-active-right-now").removeClass("scroll-to-active-right-now");
+		$("#cinnamon-seed").addClass("scroll-to-active-right-now");
 	});
 
 	var lock = false;
