@@ -59,7 +59,7 @@ $(document).ready(function () {
 				selectedSlide++;
 			}
 			// Scroll up
-			else if(event.deltaY > 0 && event.deltaY > 50){
+			else if(event.deltaY > 0 && event.deltaY < 50){
 				$("#scroll-up-indicator").addClass("fadeout");
 				its_the_moment = true;
 				selectedSlide--;
