@@ -90,11 +90,18 @@ body{
 
 
 #cinnamon-seed{
-	@include cB(transition, opacity .8s ease);
+	-webkit-transition: opacity .6s ease, -webkit-transform .6s ease;
+	-moz-transition: opacity .6s ease, -moz-transform .6s ease;
+	-ms-transition: opacity .6s ease, -ms-transform .6s ease;
+	-o-transition: opacity .6s ease, -o-transform .6s ease;
+	transition: opacity .6s ease, transform .6s ease;
+
 	opacity: 1;
+	@include cB(transform, translateY(0px));
 
 	&.fadeout{
 		opacity: 0;
+		@include cB(transform, translateY(100px));
 	}
 }
 
