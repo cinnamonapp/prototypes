@@ -73,8 +73,6 @@ $(document).ready(function () {
 				unlockAction();
 			}
 		}
-
-
 	});
 
 
