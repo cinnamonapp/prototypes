@@ -182,20 +182,20 @@ $(document).ready(function () {
 	});
 
 
-	$("input[placeholder]").each(function (index) {
-		$(this).val($(this).attr("placeholder"));
-	});
+	// $("input[placeholder]").each(function (index) {
+	// 	$(this).val($(this).attr("placeholder"));
+	// });
 
-	$("input[placeholder]").on("focus blur",function (event) {
-		if($(this).val() == "")
-			$(this).val($(this).attr("placeholder"));
+	// $("input[placeholder]").on("focus blur",function (event) {
+	// 	if($(this).val() == "")
+	// 		$(this).val($(this).attr("placeholder"));
 
-	});
+	// });
 
-	$("input[placeholder]").focus(function(){
-		if($(this).val() == $(this).attr("placeholder"))
-			$(this).val("");
-	});
+	// $("input[placeholder]").focus(function(){
+	// 	if($(this).val() == $(this).attr("placeholder"))
+	// 		$(this).val("");
+	// });
 
 
 
