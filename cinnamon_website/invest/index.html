@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cinnamon: Your personal lifestyle coach</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <style media="screen">
+      body{
+        font-family: Futura;
+
+        background: #fcf4f4; /* Old browsers */
+        background: -moz-linear-gradient(top, #fcf4f4 0%, #e2e8d3 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcf4f4), color-stop(100%,#e2e8d3)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #fcf4f4 0%,#e2e8d3 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #fcf4f4 0%,#e2e8d3 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #fcf4f4 0%,#e2e8d3 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #fcf4f4 0%,#e2e8d3 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf4f4', endColorstr='#e2e8d3',GradientType=0 ); /* IE6-9 */
+
+        color: #333333;
+      }
+      .margin-auto-block{
+        display: block;
+        margin: auto !important;
+        float: none;
+        width: 300px;
+        text-align: center;
+      }
+      .container{
+        max-width: 960px !important;
+      }
+      h2{
+        color: #37673F;
+        font-size: 30px;
+        margin-bottom: 15px;
+        line-height: 1.5em;
+      }
+      p{
+        font-size: 16px;
+        font-weight: 300;
+        font-family: 'Futura Std';
+      }
+
+      p.small{
+        font-size: 15px;
+        line-height: 16px;
+      }
+      ul{
+        padding-left: 20px;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: 'Futura Std';
+      }
+      .navigator{
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .no-margin-top{
+        margin-top: 0;
+      }
+
+      a{
+        color: inherit;
+        text-decoration: underline;
+      }
+      a:hover{
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .adv{
+        width: 100%;
+        height: 100px;
+        color: #37673F;
+        margin-bottom: 10px;
+      }
+
+      .adv.marvelapp{
+        background: url(images/marvelapp.png) repeat-x top left;
+      }
+
+      .adv.onboarding{
+        background: url(images/onboarding.png) repeat-x top left;
+      }
+
+      .adv.inverse{
+        color: white;
+        background: #37673F;
+      }
+      .adv a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 28px;
+        height: 100px;
+        padding-top: 25px;
+      }
+
+      .team-member .media-heading{
+        font-family: 'Futura Std';
+        font-weight: 600;
+        /*margin-top: 10px;*/
+      }
+      .team-member img{
+        /*width: 100px;
+        height: 100px;*/
+        width: 80px;
+        height: 80px;
+        border: 4px solid #4A4A4A;
+      }
+      .team-member>.pull-left{
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="text-center navigator">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="margin-auto-block" href="#">
+            <img src="images/logo.png" />
+          </a>
+      </nav>
+
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="images/phone.png" alt="" />
+        </div>
+        <div class="col-md-8">
+          <section>
+            <h2 class="no-margin-top">The problem</h2>
+            <p>
+              Today, 8 out of 9 causes of death are preventable. All the big killers - coronary heart disease, stroke, diabetes, cancer, Alzheimer - share an early clinical presentation, called Metabolic Syndrome. <br>
+              <b>High blood sugar</b> is in most cases what leads to this cascade of events, by causing diabetes or pre-diabetes.
+              <br><br>
+              <b>382 millions</b> worldwide have diabetes, 46% of which do not even know it; by 2035, this number will spike to 592 millions, a 55% increase. The cause of this sugar epidemic is in our diet: we develop a <b>sugar addiction</b> because 80% of the food we buy at the grocery store hides some sort of sugar. Even bread, salad dressing and fish sticks!
+            </p>
+          </section>
+
+          <section>
+            <h2>The solution</h2>
+            <p>
+              Cinnamon <b>breaks the sugar addiction cycle</b>, and makes it possible to prevent or revert Metabolic Syndrome. <br><br>
+              It helps you keep your blood sugar checked at all times and motivates you to remain within a safe and steady range. <br>
+              Through continuous feedback, personalised tips and a unique gardening interface, it also helps you achieve a diet mostly based on plants and real,  healthy food.
+            </p>
+          </section>
+
+          <!-- <section>
+            <h2>The solution</h2>
+            <p>
+              By simply breaking the sugar addiction cycle, we can prevent or revert metabolic syndrome: this means eating a diet mostly based on plants and food and keeping the blood sugar level between 70 and 110 mg/dl.
+            </p>
+            <p>
+              Cinnamon will:
+            </p>
+            <ul>
+              <li>keep your blood sugar checked at all times</li>
+              <li>coach you with continuous, personalised tips and feedbacks to keep you within the limits</li>
+              <li>boost your diet with plants by helping you grow your own digital garden and teaching you how it use them in your daily cooking</li>
+            </ul>
+
+          </section> -->
+        </div>
+      </div>
+      <!-- <section>
+        <h2>Team</h2>
+
+        <div class="row">
+          <div class="col-md-4" style="padding-right: 0;">
+            <div class="media team-member">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="images/linnea.png" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a href="#">
+                    Linnea Passaler
+                  </a>
+                </h4>
+                <p class="small">CEO</p>
+                <p class="small">Former founder of Pazienti.it and super doctor</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" style="padding-right: 0;">
+            <div class="media team-member">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="images/linnea.png" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a href="#">
+                    Dario Buzzini
+                  </a>
+                </h4>
+                <p class="small">CEO</p>
+                <p class="small">Former founder of Pazienti.it and super doctor</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" style="padding-right: 0;">
+            <div class="media team-member">
+              <a class="pull-left" href="#">
+                <img class="media-object" src="images/linnea.png" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a href="#">
+                    Alessio Santo
+                  </a>
+                </h4>
+                <p class="small">CEO</p>
+                <p class="small">Former founder of Pazienti.it and super doctor</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section> -->
+
+      <div class="row">
+        <div class="col-md-6">
+          <section>
+            <h2>Roadmap</h2>
+            <p>
+              What we are building:
+            </p>
+            <ul>
+              <li>Glucose tracking tool</li>
+              <li>Software-based personalized feedback and tips</li>
+              <li>Plant based diet program</li>
+            </ul>
+
+            <p>
+              We are focusing on a specific set of users who already have a big need to solve this problem and have no ideal solution yet: Diabetics type 1 and 2. <br>
+              As simple sugar tracking through body fluids develops and becomes readily available, we will target the general population.
+            </p>
+
+            </p>
+          </section>
+        </div>
+        <div class="col-md-6">
+          <!-- <section>
+            <h2>Board</h2>
+          </section> -->
+
+
+          <section>
+            <h2>Team</h2>
+
+            <div class="media team-member">
+              <a class="pull-left" href="http://www.linkedin.com/in/linneapassaler">
+                <img class="media-object" src="images/linnea.png" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a href="http://www.linkedin.com/in/linneapassaler">
+                    Linnea Passaler
+                  </a>
+                </h4>
+                <p class="small">CEO</p>
+                <p class="small">Doctor, founder of Italy's largest online health marketplace, Pazienti.it</p>
+              </div>
+            </div>
+
+            <div class="media team-member">
+              <a class="pull-left" href="http://www.linkedin.com/in/alessiosantocs">
+                <img class="media-object" src="images/alessio.png" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a href="http://www.linkedin.com/in/alessiosantocs">
+                    Alessio Santo
+                  </a>
+                </h4>
+                <p class="small">CTO</p>
+                <p class="small">Former CTO at Pazienti.it and IOS developer, web expert and API addict</p>
+              </div>
+            </div>
+
+            <div class="media team-member">
+              <a class="pull-left" href="http://www.linkedin.com/in/dariobuzzini">
+                <img class="media-object" src="images/dario.png" alt="...">
+              </a>
+              <div class="media-body">
+                <h4 class="media-heading">
+                  <a href="http://www.linkedin.com/in/dariobuzzini">
+                    Dario Buzzini
+                  </a>
+                </h4>
+                <p class="small">DESIGNER</p>
+                <p class="small">Director of IDEO NY and experienced interaction designer</p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </div>
+
+      <section>
+        <h2>See the concept</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="adv onboarding">
+              <a href="https://marvelapp.com/331b3i">Onboarding process</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="adv marvelapp">
+              <a href="https://marvelapp.com/21ffe1">Try the marvel app</a>
+            </div>
+          </div>
+          <!-- <div class="col-md-4" style="padding-left: 5px;">
+            <div class="adv inverse">
+              <a href="https://vimeo.com/107938571">See a video</a>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <br><br>
+      <section>
+        <h2><a href="mailto:linnea@cinnamon-app.com">Contact Linnea Passaler</a></h2>
+      </section>
+      <br><br>
+
+    </div>
+  </body>
+</html>
