@@ -51,10 +51,12 @@
       }
       .margin-auto-block{
         display: block;
-        margin: auto !important;
         float: none;
         width: 300px;
         text-align: center;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
       }
       .container{
         max-width: 960px !important;
@@ -87,7 +89,7 @@
       }
 
       .no-margin-top{
-        margin-top: 0;
+        margin-top: 40px;
       }
 
       a{
@@ -100,7 +102,8 @@
       }
 
       .adv{
-        width: 100%;
+        /*width: 100%;*/
+        width: 300px;
         height: 100px;
         color: #37673F;
         margin-bottom: 10px;
@@ -146,34 +149,38 @@
   </head>
   <body>
     <div class="container">
-      <nav class="text-center navigator">
+      <!-- <nav class="text-center navigator">
+
+          <a class="margin-auto-block" href="#">
+            <img src="images/logo.png" />
+          </a>
+      </nav> -->
+
+      <div class="row">
+        <div class="col-md-4 text-center">
           <!-- Brand and toggle get grouped for better mobile display -->
           <a class="margin-auto-block" href="#">
             <img src="images/logo.png" />
           </a>
-      </nav>
 
-      <div class="row">
-        <div class="col-md-4 text-center">
           <img src="images/phone.png" alt="" />
         </div>
         <div class="col-md-8">
           <section>
             <h2 class="no-margin-top">The problem</h2>
             <p>
-              Today, 8 out of 9 causes of death are preventable. All the big killers - coronary heart disease, stroke, diabetes, cancer, Alzheimer - share an early clinical presentation, called Metabolic Syndrome. <br>
-              <b>High blood sugar</b> is in most cases what leads to this cascade of events, by causing diabetes or pre-diabetes.
-              <br><br>
-              <b>382 millions</b> worldwide have diabetes, 46% of which do not even know it; by 2035, this number will spike to 592 millions, a 55% increase. The cause of this sugar epidemic is in our diet: we develop a <b>sugar addiction</b> because 80% of the food we buy at the grocery store hides some sort of sugar. Even bread, salad dressing and fish sticks!
+              Today, 1.7 billion people are affected by health issues related to glucose. A continuum of health problems ranging from mild insulin resistance and overweight to obesity and diabetes is the single biggest global epidemic of our time. In a few years, half a billion people will be affected by full blown diabetes and 1 billion by pre-diabetes. <br><br>
+Doctors are not expected, trained, or paid to diagnose and treat the single biggest chronic disease in the world, which, along with smoking, causes nearly all the major health burdens of the 21st century, including heart disease, stroke, dementia and even cancer.<br><br>
+The cause of this sugar epidemic is in our diet: we develop a sugar addiction because 80% of the food we buy at the grocery store hides some sort of sugar. We are not aware of this addiction and are unprepared to deal with it.
             </p>
           </section>
 
           <section>
             <h2>The solution</h2>
             <p>
-              Cinnamon <b>breaks the sugar addiction cycle</b>, and makes it possible to prevent or revert Metabolic Syndrome. <br><br>
-              It helps you keep your blood sugar checked at all times and motivates you to remain within a safe and steady range. <br>
-              Through continuous feedback, personalised tips and a unique gardening interface, it also helps you achieve a diet mostly based on plants and real,  healthy food.
+              Cinnamon breaks the sugar addiction cycle, thereby preventing and curing health issues caused by high glucose levels. It builds awareness by keeping your blood sugar checked at all times and helps you remain within a safe and steady range. <br>
+              Through continuous feedback, personalised tips and a unique gardening interface, it also helps you achieving a diet mostly based on plants and real, healthy food. <br>
+              We want to focus on the existing 350 million diabetics first, because they already have a clear and urgent unmet need; then, we want to address the over 1 billion people with health issues related to glucose.
             </p>
           </section>
 
@@ -256,7 +263,13 @@
         <div class="col-md-6">
           <section>
             <h2>Roadmap</h2>
-            <p>
+            <ul>
+              <li>3 months: Concept -User testing</li>
+              <li>6 months: Limited release for selected users</li>
+              <li>9 months: General availability + customer acquisition</li>
+            </ul>
+
+            <!-- <p>
               What we are building:
             </p>
             <ul>
@@ -268,10 +281,22 @@
             <p>
               We are focusing on a specific set of users who already have a big need to solve this problem and have no ideal solution yet: Diabetics type 1 and 2. <br>
               As simple sugar tracking through body fluids develops and becomes readily available, we will target the general population.
-            </p>
+            </p> -->
 
             </p>
           </section>
+
+          <section>
+            <h2>See the concept</h2>
+            <div class="adv onboarding">
+              <a href="https://vimeo.com/108270593" target="_blank">See a video</a>
+            </div>
+            <!-- <div class="adv marvelapp">
+              <a href="https://marvelapp.com/21ffe1">Try the marvel app</a>
+            </div>
+ -->
+          </section>
+
         </div>
         <div class="col-md-6">
           <!-- <section>
@@ -283,12 +308,12 @@
             <h2>Team</h2>
 
             <div class="media team-member">
-              <a class="pull-left" href="http://www.linkedin.com/in/linneapassaler">
+              <a class="pull-left" href="http://www.linkedin.com/in/linneapassaler" target="_blank">
                 <img class="media-object" src="images/linnea.png" alt="...">
               </a>
               <div class="media-body">
                 <h4 class="media-heading">
-                  <a href="http://www.linkedin.com/in/linneapassaler">
+                  <a href="http://www.linkedin.com/in/linneapassaler" target="_blank">
                     Linnea Passaler
                   </a>
                 </h4>
@@ -298,12 +323,12 @@
             </div>
 
             <div class="media team-member">
-              <a class="pull-left" href="http://www.linkedin.com/in/alessiosantocs">
+              <a class="pull-left" href="http://www.linkedin.com/in/alessiosantocs" target="_blank">
                 <img class="media-object" src="images/alessio.png" alt="...">
               </a>
               <div class="media-body">
                 <h4 class="media-heading">
-                  <a href="http://www.linkedin.com/in/alessiosantocs">
+                  <a href="http://www.linkedin.com/in/alessiosantocs" target="_blank">
                     Alessio Santo
                   </a>
                 </h4>
@@ -313,12 +338,12 @@
             </div>
 
             <div class="media team-member">
-              <a class="pull-left" href="http://www.linkedin.com/in/dariobuzzini">
+              <a class="pull-left" href="http://www.linkedin.com/in/dariobuzzini" target="_blank">
                 <img class="media-object" src="images/dario.png" alt="...">
               </a>
               <div class="media-body">
                 <h4 class="media-heading">
-                  <a href="http://www.linkedin.com/in/dariobuzzini">
+                  <a href="http://www.linkedin.com/in/dariobuzzini" target="_blank">
                     Dario Buzzini
                   </a>
                 </h4>
@@ -331,7 +356,7 @@
         </div>
       </div>
 
-      <section>
+      <!-- <section>
         <h2>See the concept</h2>
         <div class="row">
           <div class="col-md-4">
@@ -344,14 +369,14 @@
               <a href="https://marvelapp.com/21ffe1">Try the marvel app</a>
             </div>
           </div>
-          <!-- <div class="col-md-4" style="padding-left: 5px;">
+          <div class="col-md-4" style="padding-left: 5px;">
             <div class="adv inverse">
               <a href="https://vimeo.com/107938571">See a video</a>
             </div>
-          </div> -->
+          </div>
         </div>
-      </section>
-      <br><br>
+      </section> -->
+      <br>
       <section>
         <h2><a href="mailto:linnea@snaphealth.me">Contact Linnea Passaler</a></h2>
       </section>
