@@ -1,0 +1,115 @@
+.tp-caption.small_white_text{
+	color:white; 
+	font-size: 18px; 
+	line-height: 24px; 
+	font-family:'Cabin',Arial !important;
+}
+
+.tp-caption.small_box_text{
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:4px 10px;
+	color:white; 
+	font-size: 18px; 
+	line-height: 24px; 
+	font-family:'Cabin',Arial !important;
+}
+
+.tp-caption.small_highlight_text{
+	color:#f1c40f; 
+	font-size: 18px; 
+	line-height: 24px; 
+	font-family:'Cabin',Arial !important;
+}
+
+.tp-caption.medium_white_text{
+	color:white; 
+	font-size: 30px; 
+	line-height: 36px;  
+	font-family:'Cabin',Arial !important;	
+}
+
+.tp-caption.medium_box_text{
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:6px 14px;
+	color:white; 
+	font-size: 30px; 
+	line-height: 36px;   
+	font-family:'Cabin',Arial !important;		
+}
+
+.tp-caption.medium_highlight_text{
+	color:#f1c40f; 
+	font-style:normal;
+	font-size: 30px; 
+	line-height: 36px;   
+	font-family:'Cabin',Arial !important;	
+}
+
+.tp-caption.large_white_text{
+	color:white; 
+	font-style:normal;
+	font-weight:900; 
+	font-size: 48px; 
+	line-height: 60px; 
+	font-family:'Cabin',Arial !important;		
+}
+
+
+.tp-caption.large_box_text{
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:6px 18px;
+	color:white; 
+	font-size: 48px; 
+	line-height: 60px; 
+	font-style:normal;
+	font-weight:900;
+	font-family:'Cabin',Arial !important;	
+}
+
+.tp-caption.large_highlight_text{
+	color:#f1c40f; 
+	font-style:normal;
+	font-weight:900; 
+	font-size: 48px; 
+	line-height: 60px; 
+	font-family:'Cabin',Arial !important;	
+}
+
+
+.tp-caption.big_white_text{
+	color:white; 
+	font-style:normal;
+	font-weight:600; 
+	font-size: 72px; 
+	line-height: 96px; 
+	font-family:'Cabin',Arial !important;	
+	line-height: 1em;	
+}
+
+.tp-caption.big_box_text{
+	background-color:rgba(0, 0, 0, 0.5);
+	padding:6px 24px;
+	color:white; 
+	font-size: 72px; 
+	line-height: 96px; 
+	font-style:normal;
+	font-weight:900;
+	font-family:'Cabin',Arial !important;		
+}
+
+.tp-caption.big_highlight_text{
+	color:#f1c40f; 
+	font-style:normal;
+	font-weight:600; 
+	font-size: 72px; 
+	line-height: 96px; 
+	font-family:'Cabin',Arial !important;		
+}
+					
+.tp-caption.boxshadow{
+	-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	line-height:0px;
+}
+	
