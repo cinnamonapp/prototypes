@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Cinnamon: Your personal lifestyle coach</title>
+    <title>Interaction Designer - Cinnamon</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
@@ -60,6 +60,7 @@
         border: 2px solid #E5C4A9;
         border-radius: 0;
         text-decoration: none;
+        background: transparent;
       }
 
       .btn.btn-outline:hover{
@@ -74,23 +75,23 @@
         letter-spacing: 1px;
         /* Swap Sugar with Cinn: */
         text-shadow: 1px 1px 0px rgba(0,0,0,0.60);
-        margin-top: 50px;
-        margin-bottom: 30px;
+        margin-top: 30px;
+        margin-bottom: 40px;
       }
 
       p{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         font-family: 'Futura Std', Arial;
       }
 
       p.small{
-        font-size: 15px;
+        font-size: 16px;
         line-height: 16px;
       }
       ul{
         padding-left: 20px;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 300;
         font-family: 'Futura Std', Arial;
       }
@@ -160,6 +161,24 @@
   </head>
   <body>
     <div class="container">
+      <nav class="navbar">
+        <div class="navbar-header">
+          <a class="btn btn-lg btn-outline navbar-toggle collapsed" data-toggle="collapse" style="margin-right: 0; margin-top: 15px;">
+            Contact
+          </a>
+          <a class="navbar-brand" href="#" style="padding-left: 0;">
+            <img src="images/logo.png" height="45" />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="mailto:linnea@cinnamon-app.com" class="btn btn-lg btn-outline" style="margin-top: 15px;">Get in touch</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+
+      </nav>
       <!-- <nav class="text-center navigator">
 
           <a class="margin-auto-block" href="#">
@@ -199,7 +218,7 @@
               <li>
                 <b>A game designer/addict (optional):</b>
                 <p>
-                  We believe Cinnamon should spice up people’s lives by playing a game. This is why it would be great if you had a gaming background.
+                  We believe Cinnamon should spice up people's lives by playing a game. This is why it would be great if you had a gaming background.
                 </p>
               </li>
               <li>
@@ -211,7 +230,7 @@
               <li>
                 <b>A hobbyst coder (optional):</b>
                 <p>
-                  You’ll need to communicate clearly with developers and know what they’re talking about when they reply to your design choices. You’ll also want to stay ahead of them respecting the application’s structure while making your design choices.
+                  You'll need to communicate clearly with developers and know what they're talking about when they reply to your design choices. You'll also want to stay ahead of them respecting the application's structure while making your design choices.
                 </p>
               </li>
             </ul>
@@ -229,8 +248,10 @@
       <br><br>
 
       <section>
-        <h4><a href="mailto:linnea@snaphealth.me" class="btn btn-lg btn-outline">Contact Linnea Passaler</a></h4>
+        <a href="mailto:linnea@cinnamon-app.com" class="btn btn-lg btn-outline">Get in touch</a>
       </section>
+
+      <br><br>
 
     </div>
   </body>
