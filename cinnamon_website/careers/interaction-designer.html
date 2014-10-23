@@ -38,9 +38,11 @@
       body{
         font-family: 'Futura', Arial;
 
-        background: #000000; /* Old browsers */
+        /*background: #000000; */
+        background: #E5C4A9;
 
-        color: #E5C4A9;
+        color: #000000;
+        /*color: #E5C4A9;*/
       }
       .margin-auto-block{
         display: block;
@@ -57,20 +59,24 @@
 
       .btn.btn-outline{
         /* Button Background: */
-        border: 2px solid #E5C4A9;
+        /*border: 2px solid #E5C4A9;*/
+        border: 2px solid #000000;
         border-radius: 0;
         text-decoration: none;
         background: transparent;
       }
 
       .btn.btn-outline:hover{
-        background: #E5C4A9;
+        /*background: #E5C4A9;*/
+        background: #000000;
+        color: #E5C4A9;
 
       }
       h1{
         /*font-family: FuturaStd-Heavy;*/
         font-size: 48px;
-        color: #E5C4A9;
+        color: #000000;
+        /*color: #E5C4A9;*/
         line-height: 58px;
         letter-spacing: 1px;
         /* Swap Sugar with Cinn: */
@@ -157,6 +163,17 @@
       .team-member>.pull-left{
         margin-right: 15px;
       }
+
+      .img-logo{
+        height: 54px;
+      }
+
+      @media screen and (max-width : 768px){
+        .img-logo{
+          height: 45px;
+        }
+      }
+
     </style>
   </head>
   <body>
@@ -166,8 +183,8 @@
           <a class="btn btn-lg btn-outline navbar-toggle collapsed" data-toggle="collapse" style="margin-right: 0; margin-top: 15px;">
             Contact
           </a>
-          <a class="navbar-brand" href="#" style="padding-left: 0;">
-            <img src="images/logo.png" height="45" />
+          <a class="navbar-brand" href="http://cinnamon-app.com" style="padding-left: 0;">
+            <img src="images/logo-dark.png" class="img-logo"/>
           </a>
         </div>
 
