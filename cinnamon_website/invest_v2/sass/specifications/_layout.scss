@@ -1,0 +1,21 @@
+/*Body*/
+body{
+	@include typo_brand_weak;
+	color: $base_color;
+}
+
+// Content sections style
+@import "components/sections";
+
+hr{
+	border-color: rgba(0,0,0, 0.3);
+
+	&.half-rule {
+		width: 100px;
+		margin: 40px auto;
+	}
+
+	&.hr-inverse{
+		border-color: rgba(255,255,255, 0.5);
+	}
+}

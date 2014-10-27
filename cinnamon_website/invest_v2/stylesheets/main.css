@@ -1,0 +1,1208 @@
+@import url(http://fonts.googleapis.com/css?family=Neuton:400,700,400italic);
+@font-face {
+  font-family: 'Titillium';
+  font-style: bold;
+  font-weight: 800;
+  src: url("../fonts/titillium-bold-webfont.ttf"); }
+
+@font-face {
+  font-family: 'Archer';
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/archer/archer-light-pro.otf"); }
+
+@font-face {
+  font-family: 'Archer';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/archer/archer-book-pro.otf"); }
+
+@font-face {
+  font-family: 'Archer';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/archer/archer-bold-pro.otf"); }
+
+.ci-navbar {
+  top: 5px; }
+  .ci-navbar .container {
+    border-bottom: 2px solid black; }
+    .ci-navbar .container .navbar-nav > li > a {
+      color: black;
+      font-size: 15px;
+      font-weight: 400; }
+      .ci-navbar .container .navbar-nav > li > a:hover {
+        background: transparent;
+        text-decoration: underline; }
+
+/*Body*/
+body {
+  font-family: Archer;
+  font-weight: 200;
+  color: black; }
+
+/*Container with image*/
+.container.da-image-right {
+  position: relative; }
+
+.container.da-image-right img {
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+.container.da-image-left {
+  position: relative; }
+
+.container.da-image-left img {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+/*Row containers*/
+.da-row-container.da-row-main {
+  padding: 80px 0px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top center, bottom center; }
+
+.da-row-container.da-row-default {
+  /*background: #eee;*/
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+
+.da-row-container.da-row-cta {
+  background: #eee; }
+
+.da-row-container.da-row-inverse {
+  background-color: #1d6fb7;
+  color: #fff; }
+
+.da-row-container.da-row-size1 {
+  padding: 50px 0px; }
+
+section {
+  padding: 50px 0;
+  position: relative; }
+  section.section-primary {
+    background: black;
+    color: black; }
+  section.section-info {
+    background: #e5c4a9;
+    color: black; }
+  section.section-success {
+    background: #e1ea2a;
+    color: black; }
+  section.section-danger {
+    background: black;
+    color: black; }
+  section.section-dream {
+    background: #e5c4a9;
+    color: black; }
+  section.section-size-1 {
+    padding: 30px 0px; }
+  section.section-size-2 {
+    padding: 60px 0px; }
+  section.section-size-3 {
+    padding: 90px 0px; }
+  section.section-size-4 {
+    padding: 120px 0px; }
+  section.section-size-5 {
+    padding: 150px 0px; }
+  section.section-size-6 {
+    padding: 180px 0px; }
+  section.section-size-7 {
+    padding: 210px 0px; }
+  section.section-size-8 {
+    padding: 240px 0px; }
+  section.section-size-9 {
+    padding: 270px 0px; }
+  section.section-size-10 {
+    padding: 300px 0px; }
+  section .vertically-aligned {
+    width: 100%; }
+  section .vertically-aligned {
+    width: 100%; }
+
+hr {
+  border-color: rgba(0, 0, 0, 0.3); }
+  hr.half-rule {
+    width: 100px;
+    margin: 40px auto; }
+  hr.hr-inverse {
+    border-color: rgba(255, 255, 255, 0.5); }
+
+/*Primary button*/
+.btn {
+  font-family: Titillium;
+  font-weight: 800;
+  outline: none !important; }
+  .btn.btn-primary {
+    background: black;
+    color: white;
+    border-color: black;
+    border-radius: 0;
+    text-transform: uppercase; }
+    .btn.btn-primary:hover {
+      background: #0d0d0d;
+      border-color: #0d0d0d; }
+    .btn.btn-primary:active, .btn.btn-primary.active {
+      background: black;
+      border-color: black;
+      box-shadow: none; }
+    .btn.btn-primary.btn-outline {
+      color: black;
+      border: 2px solid black;
+      background: transparent; }
+      .btn.btn-primary.btn-outline:hover, .btn.btn-primary.btn-outline.hover {
+        color: white;
+        background: black; }
+      .btn.btn-primary.btn-outline:active, .btn.btn-primary.btn-outline.active {
+        color: white;
+        background: black; }
+    .btn.btn-primary.btn-line {
+      color: black;
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      padding: 0px; }
+      .btn.btn-primary.btn-line:hover {
+        text-decoration: none; }
+  .btn.btn-warning {
+    background: #e5c4a9;
+    color: white;
+    border-color: #e5c4a9;
+    border-radius: 0;
+    text-transform: uppercase; }
+    .btn.btn-warning:hover {
+      background: #ebd1bd;
+      border-color: #ebd1bd; }
+    .btn.btn-warning:active, .btn.btn-warning.active {
+      background: #dfb795;
+      border-color: #dfb795;
+      box-shadow: none; }
+    .btn.btn-warning.btn-outline {
+      color: #e5c4a9;
+      border: 2px solid #e5c4a9;
+      background: transparent; }
+      .btn.btn-warning.btn-outline:hover, .btn.btn-warning.btn-outline.hover {
+        color: white;
+        background: #e5c4a9; }
+      .btn.btn-warning.btn-outline:active, .btn.btn-warning.btn-outline.active {
+        color: white;
+        background: #dfb795; }
+    .btn.btn-warning.btn-line {
+      color: #e5c4a9;
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      padding: 0px; }
+      .btn.btn-warning.btn-line:hover {
+        text-decoration: none; }
+  .btn.btn-danger {
+    background: black;
+    color: white;
+    border-color: black;
+    border-radius: 0;
+    text-transform: uppercase; }
+    .btn.btn-danger:hover {
+      background: #0d0d0d;
+      border-color: #0d0d0d; }
+    .btn.btn-danger:active, .btn.btn-danger.active {
+      background: black;
+      border-color: black;
+      box-shadow: none; }
+    .btn.btn-danger.btn-outline {
+      color: black;
+      border: 2px solid black;
+      background: transparent; }
+      .btn.btn-danger.btn-outline:hover, .btn.btn-danger.btn-outline.hover {
+        color: white;
+        background: black; }
+      .btn.btn-danger.btn-outline:active, .btn.btn-danger.btn-outline.active {
+        color: white;
+        background: black; }
+    .btn.btn-danger.btn-line {
+      color: black;
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      padding: 0px; }
+      .btn.btn-danger.btn-line:hover {
+        text-decoration: none; }
+  .btn.btn-info {
+    background: #c9f3f9;
+    color: white;
+    border-color: #c9f3f9;
+    border-radius: 0;
+    text-transform: uppercase; }
+    .btn.btn-info:hover {
+      background: #e0f8fc;
+      border-color: #e0f8fc; }
+    .btn.btn-info:active, .btn.btn-info.active {
+      background: #b2eef6;
+      border-color: #b2eef6;
+      box-shadow: none; }
+    .btn.btn-info.btn-outline {
+      color: #c9f3f9;
+      border: 2px solid #c9f3f9;
+      background: transparent; }
+      .btn.btn-info.btn-outline:hover, .btn.btn-info.btn-outline.hover {
+        color: white;
+        background: #c9f3f9; }
+      .btn.btn-info.btn-outline:active, .btn.btn-info.btn-outline.active {
+        color: white;
+        background: #b2eef6; }
+    .btn.btn-info.btn-line {
+      color: #c9f3f9;
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      padding: 0px; }
+      .btn.btn-info.btn-line:hover {
+        text-decoration: none; }
+  .btn.btn-white {
+    background: white;
+    color: white;
+    border-color: white;
+    border-radius: 0;
+    text-transform: uppercase; }
+    .btn.btn-white:hover {
+      background: white;
+      border-color: white; }
+    .btn.btn-white:active, .btn.btn-white.active {
+      background: #f2f2f2;
+      border-color: #f2f2f2;
+      box-shadow: none; }
+    .btn.btn-white.btn-outline {
+      color: white;
+      border: 2px solid white;
+      background: transparent; }
+      .btn.btn-white.btn-outline:hover, .btn.btn-white.btn-outline.hover {
+        color: white;
+        background: white; }
+      .btn.btn-white.btn-outline:active, .btn.btn-white.btn-outline.active {
+        color: white;
+        background: #f2f2f2; }
+    .btn.btn-white.btn-line {
+      color: white;
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      padding: 0px; }
+      .btn.btn-white.btn-line:hover {
+        text-decoration: none; }
+  .btn.btn-default {
+    background: black;
+    color: white;
+    border-color: black;
+    border-radius: 0;
+    text-transform: uppercase; }
+    .btn.btn-default:hover {
+      background: #0d0d0d;
+      border-color: #0d0d0d; }
+    .btn.btn-default:active, .btn.btn-default.active {
+      background: black;
+      border-color: black;
+      box-shadow: none; }
+    .btn.btn-default.btn-outline {
+      color: black;
+      border: 2px solid black;
+      background: transparent; }
+      .btn.btn-default.btn-outline:hover, .btn.btn-default.btn-outline.hover {
+        color: white;
+        background: black; }
+      .btn.btn-default.btn-outline:active, .btn.btn-default.btn-outline.active {
+        color: white;
+        background: black; }
+    .btn.btn-default.btn-line {
+      color: black;
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      padding: 0px; }
+      .btn.btn-default.btn-line:hover {
+        text-decoration: none; }
+  .btn.btn-success {
+    background: #e1ea2a;
+    color: white;
+    border-color: #e1ea2a;
+    border-radius: 0;
+    text-transform: uppercase; }
+    .btn.btn-success:hover {
+      background: #e4ec41;
+      border-color: #e4ec41; }
+    .btn.btn-success:active, .btn.btn-success.active {
+      background: #dae416;
+      border-color: #dae416;
+      box-shadow: none; }
+    .btn.btn-success.btn-outline {
+      color: #e1ea2a;
+      border: 2px solid #e1ea2a;
+      background: transparent; }
+      .btn.btn-success.btn-outline:hover, .btn.btn-success.btn-outline.hover {
+        color: white;
+        background: #e1ea2a; }
+      .btn.btn-success.btn-outline:active, .btn.btn-success.btn-outline.active {
+        color: white;
+        background: #dae416; }
+    .btn.btn-success.btn-line {
+      color: #e1ea2a;
+      border: none;
+      background: transparent;
+      text-decoration: underline;
+      padding: 0px; }
+      .btn.btn-success.btn-line:hover {
+        text-decoration: none; }
+
+h1 {
+  font-family: Titillium;
+  font-weight: 800;
+  font-size: 36px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 42px; } }
+
+h2 {
+  font-family: Titillium;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 36px; } }
+
+h3 {
+  font-family: Titillium;
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 30px; } }
+
+h4 {
+  font-family: Titillium;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 24px; } }
+
+h5 {
+  font-family: Titillium;
+  font-weight: 800;
+  font-size: 12px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 18px; } }
+
+h6 {
+  font-family: Titillium;
+  font-weight: 800;
+  font-size: 6px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h6 {
+      font-size: 12px; } }
+
+/*Primary button*/
+.link {
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+  font-weight: 400; }
+  .link.link-primary {
+    color: black;
+    text-decoration: underline; }
+    .link.link-primary:hover, .link.link-primary.hover {
+      color: black;
+      text-decoration: none; }
+    .link.link-primary:active, .link.link-primary.active {
+      color: black; }
+  .link.link-warning {
+    color: #d9a982;
+    text-decoration: underline; }
+    .link.link-warning:hover, .link.link-warning.hover {
+      color: #d9a982;
+      text-decoration: none; }
+    .link.link-warning:active, .link.link-warning.active {
+      color: #d39c6e; }
+  .link.link-danger {
+    color: black;
+    text-decoration: underline; }
+    .link.link-danger:hover, .link.link-danger.hover {
+      color: black;
+      text-decoration: none; }
+    .link.link-danger:active, .link.link-danger.active {
+      color: black; }
+  .link.link-info {
+    color: #84e4f1;
+    text-decoration: underline; }
+    .link.link-info:hover, .link.link-info.hover {
+      color: #84e4f1;
+      text-decoration: none; }
+    .link.link-info:active, .link.link-info.active {
+      color: #6ddfef; }
+  .link.link-white {
+    color: white;
+    text-decoration: underline; }
+    .link.link-white:hover, .link.link-white.hover {
+      color: white;
+      text-decoration: none; }
+    .link.link-white:active, .link.link-white.active {
+      color: #f2f2f2; }
+  .link.link-default {
+    color: black;
+    text-decoration: underline; }
+    .link.link-default:hover, .link.link-default.hover {
+      color: black;
+      text-decoration: none; }
+    .link.link-default:active, .link.link-default.active {
+      color: black; }
+  .link.link-success {
+    color: #c4cd14;
+    text-decoration: underline; }
+    .link.link-success:hover, .link.link-success.hover {
+      color: #c4cd14;
+      text-decoration: none; }
+    .link.link-success:active, .link.link-success.active {
+      color: #aeb612; }
+  .link.link-pokerface {
+    color: black; }
+  .link.disabled, .link:disabled {
+    opacity: 0.5;
+    text-decoration: line-through !important;
+    cursor: default; }
+  .link.link-xs {
+    font-size: 11px; }
+  .link.link-sm {
+    font-size: 13px; }
+  .link.link-lg {
+    font-size: 18px; }
+  .link.link-xl {
+    font-size: 22px; }
+  .link.link-square {
+    display: inline-block;
+    width: 40px;
+    text-align: center; }
+  .link.link-social {
+    color: black; }
+    .link.link-social:hover {
+      color: #0d0d0d; }
+
+button.link {
+  display: inline;
+  background: none;
+  border: none;
+  outline: none; }
+  button.link:focus {
+    outline: none; }
+
+.typo-brand-strong {
+  font-family: Titillium;
+  font-weight: 800; }
+
+.typo-brand-weak {
+  font-family: Archer;
+  font-weight: 200; }
+
+.text-primary {
+  color: black; }
+
+.text-warning {
+  color: #e5c4a9; }
+
+.text-danger {
+  color: black; }
+
+.text-info {
+  color: #c9f3f9; }
+
+.text-white {
+  color: white; }
+
+.text-success {
+  color: #e1ea2a; }
+
+p {
+  font-family: Archer;
+  font-weight: 200;
+  font-size: 18px; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 22px; } }
+  p.general {
+    font-size: 24px; }
+    @media (min-width: 768px) {
+      p.general {
+        font-size: 30px; } }
+  p.captain {
+    font-size: 22px; }
+    @media (min-width: 768px) {
+      p.captain {
+        font-size: 26px; } }
+  p.sergent {
+    font-size: 22px; }
+    @media (min-width: 768px) {
+      p.sergent {
+        font-size: 24px; } }
+
+.bullet {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border-radius: 50%;
+  border: 3px solid black;
+  -webkit-transition: border-width 0.1s ease;
+  -moz-transition: border-width 0.1s ease;
+  -ms-transition: border-width 0.1s ease;
+  -o-transition: border-width 0.1s ease;
+  transition: border-width 0.1s ease; }
+  .bullet.bullet-primary {
+    background: transparent;
+    border-color: black; }
+    .bullet.bullet-primary:active, .bullet.bullet-primary.active {
+      border-color: black; }
+  .bullet.bullet-default {
+    background: transparent;
+    border-color: black; }
+    .bullet.bullet-default:active, .bullet.bullet-default.active {
+      border-color: black; }
+  .bullet.bullet-success {
+    background: transparent;
+    border-color: #e1ea2a; }
+    .bullet.bullet-success:active, .bullet.bullet-success.active {
+      border-color: #c4cd14; }
+  .bullet:hover {
+    border-width: 8px; }
+  .bullet:active, .bullet.active {
+    border-width: 13px; }
+  .bullet.bullet-sm {
+    width: 20px;
+    height: 20px;
+    border-width: 3px; }
+    .bullet.bullet-sm:hover {
+      border-width: 5px; }
+    .bullet.bullet-sm:active, .bullet.bullet-sm.active {
+      border-width: 10px; }
+
+.bullet-group.bullet-vertical .bullet {
+  margin-bottom: 5px; }
+
+/*ANIMATIONS*/
+@-webkit-keyframes flower-orbit {
+  from {
+    -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg); } }
+
+@keyframes flower-orbit {
+  from {
+    transform: rotate(0deg) translateX(10px) rotate(0deg); }
+
+  to {
+    transform: rotate(360deg) translateX(10px) rotate(-360deg); } }
+
+@-webkit-keyframes flower-orbit-reverse {
+  from {
+    -webkit-transform: rotate(0deg) translateX(-10px) rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(-360deg) translateX(-10px) rotate(360deg); } }
+
+@keyframes flower-orbit-reverse {
+  from {
+    transform: rotate(0deg) translateX(-10px) rotate(0deg); }
+
+  to {
+    transform: rotate(-360deg) translateX(-10px) rotate(360deg); } }
+
+@-webkit-keyframes flower-pulsation {
+  from {
+    -webkit-transform: scale(1); }
+
+  50% {
+    -webkit-transform: scale(1.2); }
+
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes flower-pulsation {
+  from {
+    transform: scale(1); }
+
+  50% {
+    transform: scale(1.2); }
+
+  to {
+    transform: scale(1); } }
+
+@-webkit-keyframes flower-pollen-pulsation {
+  from {
+    -webkit-transform: scale(1); }
+
+  50% {
+    -webkit-transform: scale(1.5); }
+
+  to {
+    -webkit-transform: scale(1); } }
+
+@keyframes flower-pollen-pulsation {
+  from {
+    transform: scale(1); }
+
+  50% {
+    transform: scale(1.5); }
+
+  to {
+    transform: scale(1); } }
+
+@-webkit-keyframes flower-disc-rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes flower-disc-rotation {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes flower-disc-rotation-reverse {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(-360deg); } }
+
+@keyframes flower-disc-rotation-reverse {
+  from {
+    transform: rotate(0deg); }
+
+  to {
+    transform: rotate(-360deg); } }
+
+@-webkit-keyframes flower-wind-effect {
+  from {
+    -webkit-transform: rotate(-5deg); }
+
+  50% {
+    -webkit-transform: rotate(5deg); }
+
+  to {
+    -webkit-transform: rotate(-5deg); } }
+
+@-webkit-keyframes flower-color-carousel {
+  0% {
+    fill: #e5c4a9; }
+
+  25% {
+    fill: black; }
+
+  50% {
+    fill: #e5c4a9; }
+
+  75% {
+    fill: #e1ea2a; }
+
+  100% {
+    fill: #e5c4a9; } }
+
+@keyframes flower-color-carousel {
+  0% {
+    fill: #e5c4a9; }
+
+  25% {
+    fill: black; }
+
+  50% {
+    fill: #e5c4a9; }
+
+  75% {
+    fill: #e1ea2a; }
+
+  100% {
+    fill: #e5c4a9; } }
+
+@-webkit-keyframes scroll-up-indicator-animation {
+  /*Blink 1*/
+  0% {
+    -webkit-transform: translateY(5px); }
+
+  70% {
+    -webkit-transform: translateY(-12px); }
+
+  100% {
+    -webkit-transform: translateY(5px); } }
+
+@keyframes scroll-up-indicator-animation {
+  /*Blink 1*/
+  0% {
+    transform: translateY(5px); }
+
+  70% {
+    transform: translateY(-12px); }
+
+  100% {
+    transform: translateY(5px); } }
+
+/* 
+
+	Animated flowers in SVG + CSS3 =========================================================================================
+	
+		A flower structure:
+			SVG.ci-plant
+				.ci-animated-flower				 - Could contain N flowers
+					.ci-flower-petals			 - Just a container for petals
+						.ci-flower-petal		 - Every single petal
+					.ci-flower-disc				 - A group of shapes that form a flower skeleton
+					.ci-flower-pollen			 - The yellow center circle of a flower
+					.ci-flower-body
+
+				.ci-body						 - It's the main usually bottom branch of the plant (Not so useful actually)
+
+				.ci-leaves
+					.ci-leave
+
+
+	========================================================================================================================
+	
+*/
+/* ================== THE SVG.ci-plant CONTAINER ================== */
+svg.ci-plant {
+  /* ================== SINGLE ANIMATED FLOWER g.ci-animated-flower ================== */ }
+  svg.ci-plant .ci-animated-flower {
+    -webkit-transition: opacity 0.5s ease;
+    -moz-transition: opacity 0.5s ease;
+    -ms-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    /* ================== FLOWER PETALS GROUP g.ci-flower-petals ================== */
+    /* ================== FLOWER ANIMATION CONTROLS ================== */
+    /* ======================== FLOWER COLORS ======================== */ }
+    svg.ci-plant .ci-animated-flower .ci-flower-petals {
+      padding: 10px;
+      height: 80px;
+      width: 80px;
+      /* ================== SINGLE PETAL OF THE GROUP ================== */ }
+      svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-sm {
+        height: 60px;
+        width: 60px; }
+      svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-lg {
+        height: 100px;
+        width: 100px; }
+      svg.ci-plant .ci-animated-flower .ci-flower-petals.flower-xl {
+        height: 150px;
+        width: 150px; }
+      svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal {
+        opacity: .7; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-rotate-slow {
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          -webkit-animation: flower-disc-rotation 15s linear infinite;
+          -moz-animation: flower-disc-rotation 15s linear infinite;
+          -ms-animation: flower-disc-rotation 15s linear infinite;
+          -o-animation: flower-disc-rotation 15s linear infinite;
+          animation: flower-disc-rotation 15s linear infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-rotate {
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          -webkit-animation: flower-disc-rotation 10s linear infinite;
+          -moz-animation: flower-disc-rotation 10s linear infinite;
+          -ms-animation: flower-disc-rotation 10s linear infinite;
+          -o-animation: flower-disc-rotation 10s linear infinite;
+          animation: flower-disc-rotation 10s linear infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-rotate-fast {
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          -webkit-animation: flower-disc-rotation 5s linear infinite;
+          -moz-animation: flower-disc-rotation 5s linear infinite;
+          -ms-animation: flower-disc-rotation 5s linear infinite;
+          -o-animation: flower-disc-rotation 5s linear infinite;
+          animation: flower-disc-rotation 5s linear infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-orbit-slow {
+          -webkit-animation: flower-orbit 8s ease infinite;
+          -moz-animation: flower-orbit 8s ease infinite;
+          -ms-animation: flower-orbit 8s ease infinite;
+          -o-animation: flower-orbit 8s ease infinite;
+          animation: flower-orbit 8s ease infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-orbit {
+          -webkit-animation: flower-orbit 6s ease infinite;
+          -moz-animation: flower-orbit 6s ease infinite;
+          -ms-animation: flower-orbit 6s ease infinite;
+          -o-animation: flower-orbit 6s ease infinite;
+          animation: flower-orbit 6s ease infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-orbit-reverse {
+          -webkit-animation: flower-orbit-reverse 6s ease infinite;
+          -moz-animation: flower-orbit-reverse 6s ease infinite;
+          -ms-animation: flower-orbit-reverse 6s ease infinite;
+          -o-animation: flower-orbit-reverse 6s ease infinite;
+          animation: flower-orbit-reverse 6s ease infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-orbit-fast {
+          -webkit-animation: flower-orbit 4s ease infinite;
+          -moz-animation: flower-orbit 4s ease infinite;
+          -ms-animation: flower-orbit 4s ease infinite;
+          -o-animation: flower-orbit 4s ease infinite;
+          animation: flower-orbit 4s ease infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-pulse-slow {
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          -webkit-animation: flower-pulsation 10s ease infinite;
+          -moz-animation: flower-pulsation 10s ease infinite;
+          -ms-animation: flower-pulsation 10s ease infinite;
+          -o-animation: flower-pulsation 10s ease infinite;
+          animation: flower-pulsation 10s ease infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-pulse {
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          -webkit-animation: flower-pulsation 6s ease infinite;
+          -moz-animation: flower-pulsation 6s ease infinite;
+          -ms-animation: flower-pulsation 6s ease infinite;
+          -o-animation: flower-pulsation 6s ease infinite;
+          animation: flower-pulsation 6s ease infinite; }
+        svg.ci-plant .ci-animated-flower .ci-flower-petals .ci-flower-petal.ci-petal-pulse-fast {
+          -webkit-transform-origin: 50% 50%;
+          -moz-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          -o-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          -webkit-animation: flower-pulsation 4s ease infinite;
+          -moz-animation: flower-pulsation 4s ease infinite;
+          -ms-animation: flower-pulsation 4s ease infinite;
+          -o-animation: flower-pulsation 4s ease infinite;
+          animation: flower-pulsation 4s ease infinite; }
+    svg.ci-plant .ci-animated-flower.ci-flower-blur {
+      opacity: 0.1;
+      z-index: -1; }
+    svg.ci-plant .ci-animated-flower .ci-flower-disc {
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation-name: flower-disc-rotation;
+      -moz-animation-name: flower-disc-rotation;
+      -ms-animation-name: flower-disc-rotation;
+      -o-animation-name: flower-disc-rotation;
+      animation-name: flower-disc-rotation;
+      -webkit-animation-duration: normal;
+      -moz-animation-duration: normal;
+      -ms-animation-duration: normal;
+      -o-animation-duration: normal;
+      animation-duration: normal;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+      -o-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+      -o-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-duration: 10s;
+      -moz-animation-duration: 10s;
+      -ms-animation-duration: 10s;
+      -o-animation-duration: 10s;
+      animation-duration: 10s; }
+      svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-slow {
+        -webkit-animation-duration: 20s;
+        -moz-animation-duration: 20s;
+        -ms-animation-duration: 20s;
+        -o-animation-duration: 20s;
+        animation-duration: 20s; }
+      svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-veryslow {
+        -webkit-animation-duration: 30s;
+        -moz-animation-duration: 30s;
+        -ms-animation-duration: 30s;
+        -o-animation-duration: 30s;
+        animation-duration: 30s; }
+      svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-fast {
+        -webkit-animation-duration: 4s;
+        -moz-animation-duration: 4s;
+        -ms-animation-duration: 4s;
+        -o-animation-duration: 4s;
+        animation-duration: 4s; }
+      svg.ci-plant .ci-animated-flower .ci-flower-disc.ci-disc-reverse {
+        -webkit-animation-name: flower-disc-rotation-reverse;
+        -moz-animation-name: flower-disc-rotation-reverse;
+        -ms-animation-name: flower-disc-rotation-reverse;
+        -o-animation-name: flower-disc-rotation-reverse;
+        animation-name: flower-disc-rotation-reverse; }
+    svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse-slow {
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-pollen-pulsation 15s ease infinite;
+      -moz-animation: flower-pollen-pulsation 15s ease infinite;
+      -ms-animation: flower-pollen-pulsation 15s ease infinite;
+      -o-animation: flower-pollen-pulsation 15s ease infinite;
+      animation: flower-pollen-pulsation 15s ease infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse {
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-pollen-pulsation 8s ease infinite;
+      -moz-animation: flower-pollen-pulsation 8s ease infinite;
+      -ms-animation: flower-pollen-pulsation 8s ease infinite;
+      -o-animation: flower-pollen-pulsation 8s ease infinite;
+      animation: flower-pollen-pulsation 8s ease infinite; }
+    svg.ci-plant .ci-animated-flower .ci-flower-pollen.ci-pollen-pulse-fast {
+      -webkit-transform-origin: 50% 50%;
+      -moz-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      -o-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      -webkit-animation: flower-pollen-pulsation 5s ease infinite;
+      -moz-animation: flower-pollen-pulsation 5s ease infinite;
+      -ms-animation: flower-pollen-pulsation 5s ease infinite;
+      -o-animation: flower-pollen-pulsation 5s ease infinite;
+      animation: flower-pollen-pulsation 5s ease infinite; }
+    svg.ci-plant .ci-animated-flower.ci-flower-stop-animation, svg.ci-plant .ci-animated-flower.ci-flower-stop-animation.ci-windy, svg.ci-plant .ci-animated-flower.ci-flower-stop-animation .ci-flower-petals .ci-flower-petal, svg.ci-plant .ci-animated-flower.ci-flower-stop-animation .ci-flower-disc, svg.ci-plant .ci-animated-flower.ci-flower-stop-animation .ci-flower-pollen {
+      -webkit-animation-play-state: paused;
+      -moz-animation-play-state: paused;
+      -ms-animation-play-state: paused;
+      -o-animation-play-state: paused;
+      animation-play-state: paused; }
+    svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal {
+      fill: black;
+      stroke: none; }
+      svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal path {
+        fill: black; }
+      svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal:last-child {
+        fill: black; }
+      svg.ci-plant .ci-animated-flower.ci-flower-primary .ci-flower-petals .ci-flower-petal:first-child {
+        fill: black; }
+    svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal {
+      fill: #d9a982;
+      stroke: none; }
+      svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal path {
+        fill: #d9a982; }
+      svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal:last-child {
+        fill: #d39c6e; }
+      svg.ci-plant .ci-animated-flower.ci-flower-warning .ci-flower-petals .ci-flower-petal:first-child {
+        fill: #dfb795; }
+    svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal {
+      fill: black;
+      stroke: none; }
+      svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal path {
+        fill: black; }
+      svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal:last-child {
+        fill: black; }
+      svg.ci-plant .ci-animated-flower.ci-flower-danger .ci-flower-petals .ci-flower-petal:first-child {
+        fill: black; }
+    svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal {
+      fill: #9be9f4;
+      stroke: none; }
+      svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal path {
+        fill: #9be9f4; }
+      svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal:last-child {
+        fill: #84e4f1; }
+      svg.ci-plant .ci-animated-flower.ci-flower-info .ci-flower-petals .ci-flower-petal:first-child {
+        fill: #b2eef6; }
+    svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal {
+      fill: #c4cd14;
+      stroke: none; }
+      svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal path {
+        fill: #c4cd14; }
+      svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal:last-child {
+        fill: #aeb612; }
+      svg.ci-plant .ci-animated-flower.ci-flower-success .ci-flower-petals .ci-flower-petal:first-child {
+        fill: #dae416; }
+    svg.ci-plant .ci-animated-flower.ci-flower-info.ci-windy {
+      -webkit-transform-origin: right bottom;
+      -moz-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+      -o-transform-origin: right bottom;
+      transform-origin: right bottom;
+      -webkit-animation: flower-wind-effect 10s ease infinite;
+      -moz-animation: flower-wind-effect 10s ease infinite;
+      -ms-animation: flower-wind-effect 10s ease infinite;
+      -o-animation: flower-wind-effect 10s ease infinite;
+      animation: flower-wind-effect 10s ease infinite; }
+  svg.ci-plant .ci-leaves .ci-leave {
+    opacity: 0.7; }
+
+/* ================== END OF SVG CONTAINER ================== */
+.btn .ci-animated-flower, .flower-pot .ci-animated-flower {
+  position: absolute;
+  right: 80%;
+  top: -100%;
+  z-index: -1; }
+
+.no-margin {
+  margin: 0 !important; }
+
+.no-padding {
+  padding: 0 !important; }
+
+.no-padding-top {
+  padding-top: 0 !important; }
+
+.no-margin-top {
+  margin-top: 0 !important; }
+
+.margin-top, .wrapper1080 .main-content .margin-top {
+  margin-top: 10px; }
+
+.padding-top, .wrapper1080 .main-content .padding-top {
+  padding-top: 10px; }
+
+.margin-top-2, .wrapper1080 .main-content .margin-top-2 {
+  margin-top: 20px; }
+
+.padding-top-2, .wrapper1080 .main-content .padding-top-2 {
+  padding-top: 20px; }
+
+.margin-top-3, .wrapper1080 .main-content .margin-top-3 {
+  margin-top: 30px; }
+
+.padding-top-3, .wrapper1080 .main-content .padding-top-3 {
+  padding-top: 30px; }
+
+.margin-top-4, .wrapper1080 .main-content .margin-top-4 {
+  margin-top: 40px; }
+
+.padding-top-4, .wrapper1080 .main-content .padding-top-4 {
+  padding-top: 40px; }
+
+.margin-top-5, .wrapper1080 .main-content .margin-top-5 {
+  margin-top: 50px; }
+
+.padding-top-5, .wrapper1080 .main-content .padding-top-5 {
+  padding-top: 50px; }
+
+.no-padding-left {
+  padding-left: 0 !important; }
+
+.no-margin-left {
+  margin-left: 0 !important; }
+
+.margin-left, .wrapper1080 .main-content .margin-left {
+  margin-left: 10px; }
+
+.padding-left, .wrapper1080 .main-content .padding-left {
+  padding-left: 10px; }
+
+.margin-left-2, .wrapper1080 .main-content .margin-left-2 {
+  margin-left: 20px; }
+
+.padding-left-2, .wrapper1080 .main-content .padding-left-2 {
+  padding-left: 20px; }
+
+.margin-left-3, .wrapper1080 .main-content .margin-left-3 {
+  margin-left: 30px; }
+
+.padding-left-3, .wrapper1080 .main-content .padding-left-3 {
+  padding-left: 30px; }
+
+.margin-left-4, .wrapper1080 .main-content .margin-left-4 {
+  margin-left: 40px; }
+
+.padding-left-4, .wrapper1080 .main-content .padding-left-4 {
+  padding-left: 40px; }
+
+.margin-left-5, .wrapper1080 .main-content .margin-left-5 {
+  margin-left: 50px; }
+
+.padding-left-5, .wrapper1080 .main-content .padding-left-5 {
+  padding-left: 50px; }
+
+.no-padding-right {
+  padding-right: 0 !important; }
+
+.no-margin-right {
+  margin-right: 0 !important; }
+
+.margin-right, .wrapper1080 .main-content .margin-right {
+  margin-right: 10px; }
+
+.padding-right, .wrapper1080 .main-content .padding-right {
+  padding-right: 10px; }
+
+.margin-right-2, .wrapper1080 .main-content .margin-right-2 {
+  margin-right: 20px; }
+
+.padding-right-2, .wrapper1080 .main-content .padding-right-2 {
+  padding-right: 20px; }
+
+.margin-right-3, .wrapper1080 .main-content .margin-right-3 {
+  margin-right: 30px; }
+
+.padding-right-3, .wrapper1080 .main-content .padding-right-3 {
+  padding-right: 30px; }
+
+.margin-right-4, .wrapper1080 .main-content .margin-right-4 {
+  margin-right: 40px; }
+
+.padding-right-4, .wrapper1080 .main-content .padding-right-4 {
+  padding-right: 40px; }
+
+.margin-right-5, .wrapper1080 .main-content .margin-right-5 {
+  margin-right: 50px; }
+
+.padding-right-5, .wrapper1080 .main-content .padding-right-5 {
+  padding-right: 50px; }
+
+.no-padding-bottom {
+  padding-bottom: 0 !important; }
+
+.no-margin-bottom {
+  margin-bottom: 0 !important; }
+
+.margin-bottom, .wrapper1080 .main-content .margin-bottom {
+  margin-bottom: 10px; }
+
+.padding-bottom, .wrapper1080 .main-content .padding-bottom {
+  padding-bottom: 10px; }
+
+.margin-bottom-2, .wrapper1080 .main-content .margin-bottom-2 {
+  margin-bottom: 20px; }
+
+.padding-bottom-2, .wrapper1080 .main-content .padding-bottom-2 {
+  padding-bottom: 20px; }
+
+.margin-bottom-3, .section-header, .wrapper1080 .main-content .margin-bottom-3, .wrapper1080 .main-content .section-header {
+  margin-bottom: 30px; }
+
+.padding-bottom-3, .wrapper1080 .main-content .padding-bottom-3 {
+  padding-bottom: 30px; }
+
+.margin-bottom-4, .wrapper1080 .main-content .margin-bottom-4 {
+  margin-bottom: 40px; }
+
+.padding-bottom-4, .wrapper1080 .main-content .padding-bottom-4 {
+  padding-bottom: 40px; }
+
+.margin-bottom-5, .wrapper1080 .main-content .margin-bottom-5 {
+  margin-bottom: 50px; }
+
+.padding-bottom-5, .wrapper1080 .main-content .padding-bottom-5 {
+  padding-bottom: 50px; }

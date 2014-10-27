@@ -1,0 +1,20 @@
+
+// font mixins
+@mixin typo_brand_strong {
+	font-family: $font_brand_strong;
+	font-weight: 800;
+}
+@mixin typo_brand_weak {
+	font-family: $font_brand_weak;
+	font-weight: 200;
+}
+
+
+// Cross-browsers mixins
+@mixin cB($property, $value){
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	-ms-#{$property}: $value;
+	-o-#{$property}: $value;
+	#{$property}: $value;
+}

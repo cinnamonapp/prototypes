@@ -1,0 +1,72 @@
+// SET YOUR STYLES HERE
+$button_styles: "primary" $action_primary, 
+				"warning" $action_warning,
+				"danger"  $action_danger,
+				"info"    $action_info,
+				"white"   white,
+				"default" $base_color,
+				"success" $action_success;
+
+/*Primary button*/
+.btn{
+
+	@include typo_brand_strong;
+	outline: none !important;
+
+	// STYLES FROM $button_styles on top
+	@each $style in $button_styles{
+		$loop_button_name: nth($style, 1);
+		$loop_button_color: nth($style, 2);
+
+		// COLORS
+		&.btn-#{$loop_button_name}{
+			background: $loop_button_color;
+			color: white;
+			border-color: $loop_button_color;
+			border-radius: 0;
+
+			text-transform: uppercase;
+
+			&:hover{
+				background: lighten($loop_button_color, 5%);
+				border-color: lighten($loop_button_color, 5%);
+			}
+
+			&:active, &.active{
+				background: darken($loop_button_color, 5%);
+				border-color: darken($loop_button_color, 5%);
+				box-shadow: none;
+				// box-shadow: inset 0px 3px 3px darken($loop_button_color, 10%);
+			}
+
+			&.btn-outline{
+				color: $loop_button_color;
+				border: 2px solid $loop_button_color;
+				background: transparent;
+
+				&:hover, &.hover{
+					color: white;
+					background: $loop_button_color;
+				}
+
+				&:active, &.active{
+					color: white;
+					background: darken($loop_button_color, 5%);
+
+				}
+			}
+
+			&.btn-line{
+				color: $loop_button_color;
+				border: none;
+				background: transparent;
+				text-decoration: underline;
+				padding: 0px;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+}

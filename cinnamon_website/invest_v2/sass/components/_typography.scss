@@ -1,0 +1,71 @@
+// H tags style
+@import "components/headings";
+// Links style
+@import "components/links";
+
+
+.typo-brand-strong{
+	@include typo_brand_strong;
+}
+
+.typo-brand-weak{
+	@include typo_brand_weak;
+}
+
+
+// .text-styles 
+$text_color_styles: "primary" $action_primary, 
+					"warning" $action_warning,
+					"danger"  $action_danger,
+					"info"    $action_info,
+					"white"   white,
+					"success" $action_success;
+
+@each $style in $text_color_styles{
+	$loop_text_name: nth($style, 1);
+	$loop_text_color: nth($style, 2);
+
+	.text-#{$loop_text_name}{
+		color: $loop_text_color;
+	}
+
+}
+
+// Paragraphs
+p{
+	@include typo_brand_weak;
+	font-size: 18px;
+
+	@media (min-width: 768px){
+		font-size: 22px;
+	}
+
+	&.general{
+		font-size: 24px;
+
+		@media (min-width: 768px){
+			font-size: 30px;
+		}
+	}
+
+	&.captain{
+		font-size: 22px;
+
+		@media (min-width: 768px){
+			font-size: 26px;
+		}
+	}
+
+	&.sergent{
+		font-size: 22px;
+
+		@media (min-width: 768px){
+			font-size: 24px;
+		}
+	}
+}
+
+// Divs
+div{
+
+}

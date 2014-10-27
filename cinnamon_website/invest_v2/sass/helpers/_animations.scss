@@ -1,0 +1,126 @@
+/*ANIMATIONS*/
+
+	// flower-orbit: Moves a single petal on a defined ellipse clockwise
+	@-webkit-keyframes flower-orbit {
+		from	{ -webkit-transform: rotate(0deg) translateX(10px) rotate(0deg); }
+		to		{ -webkit-transform: rotate(360deg) translateX(10px) rotate(-360deg); }
+	}
+
+	@keyframes flower-orbit {
+		from	{ transform: rotate(0deg) translateX(10px) rotate(0deg); }
+		to		{ transform: rotate(360deg) translateX(10px) rotate(-360deg); }
+	}
+
+
+
+	// flower-orbit-reverse: Moves a single petal on a defined ellipse anti-clockwise
+	@-webkit-keyframes flower-orbit-reverse {
+		from	{ -webkit-transform: rotate(0deg) translateX(-10px) rotate(0deg); }
+		to		{ -webkit-transform: rotate(-360deg) translateX(-10px) rotate(360deg); }
+	}
+	@keyframes flower-orbit-reverse {
+		from	{ transform: rotate(0deg) translateX(-10px) rotate(0deg); }
+		to		{ transform: rotate(-360deg) translateX(-10px) rotate(360deg); }
+	}
+
+
+
+	// flower-pulsation: Makes a single petal pulse
+	@-webkit-keyframes flower-pulsation {
+		from	{ -webkit-transform: scale(1); }
+		50%		{ -webkit-transform: scale(1.2); }
+		to		{ -webkit-transform: scale(1); }
+	}
+	@keyframes flower-pulsation {
+		from	{ transform: scale(1); }
+		50%		{ transform: scale(1.2); }
+		to		{ transform: scale(1); }
+	}
+
+
+
+	// flower-pollen-pulsation: Makes a pollen pulse
+	@-webkit-keyframes flower-pollen-pulsation {
+		from	{ -webkit-transform: scale(1); }
+		50%		{ -webkit-transform: scale(1.5); }
+		to		{ -webkit-transform: scale(1); }
+	}
+	@keyframes flower-pollen-pulsation {
+		from	{ transform: scale(1); }
+		50%		{ transform: scale(1.5); }
+		to		{ transform: scale(1); }
+	}
+
+
+
+	// flower-disc-rotation: Rotates an object clockwise
+	@-webkit-keyframes flower-disc-rotation {
+		from	{ -webkit-transform: rotate(0deg); }
+		to		{ -webkit-transform: rotate(360deg); }
+	}
+	@keyframes flower-disc-rotation {
+		from	{ transform: rotate(0deg); }
+		to		{ transform: rotate(360deg); }
+	}
+
+
+
+	// flower-disc-rotation-reverse: Rotates an object anti-clockwise
+	@-webkit-keyframes flower-disc-rotation-reverse {
+		from	{ -webkit-transform: rotate(0deg); }
+		to		{ -webkit-transform: rotate(-360deg); }
+	}
+	@keyframes flower-disc-rotation-reverse {
+		from	{ transform: rotate(0deg); }
+		to		{ transform: rotate(-360deg); }
+	}
+
+
+
+	// flower-wind-effect: Simulates the oscillation of a branch in the wind
+	@-webkit-keyframes flower-wind-effect {
+		from	{ -webkit-transform: rotate(-5deg); }
+		50%		{ -webkit-transform: rotate(5deg); }
+		to		{ -webkit-transform: rotate(-5deg); }
+	}
+
+
+
+
+	// flower-color-carousel: Changes a petal's colour every definite time
+	@-webkit-keyframes flower-color-carousel {
+		0%		{ fill: $weak_color }
+		25%		{ fill: $primary_color }
+		50%		{ fill: $secondary_color }
+		75%		{ fill: $success_color }
+		100%	{ fill: $weak_color }
+	}
+	@keyframes flower-color-carousel {
+		0%		{ fill: $weak_color }
+		25%		{ fill: $primary_color }
+		50%		{ fill: $secondary_color }
+		75%		{ fill: $success_color }
+		100%	{ fill: $weak_color }
+	}
+
+
+
+	// Indicator suggestion
+
+		// Single eyebrow blink
+		@-webkit-keyframes scroll-up-indicator-animation {
+			/*Blink 1*/
+			0% {-webkit-transform: translateY(5px);}
+			70% {-webkit-transform: translateY(-12px);}
+			100% {-webkit-transform: translateY(5px);}
+		}
+
+		@keyframes scroll-up-indicator-animation {
+			/*Blink 1*/
+			0% {transform: translateY(5px);}
+			70% {transform: translateY(-12px);}
+			100% {transform: translateY(5px);}
+		}
+
+	// indicator suggestion ends
+
