@@ -1,17 +1,22 @@
 .thumbnail{
   width: 80px;
   height: 80px;
-  border: 1px solid #e5c4a9;
+  border: 2px solid $secondary_color;
   box-shadow: none;
   border-radius: 0;
   background: #000000;
-  padding: 2px;
+  padding: 0px;
 
   &.thumbnail-default{
     background: $secondary_color;
   }
 }
 
+.section.section-info{
+  .thumbnail{
+    border-color: $primary_color;
+  }
+}
 
 .media{
   &.team-member{

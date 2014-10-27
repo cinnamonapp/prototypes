@@ -708,13 +708,16 @@ body {
 .thumbnail {
   width: 80px;
   height: 80px;
-  border: 1px solid #e5c4a9;
+  border: 2px solid #e5c4a9;
   box-shadow: none;
   border-radius: 0;
   background: #000000;
-  padding: 2px; }
+  padding: 0px; }
   .thumbnail.thumbnail-default {
     background: #e5c4a9; }
+
+.section.section-info .thumbnail {
+  border-color: black; }
 
 .media.team-member .pull-left {
   margin-right: 20px; }
