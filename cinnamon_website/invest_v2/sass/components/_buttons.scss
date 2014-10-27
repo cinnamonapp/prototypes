@@ -1,10 +1,10 @@
 // SET YOUR STYLES HERE
-$button_styles: "primary" $action_primary, 
+$button_styles: "primary" $action_primary,
 				"warning" $action_warning,
 				"danger"  $action_danger,
 				"info"    $action_info,
 				"white"   white,
-				"default" $base_color,
+				"default" $secondary_color,
 				"success" $action_success;
 
 /*Primary button*/
@@ -25,7 +25,7 @@ $button_styles: "primary" $action_primary,
 			border-color: $loop_button_color;
 			border-radius: 0;
 
-			text-transform: uppercase;
+			text-transform: lowercase;
 
 			&:hover{
 				background: lighten($loop_button_color, 5%);
@@ -52,7 +52,6 @@ $button_styles: "primary" $action_primary,
 				&:active, &.active{
 					color: white;
 					background: darken($loop_button_color, 5%);
-
 				}
 			}
 
@@ -65,6 +64,11 @@ $button_styles: "primary" $action_primary,
 				&:hover{
 					text-decoration: none;
 				}
+			}
+
+			&.btn-wider{
+				padding-left: 30px;
+				padding-right: 30px;
 			}
 		}
 

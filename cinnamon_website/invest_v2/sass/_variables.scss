@@ -33,8 +33,8 @@ $success_color: $green;
 
 
 // Fonts
-$font_brand_strong: Titillium;
-$font_brand_weak: Archer;
+$font_brand_strong: 'Futura';
+$font_brand_weak: 'Futura Std';
 
 // Actionable colors
 $action_primary: 	$primary_color;
@@ -47,6 +47,6 @@ $action_info: 		$dark_water_blue;
 // Sections colors
 $section_primary: $primary_color;
 $section_success: $success_color;
-$section_info: $weak_color;
+$section_info: $secondary_color;
 $section_danger: $strong_color;
 $section_dream: $secondary_color;

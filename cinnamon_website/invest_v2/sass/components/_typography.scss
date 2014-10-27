@@ -13,8 +13,8 @@
 }
 
 
-// .text-styles 
-$text_color_styles: "primary" $action_primary, 
+// .text-styles
+$text_color_styles: "primary" $action_primary,
 					"warning" $action_warning,
 					"danger"  $action_danger,
 					"info"    $action_info,
@@ -35,21 +35,24 @@ $text_color_styles: "primary" $action_primary,
 p{
 	@include typo_brand_weak;
 	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 30px;
 
 	@media (min-width: 768px){
-		font-size: 22px;
+		font-size: 18px;
 	}
 
 	&.general{
-		font-size: 24px;
+		font-size: 26px;
 
 		@media (min-width: 768px){
-			font-size: 30px;
+			font-size: 28px;
 		}
 	}
 
 	&.captain{
-		font-size: 22px;
+		font-size: 24px;
 
 		@media (min-width: 768px){
 			font-size: 26px;
@@ -65,7 +68,6 @@ p{
 	}
 }
 
-// Divs
-div{
-
+body{
+	letter-spacing: 1px;
 }

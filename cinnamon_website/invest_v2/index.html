@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Cinnamon - The perfect companion for IOS</title>
-		<!-- <script data-main="js/main" src="js/require.js"></script> -->
+		<script data-main="js/main" src="js/require.js"></script>
 		<link rel="stylesheet" type="text/css" href="stylesheets/lib/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/lib/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
@@ -35,37 +35,173 @@
 	</head>
 	<body>
 
-			<section class="section window-sized" id="cinnamon-seed">
-				<div class="container ci-text-container">
-					<div class="row">
-						<div class="col-sm-7">
-							<div class="section-header">
-								<h1>It all starts with a seed</h1>
+		<!-- Cinnamon website navigation -->
+		<nav class="navbar navbar-default navbar-cinnamon" role="navigation">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+						<img src="images/logo.png" alt="Cinnamon logo" height="50" />
+					</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Problem</a></li>
+		        <li><a href="#">Solution</a></li>
+		        <li><a href="#">People</a></li>
+						<li>
+							<button class="navbar-btn btn btn-default btn-outline btn-wider">Contact</button>
+						</li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav><!-- /.navbar -->
+
+
+		<section class="section section-primary section-size-10 section-with-background-img">
+
+			<img src="images/background-intro.png" alt="Cinnamon intro" class="img-background" />
+
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<div class="section-header">
+							<h1>Swap sugar with Cinnamon</h1>
+						</div>
+						<p class="sergent">
+							Manage glucose levels &amp; break the sugar addition cycle
+						</p>
+
+						<!-- <a href="#cinnamon-plant" class="btn btn-lg btn-default btn-outline">
+							Tell me more
+						</a> -->
+					</div><!-- / .col-x -->
+				</div><!-- / .row -->
+			</div><!-- / .container -->
+
+		</section><!-- / .section -->
+
+		<!-- The problem section -->
+		<section class="section section-primary section-size-2">
+			<div class="container">
+				<hr>
+
+				<div class="row">
+					<div class="col-md-offset-1 col-md-4">
+						<div class="incredible-fact">
+							<div class="fact-title">
+								1.7 Billion
 							</div>
-							<p class="general">
-								Cinnamon is an application born to track<br>good routines
-								in your life. Cinnamon blooms<br>different flowers based
-								on your lifestyle. <br> <br>
-								It is also the prettiest interactive & <br>
-								generative plant you've ever seen.
-							</p>
-							<br>
-							<br>
-
-							<div class="btn-group">
-								<a href="#cinnamon-plant" class="btn btn-lg btn-default btn-outline">
-									Tell me more
-								</a>
-
+							<div class="fact-subtitle">
+								people are affected by health issues related to glucose
 							</div>
 						</div>
+					</div>
 
+					<div class="col-md-6">
+						<h5 class="section-title">The problem</h5>
+
+						<p>
+							Today, 1.7 billion people are affected by health issues related to glucose: a continuum of health problems ranging from mild insulin resistance and overweight, to obesity and diabetes.
+						</p>
+
+						<p>
+							In a few years, half a billion people will be affected by full blown diabetes and 1 billion by pre-diabetes.<br>
+							This is the single biggest chronic disease in the world, which, along with smoking, causes nearly all the major health burdens of the 21st century, including heart disease, stroke, dementia and even cancer.
+						</p>
+
+						<p>
+							The cause of this sugar epidemic is in our diet: we develop a sugar addiction because 80% of the food we buy at the grocery store hides some sort of sugar. We are not aware of this addiction and its deadly consequences and are unprepared to deal with it; even worse, doctors are not expected, trained, or paid to diagnose or treat it.
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- The solution section -->
+		<section class="section section-info section-size-2 overflow-hidden">
+			<div class="container">
+				<hr>
+
+				<div class="row">
+					<!-- Visible only on mobile -->
+					<div class="col-md-7 text-center visible-xs">
+						<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="80%"/>
 					</div>
 
 
+					<div class="col-md-5">
+						<h5 class="section-title">The Solution</h5>
 
+						<p>
+							<b>Cinnamon breaks the sugar addiction cycle</b>, and makes it possible to prevent health issues caused by high glucose levels, and even revert the diseases already developed.
+						</p>
+
+						<p>
+							It builds awareness by keeping blood sugar checked at all times and helps remain within a safe and steady range. Through continuous feedback, personalised tips and a unique gardening interface, it also helps achieving a diet mostly based on plants and real, healthy food.
+						</p>
+						<p>
+							We want to focus on the existing 350 million diabetics first, because they already have a clear and urgent unmet need; then, we want to address the over 1 billion people with health issues related to glucose.
+						</p>
+					</div>
+
+					<div class="col-md-7 text-center hidden-xs">
+						<div style="position: absolute;">
+							<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="80%"/>
+						</div>
+					</div>
 				</div>
-			</section>
+
+			</div>
+		</section>
+
+
+		<section class="section section-primary section-size-2">
+			<div class="container">
+				<hr>
+
+				<div class="row">
+					<div class="col-md-4">
+						<h5 class="section-title">Team</h5>
+						<p>
+							<b>Linnea Passaler</b><br>
+							CEO
+						</p>
+						<p>
+							<b>Alessio Santo</b><br>
+							CTO
+						</p>
+						<p>
+							<b>Dario Buzzini</b><br>
+							Design
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<section class="section section-info section-size-2">
+			<div class="container">
+				<hr>
+
+				<h5 class="section-title">Help us change the way we eat</h5>
+				<a href="#" class="btn btn-primary btn-outline btn-lg">Contact</a>
+
+			</div>
+		</section>
+
 
 	</body>
 </html>
