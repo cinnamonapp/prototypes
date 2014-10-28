@@ -2,6 +2,10 @@
 body{
 	@include typo_brand_weak;
 	color: $base_color;
+
+	@if($navbar_fixed_top){
+		padding-top: 80px;
+	}
 }
 
 // Content sections style

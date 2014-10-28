@@ -33,10 +33,10 @@
 		<!-- End Google Tag Manager -->
 
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#cinnamon-navigation" data-offset="0" style="position:relative;">
 
 		<!-- Cinnamon website navigation -->
-		<nav class="navbar navbar-default navbar-cinnamon" role="navigation">
+		<nav class="navbar navbar-default navbar-cinnamon navbar-fixed-top" role="navigation" id="cinnamon-navigation">
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -54,11 +54,11 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Problem</a></li>
-		        <li><a href="#">Solution</a></li>
-		        <li><a href="#">People</a></li>
+		        <li><a href="#problem">Problem</a></li>
+		        <li><a href="#solution">Solution</a></li>
+		        <li><a href="#people">People</a></li>
 						<li>
-							<button class="navbar-btn btn btn-default btn-outline btn-wider">Contact</button>
+							<button class="navbar-btn btn btn-default btn-outline btn-wider"><i class="fa fa-btc"></i> us now</button>
 						</li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -93,7 +93,7 @@
 		<section class="section section-primary section-size-2">
 			<div class="container">
 				<hr>
-
+				<h2 id="problem">sads</h2>
 				<div class="row">
 					<div class="col-md-offset-1 col-md-4">
 						<div class="incredible-fact">
@@ -132,7 +132,7 @@
 		<section class="section section-info section-size-2 overflow-hidden">
 			<div class="container">
 				<hr>
-
+				<h2 id="solution">sads</h2>
 				<div class="row">
 					<!-- Visible only on mobile -->
 					<div class="col-md-7 text-center visible-xs">
@@ -170,71 +170,90 @@
 			<div class="container">
 				<hr>
 
-				<div class="row">
-					<div class="col-md-4">
+				<div class="row" id="pesople">
+
+					<!-- The team section -->
+					<div class="col-md-5">
 						<h5 class="section-title">Team</h5>
 
 						<div class="media team-member">
-							<a class="pull-left" href="http://www.linkedin.com/in/linneapassaler" target="_blank">
+							<a class="pull-left" href="http://www.linkedin.com/in/linneapassaler" target="_blank" title="View profile on LinkedIn">
 								<img src="images/team/linnea.png" alt="Linnea Passaler CEO @ Cinnamon" class="thumbnail" />
 							</a>
 							<div class="media-body">
-								<p>
-									<b class="media-heading">
-										Linnea Passaler
-									</b><br>
+								<p class="no-margin-bottom">
+									<a href="http://www.linkedin.com/in/linneapassaler" class="media-heading link" target="_blank" title="View profile on LinkedIn">Linnea Passaler</a>
+									<br>
 									CEO <br>
 									<small>Doctor, founder of Italy's largest online health marketplace, Pazienti.it</small>
 								</p>
 							</div>
-						</div>
+						</div><!-- / .CEO -->
 
 						<div class="media team-member">
-							<a class="pull-left" href="http://www.linkedin.com/in/alessiosantocs" target="_blank">
+							<a class="pull-left" href="http://www.linkedin.com/in/alessiosantocs" target="_blank" title="View profile on LinkedIn">
 								<img src="images/team/alessio.png" alt="Alessio Santo CTO @ Cinnamon" class="thumbnail" />
 							</a>
 							<div class="media-body">
-								<p>
-									<b class="media-heading">
-										Alessio Santo
-									</b><br>
+								<p class="no-margin-bottom">
+									<a href="http://www.linkedin.com/in/alessiosantocs" class="media-heading link" target="_blank" title="View profile on LinkedIn">Alessio Santo</a>
+									<br>
 									CTO <br>
 									<small>Former CTO at Pazienti.it and IOS developer</small>
 								</p>
 							</div>
-						</div>
+						</div><!-- / .CTO -->
 
 						<div class="media team-member">
-							<a class="pull-left" href="http://www.linkedin.com/in/dariobuzzini" target="_blank">
+							<a class="pull-left" href="http://www.linkedin.com/in/dariobuzzini" target="_blank" title="View profile on LinkedIn">
 								<img src="images/team/dario.png" alt="Dario Buzzini Designer @ Cinnamon" class="thumbnail" />
 							</a>
 							<div class="media-body">
-								<p>
-									<b class="media-heading">
-										Dario Buzzini
-									</b><br>
+								<p class="no-margin-bottom">
+									<a href="http://www.linkedin.com/in/dariobuzzini" class="media-heading link" target="_blank" title="View profile on LinkedIn">Dario Buzzini</a>
+									<br>
 									Design <br>
 									<small>Director of IDEO NY and interaction designer</small>
 								</p>
 							</div>
-						</div>
+						</div><!-- / .media Designer -->
 
 						<div class="media team-member">
 							<div class="pull-left">
 								<img src="images/team/unknown.png" alt="Currently Defining CPO @ Cinnamon" class="thumbnail thumbnail-default" />
 							</div>
 							<div class="media-body">
-								<p>
+								<p class="no-margin-bottom">
 									<b class="media-heading">
 										Currently Defining
 									</b><br>
 									CPO
 								</p>
 							</div>
-						</div>
+						</div><!-- / .media CPO -->
 
+					</div><!-- / .col-* team section -->
+
+					<!-- Roadmap -->
+					<div class="col-md-4 col-md-offset-1">
+						<h5 class="section-title">Roadmap</h5>
+						<p>
+							<b>Concept &amp; User Testing</b><br>
+							3 Months
+						</p>
+
+						<p>
+							<b>Limited Release (with selected users)</b><br>
+							6 Months
+						</p>
+
+						<p>
+							<b>General Availability (customer acquisition)</b><br>
+							9 Months
+						</p>
 					</div>
-				</div>
+
+				</div><!-- / .row -->
 
 			</div>
 		</section>
@@ -244,8 +263,16 @@
 			<div class="container">
 				<hr>
 
-				<h5 class="section-title">Help us change the way we eat</h5>
-				<a href="#" class="btn btn-primary btn-outline btn-lg">Contact</a>
+				<div class="row">
+					<div class="col-md-8">
+						<h4 class="section-title">Help us swap sugar with Cinnamon</h4>
+
+					</div>
+
+					<div class="col-md-4 text-right">
+						<a href="#" class="btn btn-primary btn-outline btn-lg">Send us <i class="fa fa-btc"></i>, now! </a>
+					</div>
+				</div>
 
 			</div>
 		</section>
