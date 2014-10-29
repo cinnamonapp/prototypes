@@ -29,3 +29,19 @@ hr{
 		border-color: rgba(255,255,255, 0.5);
 	}
 }
+
+
+.invisible-marker{
+	overflow: hidden; opacity: 0; height: 0; position: relative;
+
+	top: -40px;
+
+	@media (min-width: 768px){
+		top: -2px;
+
+		&.disable-desktop{
+			top: 0;
+		}
+	}
+
+}

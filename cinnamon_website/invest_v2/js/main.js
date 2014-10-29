@@ -29,5 +29,10 @@ require(["jquery", "waypoints"], function ($, W) {
 		},{
 			offset: -200
 		});
+
+    $('.nav a').on('click', function(){
+      if($(".navbar-toggle").css("display") !== "none")
+        $(".navbar-toggle").click() //bootstrap 3.x by Richard
+    });
 	});
 });

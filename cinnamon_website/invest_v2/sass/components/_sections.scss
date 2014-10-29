@@ -58,9 +58,6 @@ section{
 	&.section-with-background-img{
 		overflow: hidden;
 
-		// And add a little background to text
-		text-shadow: 1px 1px 1px #000;
-
 		// Set the chosen image as background
 		.img-background{
 			display: none;
@@ -72,6 +69,22 @@ section{
 			right: 0;
 			margin: auto;
 			display: block;
+
+			&.adapt-height{
+				height: 100%;
+				top: 0;
+				left: auto;
+				right: 0;
+
+			}
+
+			&.center-on-mobile{
+				left: -135%;
+
+				@media (min-width: 768px){
+					left: auto;
+				}
+			}
 		}
 
 		// Put the main content on top
@@ -81,23 +94,29 @@ section{
 		}
 
 		// Add a smocky layer on top of the image
-		&:after{
-			content: " ";
+		&.smocky{
+			// And add a little background to text
+			text-shadow: 1px 1px 1px #000;
 
-			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
-			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
-			background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
-			background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
-			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+			&:after{
+				content: " ";
 
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
+				background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+				background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
 		}
+
 	}
 
 	// / Sections with background =====================================
@@ -108,6 +127,7 @@ section{
 	.section-title{
 		margin-top: 0;
 		margin-bottom: 20px;
+		font-size: 24px;
 
 		@media (min-width: 768px){
 			margin-bottom: 30px;

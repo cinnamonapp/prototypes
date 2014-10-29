@@ -74,3 +74,23 @@ $button_styles: "primary" $action_primary,
 
 	}
 }
+
+
+
+
+// Hamburger menu customization
+.navbar-toggle.ci-hamburger {
+
+	border: none !important;
+
+	&:hover,&:active,&:focus{
+		background: transparent;
+	}
+
+	.icon-bar{
+		width: 30px;
+		+.icon-bar{
+			margin-top: 8px;
+		}
+	}
+}

@@ -8,4 +8,13 @@
 			-webkit-transform: translateY(-50px);
 		}
 	}
+
+	// Scale a bit
+	&.scale-up{
+		@include cB(transition, -webkit-transform 1s ease);
+		-webkit-transform-origin: top right;
+		&:hover{
+			-webkit-transform: scale(1.01);
+		}
+	}
 }

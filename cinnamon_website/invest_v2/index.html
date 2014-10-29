@@ -33,14 +33,14 @@
 		<!-- End Google Tag Manager -->
 
 	</head>
-	<body data-spy="scroll" data-target="#cinnamon-navigation" data-offset="0" style="position:relative;">
+	<body>
 
 		<!-- Cinnamon website navigation -->
-		<nav class="navbar navbar-default navbar-cinnamon navbar-fixed-top" role="navigation" id="cinnamon-navigation">
+		<nav class="navbar navbar-default navbar-cinnamon navbar-fixed-top" role="navigation">
 		  <div class="container">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		      <button type="button" class="navbar-toggle collapsed navbar-btn ci-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 		        <span class="sr-only">Toggle navigation</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
@@ -58,7 +58,7 @@
 		        <li><a href="#solution">Solution</a></li>
 		        <li><a href="#people">People</a></li>
 						<li>
-							<button class="navbar-btn btn btn-default btn-outline btn-wider"><i class="fa fa-btc"></i> us now</button>
+							<button class="navbar-btn btn btn-default btn-outline btn-wider">Contact us</button>
 						</li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
@@ -66,9 +66,10 @@
 		</nav><!-- /.navbar -->
 
 
-		<section class="section section-primary section-size-10 section-with-background-img">
+		<!-- Intro section -->
+		<section class="section section-primary section-size-10 section-with-background-img smocky">
 
-			<img src="images/background-intro.png" alt="Cinnamon intro" class="img-background" />
+			<img src="images/i6-garden-table-h768.png" alt="Cinnamon intro" class="img-background adapt-height center-on-mobile" />
 
 			<div class="container">
 				<div class="row">
@@ -90,10 +91,11 @@
 		</section><!-- / .section -->
 
 		<!-- The problem section -->
+		<div id="problem" class="invisible-marker"></div>
 		<section class="section section-primary section-size-2">
 			<div class="container">
 				<hr>
-				<h2 id="problem">sads</h2>
+
 				<div class="row">
 					<div class="col-md-offset-1 col-md-4">
 						<div class="incredible-fact">
@@ -129,14 +131,15 @@
 
 
 		<!-- The solution section -->
+		<div id="solution" class="invisible-marker disable-desktop"></div>
 		<section class="section section-info section-size-2 overflow-hidden">
 			<div class="container">
 				<hr>
-				<h2 id="solution">sads</h2>
+
 				<div class="row">
 					<!-- Visible only on mobile -->
-					<div class="col-md-7 text-center visible-xs">
-						<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="80%"/>
+					<div class="col-md-7 text-center visible-xs" style="overflow: hidden; height: 300px; margin-bottom: 30px;">
+						<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="100%"/>
 					</div>
 
 
@@ -155,7 +158,7 @@
 						</p>
 					</div>
 
-					<div class="col-md-7 text-center hidden-xs">
+					<div class="col-md-7 text-center hidden-xs ci-animate reveal-up">
 						<div style="position: absolute;">
 							<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="80%"/>
 						</div>
@@ -166,11 +169,12 @@
 		</section>
 
 
+		<div id="people" class="invisible-marker"></div>
 		<section class="section section-primary section-size-2">
 			<div class="container">
 				<hr>
 
-				<div class="row" id="pesople">
+				<div class="row">
 
 					<!-- The team section -->
 					<div class="col-md-5">
@@ -259,18 +263,23 @@
 		</section>
 
 
-		<section class="section section-info section-size-2">
+		<section class="section section-info section-size-5 section-with-background-img">
+			<img src="images/resources/bg-section-contact.png" alt="Cinnamon intro" class="img-background adapt-height" />
 			<div class="container">
-				<hr>
+				<!-- <hr> -->
 
 				<div class="row">
-					<div class="col-md-8">
-						<h4 class="section-title">Help us swap sugar with Cinnamon</h4>
-
+					<div class="col-md-8 text-center">
+						<h4 class="margin-top no-margin-bottom">
+							Help us swap sugar <br class="visible-xs">with Cinnamon
+						</h4>
 					</div>
-
-					<div class="col-md-4 text-right">
-						<a href="#" class="btn btn-primary btn-outline btn-lg">Send us <i class="fa fa-btc"></i>, now! </a>
+					<div class="visible-xs">
+						<br>
+						<br>
+					</div>
+					<div class="col-md-4 text-center">
+						<a href="#" class="btn btn-primary btn-outline btn-lg"><i class="fa fa-envelope"></i> Contact us</a>
 					</div>
 				</div>
 

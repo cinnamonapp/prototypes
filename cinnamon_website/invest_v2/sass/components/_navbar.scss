@@ -21,13 +21,34 @@
 				padding-top: 5px;
 			}
 			>a{
-				font-size: 18px;
-				padding: 30px 15px;
 				@include typo_brand_weak;
+				font-size: 18px;
+				text-align: center; // Default because we need it on mobile
+
+				padding: 18px 15px;
+
+				@media (min-width: 768px){
+					padding: 30px 15px;
+				}
+
 				color: $secondary_color;
 				font-weight: 300;
 				text-transform: lowercase;
 			}
+
+			>.navbar-btn{
+				width: 92%;
+
+				@media (min-width: 768px){
+						width: auto;
+				}
+			}
+
+
+		}
+
+		.navbar-collapse, .navbar-form{
+			border: none;
 		}
 
 		.navbar-btn{
@@ -36,6 +57,12 @@
 			padding-top: 8px;
 			padding-bottom: 8px;
 
+		}
+
+		.navbar-toggle {
+			.icon-bar{
+				background-color: #e5c4a9; // move this from here
+			}
 		}
 	}
 }
