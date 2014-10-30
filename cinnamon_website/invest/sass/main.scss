@@ -1,6 +1,5 @@
+// The font
 @import "lib/futura";
-
-// @import "lib/bourbon/bourbon";
 
 // Common sass variables
 @import "variables";
@@ -29,11 +28,18 @@
 // Customize thumbnails
 @import "components/thumbnails";
 
-
 // Helpers animations
 @import "helpers/animations";
 // Help with paddings
 @import "helpers/paddings";
+
+// Some libs
+
+  // A custom carousel
+  @import "lib/carousell";
+
+  // @import "lib/bourbon/bourbon";
+
 
 // Luc's style
 // @import "specifications/cinnamon_interactive";

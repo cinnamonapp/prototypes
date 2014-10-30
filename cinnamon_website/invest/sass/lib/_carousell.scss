@@ -1,0 +1,40 @@
+.carousell{
+
+  // position: relative;
+
+  .carousell-control{
+    font-size: 80px;
+    font-weight: 100;
+    color: inherit;
+    position: absolute;
+
+    cursor: pointer;
+    padding: 20px;
+
+    top: 36%;
+
+    &.right{
+      right: 0;
+    }
+
+    &.left{
+      left: 0;
+    }
+  }
+
+  .carousell-slide{
+    opacity: 0;
+    display: none;
+    @include cB(transition, opacity .5s ease);
+
+    // This will be activated first
+    &.solid{
+      display: block;
+    }
+    // Then this will be activated
+    &.active{
+      display: block;
+      opacity: 1;
+    }
+  }
+}

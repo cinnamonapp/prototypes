@@ -929,3 +929,29 @@ body {
 
 .padding-bottom-5, .wrapper1080 .main-content .padding-bottom-5 {
   padding-bottom: 50px; }
+
+.carousell .carousell-control {
+  font-size: 80px;
+  font-weight: 100;
+  color: inherit;
+  position: absolute;
+  cursor: pointer;
+  padding: 20px;
+  top: 36%; }
+  .carousell .carousell-control.right {
+    right: 0; }
+  .carousell .carousell-control.left {
+    left: 0; }
+.carousell .carousell-slide {
+  opacity: 0;
+  display: none;
+  -webkit-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -ms-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease; }
+  .carousell .carousell-slide.solid {
+    display: block; }
+  .carousell .carousell-slide.active {
+    display: block;
+    opacity: 1; }
