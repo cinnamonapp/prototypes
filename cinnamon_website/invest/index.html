@@ -69,8 +69,42 @@
 		<!-- Intro section -->
 		<section class="section section-primary section-size-10 section-with-background-img smocky">
 
-			<img src="images/i6-garden-table-h768.png" alt="Cinnamon intro" class="img-background adapt-height center-on-mobile" />
+			<img src="images/i6-garden-table-h768.jpg" alt="Cinnamon intro" class="img-background adapt-height center-on-mobile" />
+			<video src="videos/cinnamon-growth-light.mp4"
+						 height="960"
+						 width="542"
+						 preload
+						 loop
+						 id="first-video"
+						 style="z-index: 0;
+										position: absolute;
+										-webkit-transform: rotate(-20.4deg) scale(0.765);
+										right: 605px;
+										top: -20px;
+										opacity: 0;
+										-webkit-transition: opacity .5s ease;" ></video>
 
+			<script charset="utf-8">
+				document.getElementById("first-video").addEventListener('progress', function(event) {
+				  var vid = this;
+			    var percent = null;
+
+			    if (vid.buffered.length > 0 && vid.buffered.end && vid.duration) {
+			        percent = vid.buffered.end(0) / vid.duration;
+			    } else if (vid.bytesTotal != undefined && vid.bytesTotal > 0 && vid.bufferedBytes != undefined) {
+			        percent = vid.bufferedBytes / vid.bytesTotal;
+			    }
+
+			    if (percent !== null) {
+			        percent = 100 * Math.min(1, Math.max(0, percent));
+
+			        if(percent > 80){
+								vid.style.opacity = 1;
+								vid.play();
+							}
+			    }
+				}, false);
+			</script>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 text-center">
