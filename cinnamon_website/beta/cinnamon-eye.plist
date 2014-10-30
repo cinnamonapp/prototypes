@@ -17,13 +17,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.snaphealth</string>
+				<string>com.adhoc.emu4ios</string>
 				<key>bundle-version</key>
 				<string>1.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>Cinnamon Eye</string>
+				<string>Emu4iOS Store</string>
 			</dict>
 		</dict>
 	</array>
