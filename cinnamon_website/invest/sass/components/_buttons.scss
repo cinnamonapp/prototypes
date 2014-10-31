@@ -45,12 +45,12 @@ $button_styles: "primary" $action_primary,
 				background: transparent;
 
 				&:hover, &.hover{
-					color: white;
+					color: black;
 					background: $loop_button_color;
 				}
 
 				&:active, &.active{
-					color: white;
+					color: black;
 					background: darken($loop_button_color, 5%);
 				}
 			}

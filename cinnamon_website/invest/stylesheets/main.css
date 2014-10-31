@@ -221,8 +221,13 @@ hr {
     .invisible-marker {
       top: -2px; }
       .invisible-marker.disable-desktop {
-        top: 0; } }
+        top: 0; }
+      .invisible-marker.marker-no-line {
+        top: -80px; } }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    zoom: 0.8; } }
 /*Primary button*/
 .btn {
   font-family: "Futura";
@@ -246,10 +251,10 @@ hr {
       border: 2px solid black;
       background: transparent; }
       .btn.btn-primary.btn-outline:hover, .btn.btn-primary.btn-outline.hover {
-        color: white;
+        color: black;
         background: black; }
       .btn.btn-primary.btn-outline:active, .btn.btn-primary.btn-outline.active {
-        color: white;
+        color: black;
         background: black; }
     .btn.btn-primary.btn-line {
       color: black;
@@ -280,10 +285,10 @@ hr {
       border: 2px solid #e5c4a9;
       background: transparent; }
       .btn.btn-warning.btn-outline:hover, .btn.btn-warning.btn-outline.hover {
-        color: white;
+        color: black;
         background: #e5c4a9; }
       .btn.btn-warning.btn-outline:active, .btn.btn-warning.btn-outline.active {
-        color: white;
+        color: black;
         background: #dfb795; }
     .btn.btn-warning.btn-line {
       color: #e5c4a9;
@@ -314,10 +319,10 @@ hr {
       border: 2px solid black;
       background: transparent; }
       .btn.btn-danger.btn-outline:hover, .btn.btn-danger.btn-outline.hover {
-        color: white;
+        color: black;
         background: black; }
       .btn.btn-danger.btn-outline:active, .btn.btn-danger.btn-outline.active {
-        color: white;
+        color: black;
         background: black; }
     .btn.btn-danger.btn-line {
       color: black;
@@ -348,10 +353,10 @@ hr {
       border: 2px solid #c9f3f9;
       background: transparent; }
       .btn.btn-info.btn-outline:hover, .btn.btn-info.btn-outline.hover {
-        color: white;
+        color: black;
         background: #c9f3f9; }
       .btn.btn-info.btn-outline:active, .btn.btn-info.btn-outline.active {
-        color: white;
+        color: black;
         background: #b2eef6; }
     .btn.btn-info.btn-line {
       color: #c9f3f9;
@@ -382,10 +387,10 @@ hr {
       border: 2px solid white;
       background: transparent; }
       .btn.btn-white.btn-outline:hover, .btn.btn-white.btn-outline.hover {
-        color: white;
+        color: black;
         background: white; }
       .btn.btn-white.btn-outline:active, .btn.btn-white.btn-outline.active {
-        color: white;
+        color: black;
         background: #f2f2f2; }
     .btn.btn-white.btn-line {
       color: white;
@@ -416,10 +421,10 @@ hr {
       border: 2px solid #e5c4a9;
       background: transparent; }
       .btn.btn-default.btn-outline:hover, .btn.btn-default.btn-outline.hover {
-        color: white;
+        color: black;
         background: #e5c4a9; }
       .btn.btn-default.btn-outline:active, .btn.btn-default.btn-outline.active {
-        color: white;
+        color: black;
         background: #dfb795; }
     .btn.btn-default.btn-line {
       color: #e5c4a9;
@@ -450,10 +455,10 @@ hr {
       border: 2px solid #e1ea2a;
       background: transparent; }
       .btn.btn-success.btn-outline:hover, .btn.btn-success.btn-outline.hover {
-        color: white;
+        color: black;
         background: #e1ea2a; }
       .btn.btn-success.btn-outline:active, .btn.btn-success.btn-outline.active {
-        color: white;
+        color: black;
         background: #dae416; }
     .btn.btn-success.btn-line {
       color: #e1ea2a;
@@ -937,7 +942,7 @@ body {
   position: absolute;
   cursor: pointer;
   padding: 20px;
-  top: 36%; }
+  top: 40%; }
   .carousell .carousell-control.right {
     right: 0; }
   .carousell .carousell-control.left {
@@ -950,8 +955,25 @@ body {
   -ms-transition: opacity 0.5s ease;
   -o-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease; }
+  .carousell .carousell-slide .carousell-enter-top-bottom {
+    -webkit-transition: -webkit-transform 1s ease;
+    -webkit-transform: translateY(-20%); }
+  .carousell .carousell-slide .carousell-enter-bottom-top {
+    -webkit-transition: -webkit-transform 1s ease;
+    -webkit-transform: translateY(20%); }
+  .carousell .carousell-slide p {
+    opacity: 0;
+    -webkit-transition: opacity 1.3s 0.136s ease; }
+    .carousell .carousell-slide p:first-of-type {
+      -webkit-transition-delay: 0s; }
+    .carousell .carousell-slide p:last-of-type {
+      -webkit-transition-delay: 0.272s; }
   .carousell .carousell-slide.solid {
     display: block; }
   .carousell .carousell-slide.active {
     display: block;
     opacity: 1; }
+    .carousell .carousell-slide.active .carousell-enter-top-bottom, .carousell .carousell-slide.active .carousell-enter-bottom-top {
+      -webkit-transform: translateY(0%); }
+    .carousell .carousell-slide.active p {
+      opacity: 1; }

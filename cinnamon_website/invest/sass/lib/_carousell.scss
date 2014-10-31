@@ -11,7 +11,7 @@
     cursor: pointer;
     padding: 20px;
 
-    top: 36%;
+    top: 40%;
 
     &.right{
       right: 0;
@@ -27,6 +27,33 @@
     display: none;
     @include cB(transition, opacity .5s ease);
 
+    .carousell-enter-top-bottom{
+      -webkit-transition: -webkit-transform 1s ease;
+      -webkit-transform: translateY(-20%);
+    }
+
+    .carousell-enter-bottom-top{
+      -webkit-transition: -webkit-transform 1s ease;
+      -webkit-transform: translateY(20%);
+    }
+
+    // Some entering effect to <p>s
+    $entering_duration: 1.3s;
+    $base_delay: .136s;
+    
+    p{
+      opacity: 0;
+      -webkit-transition: opacity $entering_duration $base_delay ease;
+
+      &:first-of-type{
+        -webkit-transition-delay: 0s;
+      }
+
+      &:last-of-type{
+        -webkit-transition-delay: $base_delay * 2;
+      }
+    }
+
     // This will be activated first
     &.solid{
       display: block;
@@ -35,6 +62,14 @@
     &.active{
       display: block;
       opacity: 1;
+
+      .carousell-enter-top-bottom, .carousell-enter-bottom-top{
+        -webkit-transform: translateY(0%);
+      }
+
+      p{
+        opacity: 1;
+      }
     }
   }
 }

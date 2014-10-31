@@ -42,6 +42,21 @@ hr{
 		&.disable-desktop{
 			top: 0;
 		}
+
+		&.marker-no-line{
+			top: -80px;
+		}
 	}
 
+}
+
+
+// Conditions for special screens
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    body{
+			zoom: 0.8;
+		}
 }
