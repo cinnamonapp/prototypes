@@ -1,11 +1,11 @@
 // SET YOUR STYLES HERE
-$button_styles: "primary" $action_primary,
-				"warning" $action_warning,
-				"danger"  $action_danger,
-				"info"    $action_info,
-				"white"   white,
-				"default" $secondary_color,
-				"success" $action_success;
+$button_styles: "primary" $action_primary $weak_color,
+								"warning" $action_warning $base_color,
+								"danger"  $action_danger $base_color,
+								"info"    $action_info $base_color,
+								"white"   white $base_color,
+								"default" $secondary_color $base_color,
+								"success" $action_success $base_color;
 
 /*Primary button*/
 .btn{
@@ -17,11 +17,12 @@ $button_styles: "primary" $action_primary,
 	@each $style in $button_styles{
 		$loop_button_name: nth($style, 1);
 		$loop_button_color: nth($style, 2);
+		$loop_label_color: nth($style, 3);
 
 		// COLORS
 		&.btn-#{$loop_button_name}{
 			background: $loop_button_color;
-			color: white;
+			color: $loop_label_color;
 			border-color: $loop_button_color;
 			border-radius: 0;
 
@@ -45,7 +46,7 @@ $button_styles: "primary" $action_primary,
 				background: transparent;
 
 				&:hover, &.hover{
-					color: black;
+					color: $loop_label_color;
 					background: $loop_button_color;
 				}
 

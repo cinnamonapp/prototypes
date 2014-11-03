@@ -35,19 +35,23 @@
 				font-weight: 300;
 				text-transform: lowercase;
 
-				&:hover{
-					&:after{
-						display: block;
-					}
-				}
 
-				&:after{
-					content: " ";
-					display: none;
-					position: absolute;
-					background: $secondary_color;
-					left: 15px; right: 15px;
-					height: 2px;
+				@media (min-width: 768px){
+
+					&:hover{
+						&:after{
+							display: block;
+						}
+					}
+
+					&:after{
+						content: " ";
+						display: none;
+						position: absolute;
+						background: $secondary_color;
+						left: 15px; right: 15px;
+						height: 2px;
+					}
 				}
 			}
 

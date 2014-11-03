@@ -79,7 +79,7 @@ section{
 			}
 
 			&.center-on-mobile{
-				left: -135%;
+				left: -95%;
 
 				@media (min-width: 768px){
 					left: auto;
@@ -97,6 +97,10 @@ section{
 		&.smocky{
 			// And add a little background to text
 			text-shadow: 1px 1px 1px #000;
+
+			h1{
+				text-shadow: 2px 2px 2px #000;
+			}
 
 			&:after{
 				content: " ";

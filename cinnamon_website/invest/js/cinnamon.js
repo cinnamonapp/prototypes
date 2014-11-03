@@ -1,5 +1,30 @@
 
-$(document).ready(function () {
+$(document).ready(function (event) {
+  $("[data-action-spoiler]").each(function (index) {
+    var target = $($(this).attr("data-action-spoiler"));
+    var originalHeight = target.height();
+    var initiator = $(this);
+
+    target.height(0);
+
+    initiator.click(function (event) {
+
+      event.preventDefault();
+      if($(this).attr("data-spoiler-remove-after-use") == "true")
+        $(this).css("display", "none");
+      if(target.height() == 0)
+        target.height(originalHeight);
+      else
+        target.height(0);
+    });
+  });
+});
+
+setTimeout(function () {
+
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $("video").remove();
+  }
 
   var calculatePercentage = function (video) {
     var vid = video;
@@ -11,24 +36,35 @@ $(document).ready(function () {
         percent = vid.bufferedBytes / vid.bytesTotal;
     }
 
+    percent = 100 * Math.min(1, Math.max(0, percent));
+
     return percent;
 
   };
 
-  console.log($(".show-after-preload").length + " elements");
   $(".show-after-preload").on('progress', function(event) {
     var vid = this;
     var percent = calculatePercentage(vid);
+    var minpercentage = Math.floor($(vid).attr("data-min-percentage") || 80);
+
+    console.log(vid.src.split("/")[vid.src.split("/").length - 1] + ": " + percent + "%");
 
     if (percent !== null) {
-      percent = 100 * Math.min(1, Math.max(0, percent));
-
-      if(percent > 80){
-        vid.style.opacity = 1;
+      if(percent > minpercentage && !$(vid).hasClass("enter")){
+        console.warn("### Now showing >>>> " + vid.src.split("/")[vid.src.split("/").length - 1]);
+        $(vid).addClass("enter");
         vid.play();
       }
     }
   });
 
 
-});
+
+}, 500);
+
+setTimeout(function () {
+  $(".load-after-5sec").attr("src", function(){ return $(this).attr("data-video-src"); });
+  $(".load-after-5sec").each(function () {
+    this.load();
+  });
+}, 5000);

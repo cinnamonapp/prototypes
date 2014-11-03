@@ -8,7 +8,7 @@ requirejs.config({
 
 
 require(["jquery", "waypoints"], function ($, W) {
-	require(["lib/caret-blink", "lib/bootstrap.min", "lib/window-sized", "lib/vertical-align", "lib/carousell", "cinnamon"], function (){
+	require(["lib/jquery.touchy.min", "lib/bootstrap.min", "lib/window-sized", "lib/vertical-align", "lib/carousell", "cinnamon"], function (){
 
     $('.nav a').on('click', function(){
       if($(".navbar-toggle").css("display") !== "none")

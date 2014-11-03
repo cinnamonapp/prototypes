@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
   $(".carousell .carousell-control").click(function (event) {
 
     var control = $(this);

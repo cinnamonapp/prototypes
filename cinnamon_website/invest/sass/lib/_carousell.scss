@@ -1,6 +1,6 @@
 .carousell{
 
-  // position: relative;
+  position: relative;
 
   .carousell-control{
     font-size: 80px;
@@ -11,14 +11,14 @@
     cursor: pointer;
     padding: 20px;
 
-    top: 40%;
+    top: 35%;
 
     &.right{
-      right: 0;
+      right: -60px;
     }
 
     &.left{
-      left: 0;
+      left: -60px;
     }
   }
 
@@ -40,7 +40,7 @@
     // Some entering effect to <p>s
     $entering_duration: 1.3s;
     $base_delay: .136s;
-    
+
     p{
       opacity: 0;
       -webkit-transition: opacity $entering_duration $base_delay ease;

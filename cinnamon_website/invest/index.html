@@ -50,7 +50,7 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" href="#">
-						<img src="images/logo.png" alt="Cinnamon logo" height="50" />
+						<img src="images/logo.svg" alt="Cinnamon logo" height="50" />
 					</a>
 		    </div>
 
@@ -76,16 +76,14 @@
 			<video src="videos/cinnamon-growth-light.mp4"
 						 height="960"
 						 width="542"
-						 preload
-						 loop
 						 class="show-after-preload"
+						 loop
+						 data-min-percentage="10"
 						 style="z-index: 0;
 										position: absolute;
 										-webkit-transform: rotate(-20.4deg) scale(0.765);
 										right: 605px;
-										top: -20px;
-										opacity: 0;
-										-webkit-transition: opacity .5s ease;" ></video>
+										top: -20px;" ></video>
 
 			<div class="container">
 				<div class="row">
@@ -139,6 +137,17 @@
 						<p>
 							The cause of this sugar epidemic is in our diet: we develop a sugar addiction because 80% of the food we buy at the grocery store hides some sort of sugar. We are not aware of this addiction and its deadly consequences and are unprepared to deal with it; even worse, doctors are not expected, trained, or paid to diagnose or treat it.
 						</p>
+
+						<p>
+							<a href="#" class="link" data-action-spoiler="#documentary-spoiler" data-spoiler-remove-after-use="true">Tell me more...</a>
+							<span id="documentary-spoiler" class="spoiler">
+								The 2014 documentary film Fed up is poised to be the Inconvenient truth of the health movement. <br>
+								Featuring Bill Clinton along with well known doctors and researchers, it casts light on the sugar epidemic and its causes, building on the idea that the solution won't come by government or by Big Food. Instead, it will require a grassroots, bottom-up effort on the part of families and savvy consumers. <br>
+								We as technologists and doctors must lead the way. <br>
+								<a href="https://www.youtube.com/watch?v=KNqymWYB-18" target="_blank" class="link">Watch the trailer</a>
+							</span>
+						</p>
+
 					</div>
 				</div>
 
@@ -181,19 +190,17 @@
 
 					<div class="col-md-7 text-center hidden-xs ci-animate">
 						<div style="position: absolute;" class="carousell-enter-bottom-top">
-							<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="80%"/>
+							<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="70%"/>
 							<video src="videos/cinnamon-growth-light.mp4"
-										preload
 										loop
 										class="show-after-preload"
+										data-min-percentage="50"
 										style=" z-index: 0;
 														position: absolute;
-														left: 15%;
-														top: 12%;
+														left: 19.7%;
+														top: 12.2%;
 														right: 90px;
-														-webkit-transition: opacity 0.5s ease;
-														opacity: 0;
-														width: 70%;"></video>
+														width: 61%;"></video>
 						</div>
 					</div>
 				</div><!-- / First slide -->
@@ -207,36 +214,34 @@
 
 
 					<div class="col-md-5">
+						<br><br><br>
 						<h5 class="section-title">The computer vision</h5>
 
 						<p>
-							<b>The world is full of glucose meters</b> and most of them are not so well connected in the internet of our things. Even though we envision a revolutionary device that will change the way we track glucose in our body we need to face the actual challenge.
+							<b>The world is full of glucose meters</b> and most of them are not so well connected in the internet of our things.
 						</p>
 
 						<p>
-							With an eye that could read any bgm number in a snap we can integrate hundreds of devices without adding a single intermediate to do the job.
+							We designed a process that takes advantage of your phone's camera and magically integrates any bgm on the market.
 						</p>
 						<p class="no-margin">
-							The plant will have a look at your number and let you know what it thinks about it! <br>
-							We believe this experience will be engaging the user far more than any other input experience you've ever seen. Look and snap.
+							Even though we envision a revolutionary device that will change the way we track glucose in our body we need to face the actual challenge.
 						</p>
+						<br><br><br>
 					</div>
 
 					<div class="col-md-7 text-center hidden-xs">
-						<div style="position: absolute; top: -350px;" class="carousell-enter-top-bottom">
-							<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="80%"/>
-							<video src="videos/cinnamon-computer-vision.mov"
-										preload
+						<div style="position: absolute; top: -239px;" class="carousell-enter-top-bottom">
+							<img src="images/resources/i6-week-view.png" alt="Cinnamon weekly preview" width="70%"/>
+							<video src="videos/computer-vision.mp4"
 										loop
 										class="show-after-preload"
 										style=" z-index: 0;
 														position: absolute;
-														left: 15%;
-														top: 12%;
+														left: 19.7%;
+														top: 12.4%;
 														right: 90px;
-														-webkit-transition: opacity 0.5s ease;
-														opacity: 0;
-														width: 70%;"></video>
+														width: 61%;"></video>
 						</div>
 					</div>
 
@@ -358,7 +363,7 @@
 						<br>
 					</div>
 					<div class="col-md-4 text-center">
-						<a href="mailto:linnea@cinnamon-app.com" class="btn btn-primary btn-outline btn-lg"><i class="fa fa-envelope"></i> Contact us</a>
+						<a href="mailto:linnea@cinnamon-app.com" class="btn btn-primary btn-outline btn-lg btn-wider">Contact us</a>
 					</div>
 				</div>
 

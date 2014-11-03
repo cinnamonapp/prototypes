@@ -36,6 +36,10 @@ hr{
 
 	top: -40px;
 
+	&.marker-no-line{
+		top: -80px;
+	}
+
 	@media (min-width: 768px){
 		top: -2px;
 
@@ -51,6 +55,16 @@ hr{
 }
 
 
+.hide-before-preload,.show-after-preload{
+	opacity: 0;
+	@include cB(transition, opacity .5s ease);
+
+	&.enter{
+		opacity: 1;
+	}
+}
+
+
 // Conditions for special screens
 
 @media
@@ -59,4 +73,13 @@ hr{
     body{
 			zoom: 0.8;
 		}
+}
+
+
+
+
+.spoiler{
+	display: block;
+	@include cB(transition, height .5s ease);
+	overflow: hidden;
 }
