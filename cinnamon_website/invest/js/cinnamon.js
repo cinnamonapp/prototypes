@@ -17,7 +17,8 @@ $(document).ready(function () {
 
   console.log($(".show-after-preload").length + " elements");
   $(".show-after-preload").on('progress', function(event) {
-    var percent = calculatePercentage(this);
+    var vid = this;
+    var percent = calculatePercentage(vid);
 
     if (percent !== null) {
       percent = 100 * Math.min(1, Math.max(0, percent));
