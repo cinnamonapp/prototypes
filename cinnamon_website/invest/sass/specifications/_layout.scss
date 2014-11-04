@@ -70,11 +70,17 @@ hr{
 @media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
-    body{
-			zoom: 0.8;
-		}
+  body{
+		zoom: 0.8;
+	}
 }
 
+
+@media (min-width: 1025px){
+	#iphone-computer-vision{
+		top: -239px;
+	}
+}
 
 
 
