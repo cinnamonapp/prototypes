@@ -25,37 +25,44 @@
   letter-spacing: 1px; }
   .navbar.navbar-cinnamon .navbar-brand {
     height: 80px; }
-  .navbar.navbar-cinnamon .navbar-nav > li > button {
-    margin-left: 15px;
-    margin-right: 15px;
-    font-size: 18px;
-    font-weight: 300;
-    padding-top: 5px; }
-  .navbar.navbar-cinnamon .navbar-nav > li > a {
-    font-family: "Futura Std";
-    font-weight: 200;
-    font-size: 18px;
-    text-align: center;
-    padding: 18px 15px;
-    color: #e5c4a9;
-    font-weight: 300;
-    text-transform: lowercase; }
+    @media (max-width: 465px) {
+      .navbar.navbar-cinnamon .navbar-brand {
+        width: 100%;
+        text-align: center; } }
+  .navbar.navbar-cinnamon .navbar-nav > li {
+    text-align: center; }
     @media (min-width: 768px) {
-      .navbar.navbar-cinnamon .navbar-nav > li > a {
-        padding: 30px 15px; } }
-    @media (min-width: 768px) {
-      .navbar.navbar-cinnamon .navbar-nav > li > a:hover:after {
-        display: block; }
-      .navbar.navbar-cinnamon .navbar-nav > li > a:after {
-        content: " ";
-        display: none;
-        position: absolute;
-        background: #e5c4a9;
-        left: 15px;
-        right: 15px;
-        height: 2px; } }
-  .navbar.navbar-cinnamon .navbar-nav > li > .navbar-btn {
-    width: 92%; }
+      .navbar.navbar-cinnamon .navbar-nav > li {
+        text-align: left; } }
+    .navbar.navbar-cinnamon .navbar-nav > li > button {
+      margin-left: 15px;
+      margin-right: 15px;
+      font-size: 18px;
+      font-weight: 300;
+      padding-top: 5px; }
+    .navbar.navbar-cinnamon .navbar-nav > li > a {
+      font-family: "Futura Std";
+      font-weight: 200;
+      font-size: 18px;
+      text-align: center;
+      padding: 18px 15px;
+      color: #e5c4a9;
+      font-weight: 300;
+      text-transform: lowercase; }
+      @media (min-width: 768px) {
+        .navbar.navbar-cinnamon .navbar-nav > li > a {
+          padding: 30px 15px; } }
+      @media (min-width: 768px) {
+        .navbar.navbar-cinnamon .navbar-nav > li > a:hover:after {
+          display: block; }
+        .navbar.navbar-cinnamon .navbar-nav > li > a:after {
+          content: " ";
+          display: none;
+          position: absolute;
+          background: #e5c4a9;
+          left: 15px;
+          right: 15px;
+          height: 2px; } }
     @media (min-width: 768px) {
       .navbar.navbar-cinnamon .navbar-nav > li > .navbar-btn {
         width: auto; } }
@@ -66,6 +73,14 @@
     margin-bottom: 20px;
     padding-top: 8px;
     padding-bottom: 8px; }
+  @media (max-width: 465px) {
+    .navbar.navbar-cinnamon .navbar-toggle {
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+      margin: 0;
+      padding: 30px; } }
   .navbar.navbar-cinnamon .navbar-toggle .icon-bar {
     background-color: #e5c4a9; }
 
@@ -806,6 +821,16 @@ body {
 
 .media.team-member .pull-left {
   margin-right: 20px; }
+
+@-webkit-keyframes fade-in-then-out {
+  0% {
+    opacity: 0; }
+
+  40% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
 
 .ci-animate.reveal-up {
   -webkit-transition: -webkit-transform 0.5s ease;

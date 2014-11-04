@@ -18,6 +18,11 @@ $(document).ready(function (event) {
         target.height(0);
     });
   });
+
+  $(".show-after-preload").each(function (index) {
+    $(this).addClass("enter");
+    this.play();
+  })
 });
 
 setTimeout(function () {

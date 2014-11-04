@@ -1,5 +1,17 @@
 // ANIMATIONS
 
+@-webkit-keyframes fade-in-then-out{
+	0%{
+		opacity: 0;
+	}
+	40%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
 .ci-animate{
 	// Move a bit towards the sky
 	&.reveal-up{
@@ -17,4 +29,5 @@
 			-webkit-transform: scale(1.01);
 		}
 	}
+
 }
