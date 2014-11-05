@@ -76,6 +76,9 @@ section{
 				left: auto;
 				right: 0;
 
+				img{
+					height: 100%;
+				}
 			}
 
 			&.center-on-mobile{
@@ -84,6 +87,27 @@ section{
 				@media (min-width: 768px){
 					left: auto;
 				}
+			}
+
+			// Left image gradient fallback
+			&:before{
+				content: " ";
+				display: block;
+				background: black;
+				width: 150px;
+				height: 100%;
+
+				position: absolute;
+
+				background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 6%, rgba(0,0,0,0) 74%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+				background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(6%,rgba(0,0,0,1)), color-stop(74%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+				background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 6%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 6%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+				background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 6%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 100%); /* IE10+ */
+				background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 6%,rgba(0,0,0,0) 74%,rgba(0,0,0,0) 100%); /* W3C */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+
 			}
 		}
 
