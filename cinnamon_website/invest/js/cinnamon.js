@@ -23,6 +23,33 @@ $(document).ready(function (event) {
     $(this).addClass("enter");
     this.play();
   })
+
+  var scrollTo = function (href, offset) {
+    $.scrollTo($(href), 1000, {
+      onAfter: function () {
+        window.location.hash = href;
+        $(".scroll-to-active-right-now").removeClass("scroll-to-active-right-now");
+        $(href).addClass("scroll-to-active-right-now");
+      },
+      offset: offset
+    });
+  };
+
+  $('a').click(function (event) {
+    var href = $(this).attr("href");
+
+    if(href.indexOf("#") == 0){
+      var offset = parseInt($(href).attr("data-scroll-offset") || 0);
+
+      event.preventDefault();
+
+      $.scrollTo.window().queue([]).stop();
+
+      scrollTo(href, offset);
+    }
+
+  });
+
 });
 
 setTimeout(function () {
