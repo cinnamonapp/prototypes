@@ -89,3 +89,21 @@ hr{
 	@include cB(transition, height .5s ease);
 	overflow: hidden;
 }
+
+
+#cinnamon-main-video-demo{
+	z-index: 0;
+	position: absolute;
+	-webkit-transform: rotate(-20.4deg) scale(0.772);
+	right: 611px;
+	top: -16px;
+
+	&:after{
+		content: " ";
+		width: 1px;
+		height: 500px;
+		background: black;
+		position: absolute;
+		-webkit-transform: rotate(-20.4deg);
+	}
+}

@@ -1,212 +1,76 @@
-<!DOCTYPE html>
 <html>
   <head>
-    
     <title>Interaction Designer - Cinnamon</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script data-main="../invest/js/main" src="../invest/js/require.js"></script>
+    <link rel="stylesheet" type="text/css" href="../invest/stylesheets/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../invest/stylesheets/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../invest/stylesheets/main.css">
 
-    <link rel="icon" type="image/png" href="https://res.cloudinary.com/marvel-content/image/fetch/s--u3eRh1iL--/t_app_icon_72/https://93a032b5a736369d0315-6b3cd319f06aad6377c56b723b977acb.ssl.cf3.rackcdn.com/serve/1411174061.92_1852481.png">
-    <link rel="shortcut icon" href="https://res.cloudinary.com/marvel-content/image/fetch/s--u3eRh1iL--/t_app_icon_72/https://93a032b5a736369d0315-6b3cd319f06aad6377c56b723b977acb.ssl.cf3.rackcdn.com/serve/1411174061.92_1852481.png">
-
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/marvel-content/image/fetch/s--6k0tzw02--/t_app_icon_72/https://93a032b5a736369d0315-6b3cd319f06aad6377c56b723b977acb.ssl.cf3.rackcdn.com/serve/1411123262.68_1850437.png">
+    <link rel="shortcut icon" href="https://res.cloudinary.com/marvel-content/image/fetch/s--6k0tzw02--/t_app_icon_72/https://93a032b5a736369d0315-6b3cd319f06aad6377c56b723b977acb.ssl.cf3.rackcdn.com/serve/1411123262.68_1850437.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <style media="screen">
-      @font-face {
-        font-family: 'Futura Std';
-        font-style: normal;
-        font-weight: 300;
-        src: url("fonts/ttf/FuturaStd-Medium.ttf");
-      }
+    <!-- Facebook Conversion Code for Iscrizione alla lista -->
+    <script>(function() {
+    var _fbq = window._fbq || (window._fbq = []);
+    if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+    }
+    })();
+    window._fbq = window._fbq || [];
+    </script>
 
-      @font-face {
-        font-family: 'Futura Std';
-        font-style: normal;
-        font-weight: 700;
-        src: url("fonts/ttf/futurastdheavy.ttf");
-      }
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5893LB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5893LB');</script>
+    <!-- End Google Tag Manager -->
 
-
-      @font-face {
-        font-family: 'Futura';
-        font-style: normal;
-        font-weight: 500;
-        src: url("fonts/ttf/futura.ttf");
-      }
-
-      body{
-        font-family: 'Futura', Arial;
-
-        /*background: #000000; */
-        background: #E5C4A9;
-
-        color: #000000;
-        /*color: #E5C4A9;*/
-      }
-      .margin-auto-block{
-        display: block;
-        float: none;
-        width: 300px;
-        text-align: center;
-
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-      .container{
-        max-width: 960px !important;
-      }
-
-      .btn.btn-outline{
-        /* Button Background: */
-        /*border: 2px solid #E5C4A9;*/
-        border: 2px solid #000000;
-        border-radius: 0;
-        text-decoration: none;
-        background: transparent;
-      }
-
-      .btn.btn-outline:hover{
-        /*background: #E5C4A9;*/
-        background: #000000;
-        color: #E5C4A9;
-
-      }
-      h1{
-        /*font-family: FuturaStd-Heavy;*/
-        font-size: 48px;
-        color: #000000;
-        /*color: #E5C4A9;*/
-        line-height: 58px;
-        letter-spacing: 1px;
-        /* Swap Sugar with Cinn: */
-        text-shadow: 1px 1px 0px rgba(0,0,0,0.60);
-        margin-top: 30px;
-        margin-bottom: 40px;
-      }
-
-      p{
-        font-size: 18px;
-        font-weight: 300;
-        font-family: 'Futura Std', Arial;
-      }
-
-      p.small{
-        font-size: 16px;
-        line-height: 16px;
-      }
-      ul{
-        padding-left: 20px;
-        font-size: 18px;
-        font-weight: 300;
-        font-family: 'Futura Std', Arial;
-      }
-      .navigator{
-        margin-top: 30px;
-        margin-bottom: 30px;
-      }
-
-      .no-margin-top{
-        margin-top: 20px;
-      }
-
-      a{
-        color: inherit;
-        text-decoration: underline;
-      }
-      a:hover{
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .adv{
-        /*width: 100%;*/
-        width: 300px;
-        height: 100px;
-        color: #37673F;
-        margin-bottom: 10px;
-      }
-
-      .adv.marvelapp{
-        background: url(images/marvelapp.png) repeat-x top left;
-      }
-
-      .adv.onboarding{
-        background: url(images/onboarding.png) repeat-x top left;
-      }
-
-      .adv.inverse{
-        color: white;
-        background: #37673F;
-      }
-      .adv a{
-        display: block;
-        width: 100%;
-        text-align: center;
-        font-size: 28px;
-        height: 100px;
-        padding-top: 25px;
-      }
-
-      .team-member .media-heading{
-        font-family: 'Futura Std';
-        font-weight: 600;
-        /*margin-top: 10px;*/
-      }
-      .team-member img{
-        /*width: 100px;
-        height: 100px;*/
-        width: 80px;
-        height: 80px;
-        border: 4px solid #4A4A4A;
-      }
-      .team-member>.pull-left{
-        margin-right: 15px;
-      }
-
-      .img-logo{
-        height: 54px;
-      }
-
-      @media screen and (max-width : 768px){
-        .img-logo{
-          height: 45px;
-        }
-      }
-
-    </style>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar">
+
+    <!-- Cinnamon website navigation -->
+    <nav class="navbar navbar-default navbar-cinnamon navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <a class="btn btn-lg btn-outline navbar-toggle collapsed" href="mailto:linnea@cinnamon-app.com" style="margin-right: 0; margin-top: 15px;">
-            Contact
-          </a>
-          <a class="navbar-brand" href="http://cinnamon-app.com" style="padding-left: 0;">
-            <img src="images/logo-dark.png" class="img-logo"/>
+          <button type="button" class="navbar-toggle collapsed navbar-btn ci-hamburger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../invest">
+            <img src="../invest/images/logo.svg" alt="Cinnamon logo" height="50" />
           </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="mailto:linnea@cinnamon-app.com" class="btn btn-lg btn-outline" style="margin-top: 15px;">Get in touch</a></li>
+            <li>
+              <button class="navbar-btn btn btn-default btn-outline btn-wider" onclick="javascript:window.location.href='mailto:linnea@cinnamon-app.com'">Contact us</button>
+            </li>
           </ul>
         </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
 
-      </nav>
-      <!-- <nav class="text-center navigator">
+    <!-- The problem section -->
+    <section class="section section-primary section-size-2">
+      <div class="container">
 
-          <a class="margin-auto-block" href="#">
-            <img src="images/logo.png" />
-          </a>
-      </nav> -->
-
-      <div class="row">
-        <div class="col-md-12">
-          <section>
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10">
             <h1>Interaction Designer</h1>
             <p>
               1.7 billion children and adults around the world are affected by health issues related to glucose. This number is predicted to skyrocket in the next few years, unless we find a way to stop the deadliest epidemic in our history.
@@ -222,32 +86,32 @@
             </p>
             <ul>
               <li>
-                <b>An experienced mobile app designer (3+ years):</b>
                 <p>
+                  <b>An experienced mobile app designer (3+ years):</b><br>
                   You are fluent in patterns and users behaviors on both IOS (strong) and Android
                 </p>
               </li>
               <li>
-                <b>User feedback oriented:</b>
                 <p>
+                  <b>User feedback oriented:</b> <br>
                   Early adopters and users feedback is your compass. You learn and optimize like there's no tomorrow.
                 </p>
               </li>
               <li>
-                <b>A game designer/addict (optional):</b>
                 <p>
+                  <b>A game designer/addict (optional):</b><br>
                   We believe Cinnamon should spice up people's lives by playing a game. This is why it would be great if you had a gaming background.
                 </p>
               </li>
               <li>
-                <b>Visual designer (optional):</b>
                 <p>
+                  <b>Visual designer (optional):</b><br>
                   It would be a great plus if you also have a background in graphic design. In any case just bring your sense of appreciation for beautiful things.
                 </p>
               </li>
               <li>
-                <b>A hobbyst coder (optional):</b>
                 <p>
+                  <b>A hobbyst coder (optional):</b><br>
                   You'll need to communicate clearly with developers and know what they're talking about when they reply to your design choices. You'll also want to stay ahead of them respecting the application's structure while making your design choices.
                 </p>
               </li>
@@ -259,18 +123,35 @@
               <br>
               Are you ready for the challenge? If you have what it takes to shape Cinnamon from the ground up, and make it a transformational tool in the lives of billions of people, shoot us an email right now.
             </p>
-          </section>
-
+          </div>
         </div>
+
       </div>
-      <br><br>
+    </section>
 
-      <section>
-        <a href="mailto:linnea@cinnamon-app.com" class="btn btn-lg btn-outline">Get in touch</a>
-      </section>
+    <section class="section section-info section-size-5 section-with-background-img">
+      <img src="../invest/images/resources/bg-section-contact.png" alt="Cinnamon intro" class="img-background adapt-height" />
+      <div class="container">
+        <!-- <hr> -->
 
-      <br><br>
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="no-margin">
+              Help us swap sugar <br class="visible-xs">with Cinnamon
+            </h3>
+          </div>
+          <div class="visible-xs">
+            <br>
+            <br>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="mailto:linnea@cinnamon-app.com" class="btn btn-primary btn-outline btn-lg btn-wider">Contact us</a>
+          </div>
+        </div>
 
-    </div>
+      </div>
+    </section>
+
+
   </body>
 </html>
